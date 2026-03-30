@@ -32,7 +32,7 @@
 
 ## Entity 规则
 
-- 除非所在模块明显另有约定，否则实体类继承 `org.dromara.common.mybatis.core.domain.BaseEntity`。
+- 除非所在模块明显另有约定，否则实体类继承 `domain.core.org.itrys.boot.mybatis.BaseEntity`。
 - 使用 Lombok `@Data` 和 `@EqualsAndHashCode(callSuper = true)`。
 - 使用 `@TableName("table_name")`。
 - 主键使用 `@TableId`。

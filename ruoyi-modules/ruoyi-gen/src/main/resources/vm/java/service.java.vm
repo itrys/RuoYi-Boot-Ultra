@@ -4,7 +4,7 @@ import ${packageName}.domain.vo.${ClassName}Vo;
 import ${packageName}.domain.bo.${ClassName}Bo;
 #if($table.crud)
 import domain.org.dromara.boot.PageResult;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import page.core.org.itrys.boot.mybatis.PageQuery;
 #end
 
 import java.util.Collection;

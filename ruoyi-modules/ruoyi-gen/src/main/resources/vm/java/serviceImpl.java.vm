@@ -4,7 +4,7 @@ import utils.org.dromara.boot.MapstructUtils;
 import utils.org.dromara.boot.StringUtils;
 #if($table.crud)
 import domain.org.dromara.boot.PageResult;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import page.core.org.itrys.boot.mybatis.PageQuery;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 #end
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
