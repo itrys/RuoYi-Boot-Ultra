@@ -13,9 +13,9 @@ import org.itrys.boot.utils.MessageUtils;
 import org.itrys.boot.utils.ServletUtils;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.utils.ip.AddressUtils;
-import org.dromara.common.log.event.LoginInfoEvent;
-import org.dromara.common.redis.utils.RedisUtils;
-import org.dromara.common.satoken.utils.LoginHelper;
+import org.itrys.boot.log.event.LoginInfoEvent;
+import org.itrys.boot.redis.utils.RedisUtils;
+import org.itrys.boot.satoken.utils.LoginHelper;
 import org.dromara.web.service.SysLoginService;
 import org.springframework.stereotype.Component;
 

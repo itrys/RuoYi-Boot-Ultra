@@ -8,7 +8,7 @@ import org.itrys.boot.domain.PageResult;
 import org.itrys.boot.exception.ServiceException;
 import org.itrys.boot.utils.MapstructUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.demo.domain.TestDemo;
 import org.itrys.demo.domain.bo.TestDemoBo;
 import org.itrys.demo.domain.vo.TestDemoVo;

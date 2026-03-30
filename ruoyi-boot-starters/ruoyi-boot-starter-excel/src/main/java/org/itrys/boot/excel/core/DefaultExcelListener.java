@@ -7,7 +7,7 @@ import org.apache.fesod.sheet.exception.ExcelAnalysisException;
 import org.apache.fesod.sheet.exception.ExcelDataConvertException;
 import org.itrys.boot.utils.StreamUtils;
 import org.itrys.boot.utils.ValidatorUtils;
-import org.dromara.common.json.utils.JsonUtils;
+import org.itrys.boot.json.utils.JsonUtils;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,6 @@
 package org.itrys.system.mapper;
 
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.system.domain.SysOssConfig;
 import org.itrys.system.domain.vo.SysOssConfigVo;
 

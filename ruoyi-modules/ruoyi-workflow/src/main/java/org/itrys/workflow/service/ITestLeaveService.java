@@ -1,7 +1,7 @@
 package org.itrys.workflow.service;
 
 import org.itrys.boot.domain.PageResult;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.workflow.domain.bo.TestLeaveBo;
 import org.itrys.workflow.domain.vo.TestLeaveVo;
 

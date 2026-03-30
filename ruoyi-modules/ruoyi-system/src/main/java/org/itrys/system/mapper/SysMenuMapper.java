@@ -7,7 +7,7 @@ import com.github.yulichang.toolkit.JoinWrappers;
 import org.itrys.boot.constant.SystemConstants;
 import org.itrys.boot.utils.StreamUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.system.domain.SysMenu;
 import org.itrys.system.domain.SysRole;
 import org.itrys.system.domain.SysRoleMenu;

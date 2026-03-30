@@ -14,7 +14,7 @@ import org.itrys.boot.service.MessageService;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.utils.StreamUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mail.utils.MailUtils;
+import org.itrys.boot.mail.utils.MailUtils;
 import org.dromara.warm.flow.core.FlowEngine;
 import org.dromara.warm.flow.core.entity.Node;
 import org.dromara.warm.flow.orm.entity.FlowTask;

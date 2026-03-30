@@ -3,7 +3,7 @@ package org.itrys.system.listener;
 import cn.hutool.core.lang.tree.Tree;
 import lombok.RequiredArgsConstructor;
 import org.itrys.boot.utils.TreeBuildUtils;
-import org.dromara.common.excel.core.ExcelOptionsProvider;
+import org.itrys.boot.excel.core.ExcelOptionsProvider;
 import org.itrys.system.domain.bo.SysDeptBo;
 import org.itrys.system.service.ISysDeptService;
 import org.springframework.stereotype.Component;

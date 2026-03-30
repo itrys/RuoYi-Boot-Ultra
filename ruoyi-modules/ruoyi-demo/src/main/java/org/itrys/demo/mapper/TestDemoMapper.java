@@ -5,9 +5,9 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Param;
-import org.dromara.common.mybatis.annotation.DataColumn;
-import org.dromara.common.mybatis.annotation.DataPermission;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.annotation.DataColumn;
+import org.itrys.boot.mybatis.annotation.DataPermission;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.demo.domain.TestDemo;
 import org.itrys.demo.domain.vo.TestDemoVo;
 

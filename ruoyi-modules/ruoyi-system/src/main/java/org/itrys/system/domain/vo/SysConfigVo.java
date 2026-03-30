@@ -4,8 +4,8 @@ import io.github.linpeilie.annotations.AutoMapper;
 import lombok.Data;
 import org.apache.fesod.sheet.annotation.ExcelIgnoreUnannotated;
 import org.apache.fesod.sheet.annotation.ExcelProperty;
-import org.dromara.common.excel.annotation.ExcelDictFormat;
-import org.dromara.common.excel.convert.ExcelDictConvert;
+import org.itrys.boot.excel.annotation.ExcelDictFormat;
+import org.itrys.boot.excel.convert.ExcelDictConvert;
 import org.itrys.system.domain.SysConfig;
 
 import java.io.Serial;

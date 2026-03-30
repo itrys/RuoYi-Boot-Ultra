@@ -1,8 +1,8 @@
 package org.itrys.system.domain.vo;
 
 import lombok.Data;
-import org.dromara.common.translation.annotation.Translation;
-import org.dromara.common.translation.constant.TransConstant;
+import org.itrys.boot.translation.annotation.Translation;
+import org.itrys.boot.translation.constant.TransConstant;
 
 import java.io.Serial;
 import java.io.Serializable;

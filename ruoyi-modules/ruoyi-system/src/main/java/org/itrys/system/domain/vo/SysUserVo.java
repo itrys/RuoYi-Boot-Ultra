@@ -4,10 +4,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.linpeilie.annotations.AutoMapper;
 import lombok.Data;
-import org.dromara.common.sensitive.annotation.Sensitive;
-import org.dromara.common.sensitive.core.SensitiveStrategy;
-import org.dromara.common.translation.annotation.Translation;
-import org.dromara.common.translation.constant.TransConstant;
+import org.itrys.boot.sensitive.annotation.Sensitive;
+import org.itrys.boot.sensitive.core.SensitiveStrategy;
+import org.itrys.boot.translation.annotation.Translation;
+import org.itrys.boot.translation.constant.TransConstant;
 import org.itrys.system.domain.SysUser;
 
 import java.io.Serial;

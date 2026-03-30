@@ -2,7 +2,7 @@ package org.itrys.boot.encrypt.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.dromara.common.encrypt.core.encryptor.*;
+import org.itrys.boot.encrypt.core.encryptor.*;
 import org.itrys.boot.encrypt.core.encryptor.*;
 
 /**

@@ -1,8 +1,8 @@
 package org.itrys.demo.controller;
 
 import org.itrys.boot.domain.R;
-import org.dromara.common.redis.annotation.RateLimiter;
-import org.dromara.common.redis.enums.LimitType;
+import org.itrys.boot.redis.annotation.RateLimiter;
+import org.itrys.boot.redis.enums.LimitType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

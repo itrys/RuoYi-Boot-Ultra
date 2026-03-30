@@ -1,7 +1,7 @@
 package org.itrys.workflow.domain.vo;
 
 import lombok.Data;
-import org.dromara.common.translation.annotation.Translation;
+import org.itrys.boot.translation.annotation.Translation;
 import org.itrys.workflow.common.constant.FlowConstant;
 
 import java.io.Serial;

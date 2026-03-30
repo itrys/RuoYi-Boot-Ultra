@@ -6,7 +6,7 @@ import org.itrys.boot.constant.SystemConstants;
 import org.itrys.boot.domain.dto.RoleDTO;
 import org.itrys.boot.service.PermissionService;
 import org.itrys.boot.utils.StreamUtils;
-import org.dromara.common.satoken.utils.LoginHelper;
+import org.itrys.boot.satoken.utils.LoginHelper;
 import org.itrys.system.service.ISysMenuService;
 import org.itrys.system.service.ISysPermissionService;
 import org.itrys.system.service.ISysRoleService;

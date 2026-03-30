@@ -9,7 +9,7 @@ import org.itrys.boot.domain.model.LoginUser;
 import org.itrys.boot.exception.ServiceException;
 import org.itrys.boot.utils.ObjectUtils;
 import org.itrys.boot.mybatis.core.domain.BaseEntity;
-import org.dromara.common.satoken.utils.LoginHelper;
+import org.itrys.boot.satoken.utils.LoginHelper;
 
 import java.util.Date;
 

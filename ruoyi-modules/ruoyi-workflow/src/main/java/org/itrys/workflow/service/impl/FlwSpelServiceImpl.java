@@ -15,7 +15,7 @@ import org.itrys.boot.exception.ServiceException;
 import org.itrys.boot.utils.MapstructUtils;
 import org.itrys.boot.utils.StreamUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.workflow.common.ConditionalOnEnable;
 import org.itrys.workflow.domain.FlowSpel;
 import org.itrys.workflow.domain.bo.FlowSpelBo;

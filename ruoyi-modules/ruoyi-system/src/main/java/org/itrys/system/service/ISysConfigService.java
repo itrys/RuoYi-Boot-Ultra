@@ -1,7 +1,7 @@
 package org.itrys.system.service;
 
 import org.itrys.boot.domain.PageResult;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.system.domain.bo.SysConfigBo;
 import org.itrys.system.domain.vo.SysConfigVo;
 

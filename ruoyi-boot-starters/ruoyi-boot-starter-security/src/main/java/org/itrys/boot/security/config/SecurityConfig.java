@@ -16,7 +16,7 @@ import org.itrys.boot.constant.HttpStatus;
 import org.itrys.boot.utils.ServletUtils;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.satoken.utils.LoginHelper;
+import org.itrys.boot.satoken.utils.LoginHelper;
 import org.itrys.boot.security.config.properties.SecurityProperties;
 import org.itrys.boot.security.handler.AllUrlHandler;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,8 +1,8 @@
 package org.itrys.demo.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import org.dromara.common.encrypt.annotation.EncryptField;
-import org.dromara.common.encrypt.enums.AlgorithmType;
+import org.itrys.boot.encrypt.annotation.EncryptField;
+import org.itrys.boot.encrypt.enums.AlgorithmType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

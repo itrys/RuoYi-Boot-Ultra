@@ -8,8 +8,8 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import org.itrys.boot.constant.RegexConstants;
-import org.dromara.common.json.validate.JsonPattern;
-import org.dromara.common.json.validate.JsonType;
+import org.itrys.boot.json.validate.JsonPattern;
+import org.itrys.boot.json.validate.JsonType;
 import org.itrys.system.domain.SysMenu;
 
 import java.io.Serial;

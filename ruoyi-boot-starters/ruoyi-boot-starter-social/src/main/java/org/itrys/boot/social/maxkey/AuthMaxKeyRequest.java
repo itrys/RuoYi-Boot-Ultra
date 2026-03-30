@@ -9,7 +9,7 @@ import me.zhyd.oauth.model.AuthToken;
 import me.zhyd.oauth.model.AuthUser;
 import me.zhyd.oauth.request.AuthDefaultRequest;
 import org.itrys.boot.utils.SpringUtils;
-import org.dromara.common.json.utils.JsonUtils;
+import org.itrys.boot.json.utils.JsonUtils;
 
 /**
  *  @author 长春叭哥 2023年03月26日

@@ -3,7 +3,7 @@ package org.itrys.boot.web.config;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
 import org.itrys.boot.utils.ObjectUtils;
-import org.dromara.common.json.enhance.JsonValueEnhancer;
+import org.itrys.boot.json.enhance.JsonValueEnhancer;
 import org.itrys.boot.web.advice.ResponseEnhancementAdvice;
 import org.itrys.boot.web.handler.GlobalExceptionHandler;
 import org.itrys.boot.web.interceptor.PlusWebInvokeTimeInterceptor;

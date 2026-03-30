@@ -1,6 +1,6 @@
 package org.itrys.boot.oss.client;
 
-import org.dromara.common.oss.config.OssAsyncExecutorConfig;
+import org.itrys.boot.oss.config.OssAsyncExecutorConfig;
 import org.itrys.boot.oss.config.OssClientConfig;
 import org.itrys.boot.oss.exception.S3StorageException;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;

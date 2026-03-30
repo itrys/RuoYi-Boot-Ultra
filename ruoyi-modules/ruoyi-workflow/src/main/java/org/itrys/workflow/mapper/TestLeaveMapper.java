@@ -1,6 +1,6 @@
 package org.itrys.workflow.mapper;
 
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.workflow.domain.TestLeave;
 import org.itrys.workflow.domain.vo.TestLeaveVo;
 

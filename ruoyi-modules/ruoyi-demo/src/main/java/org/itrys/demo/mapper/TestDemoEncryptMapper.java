@@ -1,6 +1,6 @@
 package org.itrys.demo.mapper;
 
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.demo.domain.TestDemoEncrypt;
 
 /**

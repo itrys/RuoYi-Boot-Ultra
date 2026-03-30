@@ -2,7 +2,7 @@ package org.itrys.workflow.mapper;
 
 import cn.hutool.core.util.ObjectUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.workflow.domain.FlowInstanceBizExt;
 
 import java.util.Collection;

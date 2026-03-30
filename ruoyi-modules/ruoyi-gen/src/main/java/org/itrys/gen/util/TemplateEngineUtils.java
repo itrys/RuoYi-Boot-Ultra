@@ -11,9 +11,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.itrys.boot.utils.DateUtils;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.json.utils.JsonUtils;
-import org.dromara.common.mybatis.enums.DataBaseType;
-import org.dromara.common.mybatis.helper.DataBaseHelper;
+import org.itrys.boot.json.utils.JsonUtils;
+import org.itrys.boot.mybatis.enums.DataBaseType;
+import org.itrys.boot.mybatis.helper.DataBaseHelper;
 import org.itrys.gen.config.properties.GenProperties;
 import org.itrys.gen.constant.GenConstants;
 import org.itrys.gen.domain.GenTable;
@@ -267,8 +267,8 @@ public class TemplateEngineUtils {
             } else if (!column.isSuperColumn() && GenConstants.TYPE_BIGDECIMAL.equals(column.getJavaType())) {
                 importList.add("java.math.BigDecimal");
             } else if (!column.isSuperColumn() && "imageUpload".equals(column.getHtmlType())) {
-                importList.add("org.dromara.common.translation.annotation.Translation");
-                importList.add("org.dromara.common.translation.constant.TransConstant");
+                importList.add("org.itrys.boot.translation.annotation.Translation");
+                importList.add("org.itrys.boot.translation.constant.TransConstant");
             }
             if (!column.isSuperColumn() && GenConstants.QUERY_BETWEEN.equals(column.getQueryType())) {
                 importList.add("java.util.HashMap");

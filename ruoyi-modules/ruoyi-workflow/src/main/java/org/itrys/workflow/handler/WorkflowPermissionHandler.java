@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.itrys.boot.domain.dto.UserDTO;
 import org.itrys.boot.utils.StreamUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.satoken.utils.LoginHelper;
+import org.itrys.boot.satoken.utils.LoginHelper;
 import org.dromara.warm.flow.core.dto.FlowParams;
 import org.dromara.warm.flow.core.handler.PermissionHandler;
 import org.itrys.workflow.common.ConditionalOnEnable;

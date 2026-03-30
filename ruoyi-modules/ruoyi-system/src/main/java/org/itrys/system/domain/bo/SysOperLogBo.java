@@ -3,7 +3,7 @@ package org.itrys.system.domain.bo;
 import io.github.linpeilie.annotations.AutoMapper;
 import io.github.linpeilie.annotations.AutoMappers;
 import lombok.Data;
-import org.dromara.common.log.event.OperLogEvent;
+import org.itrys.boot.log.event.OperLogEvent;
 import org.itrys.system.domain.SysOperLog;
 
 import java.io.Serial;

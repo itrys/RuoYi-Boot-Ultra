@@ -7,7 +7,7 @@ import org.itrys.boot.domain.PageResult;
 import org.itrys.boot.domain.dto.TaskAssigneeDTO;
 import org.itrys.boot.domain.model.TaskAssigneeBody;
 import org.itrys.boot.service.TaskAssigneeService;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.system.domain.bo.SysDeptBo;
 import org.itrys.system.domain.bo.SysPostBo;
 import org.itrys.system.domain.bo.SysRoleBo;

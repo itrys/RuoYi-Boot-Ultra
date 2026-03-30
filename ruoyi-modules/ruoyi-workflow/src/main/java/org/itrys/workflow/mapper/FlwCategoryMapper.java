@@ -1,8 +1,8 @@
 package org.itrys.workflow.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
-import org.dromara.common.mybatis.helper.DataBaseHelper;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.helper.DataBaseHelper;
 import org.itrys.workflow.domain.FlowCategory;
 import org.itrys.workflow.domain.vo.FlowCategoryVo;
 

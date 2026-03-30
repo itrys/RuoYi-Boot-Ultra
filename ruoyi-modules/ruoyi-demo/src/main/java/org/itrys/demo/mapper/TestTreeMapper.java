@@ -1,8 +1,8 @@
 package org.itrys.demo.mapper;
 
-import org.dromara.common.mybatis.annotation.DataColumn;
-import org.dromara.common.mybatis.annotation.DataPermission;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.annotation.DataColumn;
+import org.itrys.boot.mybatis.annotation.DataPermission;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.demo.domain.TestTree;
 import org.itrys.demo.domain.vo.TestTreeVo;
 

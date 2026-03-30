@@ -2,8 +2,8 @@ package org.itrys.system.service.impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.util.ArrayUtil;
-import org.dromara.common.satoken.utils.LoginHelper;
-import org.dromara.common.sensitive.core.SensitiveService;
+import org.itrys.boot.satoken.utils.LoginHelper;
+import org.itrys.boot.sensitive.core.SensitiveService;
 import org.springframework.stereotype.Service;
 
 /**

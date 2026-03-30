@@ -18,7 +18,7 @@ import org.itrys.boot.exception.ServiceException;
 import org.itrys.boot.utils.MessageUtils;
 import org.itrys.boot.utils.ServletUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.json.utils.JsonUtils;
+import org.itrys.boot.json.utils.JsonUtils;
 import org.itrys.boot.redis.annotation.RepeatSubmit;
 import org.itrys.boot.redis.utils.RedisUtils;
 import org.springframework.validation.BindingResult;

@@ -1,6 +1,6 @@
 package org.dromara.test;
 
-import org.dromara.common.web.config.properties.CaptchaProperties;
+import org.itrys.boot.web.config.properties.CaptchaProperties;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

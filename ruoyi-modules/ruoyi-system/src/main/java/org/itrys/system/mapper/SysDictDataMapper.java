@@ -1,7 +1,7 @@
 package org.itrys.system.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.itrys.system.domain.SysDictData;
 import org.itrys.system.domain.vo.SysDictDataVo;
 

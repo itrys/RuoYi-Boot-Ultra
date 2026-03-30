@@ -5,8 +5,8 @@ import lombok.Data;
 import org.apache.fesod.sheet.annotation.ExcelIgnoreUnannotated;
 import org.apache.fesod.sheet.annotation.ExcelProperty;
 import org.itrys.boot.constant.SystemConstants;
-import org.dromara.common.excel.annotation.ExcelDictFormat;
-import org.dromara.common.excel.convert.ExcelDictConvert;
+import org.itrys.boot.excel.annotation.ExcelDictFormat;
+import org.itrys.boot.excel.convert.ExcelDictConvert;
 import org.itrys.system.domain.SysRole;
 
 import java.io.Serial;

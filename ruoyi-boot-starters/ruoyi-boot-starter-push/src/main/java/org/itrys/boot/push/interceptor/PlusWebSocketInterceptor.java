@@ -7,7 +7,7 @@ import org.itrys.boot.domain.model.LoginUser;
 import org.itrys.boot.utils.ServletUtils;
 import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.push.constant.MessageConstants;
-import org.dromara.common.satoken.utils.LoginHelper;
+import org.itrys.boot.satoken.utils.LoginHelper;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.socket.WebSocketHandler;

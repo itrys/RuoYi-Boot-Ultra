@@ -3,7 +3,7 @@ package org.itrys.workflow.service;
 import org.itrys.boot.domain.PageResult;
 import org.itrys.boot.domain.dto.TaskAssigneeDTO;
 import org.itrys.boot.domain.model.TaskAssigneeBody;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.workflow.domain.bo.FlowSpelBo;
 import org.itrys.workflow.domain.vo.FlowSpelVo;
 

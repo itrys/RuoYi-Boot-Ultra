@@ -7,7 +7,7 @@ import com.github.yulichang.toolkit.JoinWrappers;
 import com.github.yulichang.wrapper.MPJLambdaWrapper;
 import org.itrys.boot.enums.BusinessStatusEnum;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.dromara.warm.flow.core.enums.NodeType;
 import org.dromara.warm.flow.orm.entity.*;
 import org.itrys.workflow.domain.FlowInstanceBizExt;

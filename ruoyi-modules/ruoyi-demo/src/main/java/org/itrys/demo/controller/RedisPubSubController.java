@@ -1,7 +1,7 @@
 package org.itrys.demo.controller;
 
 import org.itrys.boot.domain.R;
-import org.dromara.common.redis.utils.RedisUtils;
+import org.itrys.boot.redis.utils.RedisUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

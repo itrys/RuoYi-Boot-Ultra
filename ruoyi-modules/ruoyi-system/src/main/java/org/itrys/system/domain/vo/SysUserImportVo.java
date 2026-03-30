@@ -3,9 +3,9 @@ package org.itrys.system.domain.vo;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.apache.fesod.sheet.annotation.ExcelProperty;
-import org.dromara.common.excel.annotation.ExcelDictFormat;
-import org.dromara.common.excel.annotation.ExcelDynamicOptions;
-import org.dromara.common.excel.convert.ExcelDictConvert;
+import org.itrys.boot.excel.annotation.ExcelDictFormat;
+import org.itrys.boot.excel.annotation.ExcelDynamicOptions;
+import org.itrys.boot.excel.convert.ExcelDictConvert;
 import org.itrys.system.listener.DeptExcelConverter;
 import org.itrys.system.listener.DeptExcelOptions;
 

@@ -7,8 +7,8 @@ import org.itrys.boot.domain.dto.PushPayloadDTO;
 import org.itrys.boot.push.constant.MessageConstants;
 import org.itrys.boot.push.dto.PushDTO;
 import org.itrys.boot.utils.SpringUtils;
-import org.dromara.common.json.utils.JsonUtils;
-import org.dromara.common.redis.utils.RedisUtils;
+import org.itrys.boot.json.utils.JsonUtils;
+import org.itrys.boot.redis.utils.RedisUtils;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import java.io.IOException;

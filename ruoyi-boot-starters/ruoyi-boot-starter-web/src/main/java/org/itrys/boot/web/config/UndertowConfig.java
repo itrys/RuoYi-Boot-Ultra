@@ -1,4 +1,4 @@
-//package org.dromara.common.web.config;
+//package org.itrys.boot.web.config;
 //
 //import io.undertow.server.DefaultByteBufferPool;
 //import io.undertow.server.handlers.DisallowedMethodsHandler;

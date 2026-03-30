@@ -13,7 +13,7 @@ import org.itrys.boot.constant.CacheNames;
 import org.itrys.boot.domain.PageResult;
 import org.itrys.boot.utils.MapstructUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.system.domain.SysClient;
 import org.itrys.system.domain.bo.SysClientBo;
 import org.itrys.system.domain.vo.SysClientVo;

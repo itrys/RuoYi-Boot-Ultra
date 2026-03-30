@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 import org.itrys.boot.constant.Constants;
 import org.itrys.boot.constant.SystemConstants;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.domain.BaseEntity;
+import org.itrys.boot.mybatis.core.domain.BaseEntity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -11,7 +11,7 @@ import org.itrys.boot.constant.SystemConstants;
 import org.itrys.boot.utils.MapstructUtils;
 import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.utils.TreeBuildUtils;
-import org.dromara.common.satoken.utils.LoginHelper;
+import org.itrys.boot.satoken.utils.LoginHelper;
 import org.itrys.system.domain.SysMenu;
 import org.itrys.system.domain.SysRole;
 import org.itrys.system.domain.SysRoleMenu;

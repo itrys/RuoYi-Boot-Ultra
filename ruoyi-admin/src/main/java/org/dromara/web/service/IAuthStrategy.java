@@ -3,8 +3,8 @@ package org.dromara.web.service;
 
 import org.itrys.boot.exception.ServiceException;
 import org.itrys.boot.utils.SpringUtils;
-import org.dromara.system.domain.SysClient;
-import org.dromara.system.domain.vo.SysClientVo;
+import org.itrys.system.domain.SysClient;
+import org.itrys.system.domain.vo.SysClientVo;
 import org.dromara.web.domain.vo.LoginVo;
 
 /**

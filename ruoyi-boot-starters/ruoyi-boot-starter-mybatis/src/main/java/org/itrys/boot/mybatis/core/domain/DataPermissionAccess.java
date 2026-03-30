@@ -1,4 +1,4 @@
-package org.dromara.common.mybatis.core.domain;
+package org.itrys.boot.mybatis.core.domain;
 
 import cn.hutool.core.collection.CollUtil;
 

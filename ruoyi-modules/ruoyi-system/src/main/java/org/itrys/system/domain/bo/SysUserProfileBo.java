@@ -7,8 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.itrys.boot.constant.RegexConstants;
 import org.itrys.boot.xss.Xss;
-import org.dromara.common.sensitive.annotation.Sensitive;
-import org.dromara.common.sensitive.core.SensitiveStrategy;
+import org.itrys.boot.sensitive.annotation.Sensitive;
+import org.itrys.boot.sensitive.core.SensitiveStrategy;
 
 import java.io.Serial;
 import java.io.Serializable;

@@ -1,6 +1,6 @@
 package org.itrys.gen.service;
 
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.boot.domain.PageResult;
 import org.itrys.gen.domain.GenTable;
 import org.itrys.gen.domain.GenTableColumn;

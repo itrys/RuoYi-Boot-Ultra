@@ -8,7 +8,7 @@ import org.itrys.boot.domain.PageResult;
 import org.itrys.boot.utils.MapstructUtils;
 import org.itrys.boot.utils.ObjectUtils;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.system.domain.SysNotice;
 import org.itrys.system.domain.SysUser;
 import org.itrys.system.domain.bo.SysNoticeBo;

@@ -2,8 +2,8 @@ package org.itrys.workflow.domain.vo;
 
 import lombok.Data;
 import org.itrys.boot.utils.DateUtils;
-import org.dromara.common.translation.annotation.Translation;
-import org.dromara.common.translation.constant.TransConstant;
+import org.itrys.boot.translation.annotation.Translation;
+import org.itrys.boot.translation.constant.TransConstant;
 import org.dromara.warm.flow.core.entity.User;
 import org.itrys.workflow.common.constant.FlowConstant;
 

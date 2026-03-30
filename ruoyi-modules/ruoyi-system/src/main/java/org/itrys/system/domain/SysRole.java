@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.dromara.common.mybatis.core.domain.BaseEntity;
+import org.itrys.boot.mybatis.core.domain.BaseEntity;
 
 /**
  * 角色表 sys_role

@@ -3,7 +3,7 @@ package org.itrys.workflow.service;
 import org.itrys.boot.domain.PageResult;
 import org.itrys.boot.domain.dto.StartProcessReturnDTO;
 import org.itrys.boot.domain.dto.UserDTO;
-import org.dromara.common.mybatis.core.page.PageQuery;
+import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.dromara.warm.flow.core.entity.Node;
 import org.dromara.warm.flow.core.entity.Task;
 import org.dromara.warm.flow.orm.entity.FlowHisTask;

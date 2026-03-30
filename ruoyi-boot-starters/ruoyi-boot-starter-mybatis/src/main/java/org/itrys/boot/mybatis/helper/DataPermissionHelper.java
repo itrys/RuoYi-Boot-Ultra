@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.plugins.IgnoreStrategy;
 import com.baomidou.mybatisplus.core.plugins.InterceptorIgnoreHelper;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.dromara.common.mybatis.core.domain.DataPermissionAccess;
+import org.itrys.boot.mybatis.core.domain.DataPermissionAccess;
 import org.itrys.boot.utils.reflect.ReflectUtils;
 import org.itrys.boot.mybatis.annotation.DataPermission;
 

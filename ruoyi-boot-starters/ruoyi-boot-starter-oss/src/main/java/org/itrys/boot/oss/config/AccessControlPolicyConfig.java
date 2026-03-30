@@ -1,4 +1,4 @@
-package org.dromara.common.oss.config;
+package org.itrys.boot.oss.config;
 
 import lombok.Builder;
 import org.itrys.boot.oss.config.Config;

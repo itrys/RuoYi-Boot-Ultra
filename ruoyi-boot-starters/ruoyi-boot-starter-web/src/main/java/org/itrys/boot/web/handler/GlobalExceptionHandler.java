@@ -13,7 +13,7 @@ import org.itrys.boot.exception.SseException;
 import org.itrys.boot.exception.base.BaseException;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.utils.StreamUtils;
-import org.dromara.common.json.utils.JsonUtils;
+import org.itrys.boot.json.utils.JsonUtils;
 import org.springframework.boot.json.JsonParseException;
 import org.springframework.context.MessageSourceResolvable;
 import org.springframework.context.support.DefaultMessageSourceResolvable;

@@ -4,7 +4,7 @@ import io.github.linpeilie.annotations.AutoMapper;
 import lombok.Data;
 import org.apache.fesod.sheet.annotation.ExcelIgnoreUnannotated;
 import org.apache.fesod.sheet.annotation.ExcelProperty;
-import org.dromara.common.translation.annotation.Translation;
+import org.itrys.boot.translation.annotation.Translation;
 import org.itrys.workflow.common.constant.FlowConstant;
 import org.itrys.workflow.domain.FlowCategory;
 

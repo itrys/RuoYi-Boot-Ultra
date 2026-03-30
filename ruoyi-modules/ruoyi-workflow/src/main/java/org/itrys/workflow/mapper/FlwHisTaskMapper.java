@@ -6,7 +6,7 @@ import com.github.yulichang.base.MPJBaseMapper;
 import com.github.yulichang.toolkit.JoinWrappers;
 import com.github.yulichang.wrapper.MPJLambdaWrapper;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
+import org.itrys.boot.mybatis.core.mapper.BaseMapperPlus;
 import org.dromara.warm.flow.core.enums.NodeType;
 import org.dromara.warm.flow.orm.entity.FlowDefinition;
 import org.dromara.warm.flow.orm.entity.FlowHisTask;

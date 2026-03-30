@@ -9,7 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.apache.ibatis.type.JdbcType;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.mybatis.core.domain.BaseEntity;
+import org.itrys.boot.mybatis.core.domain.BaseEntity;
 
 /**
  * 代码生成业务字段表 gen_table_column

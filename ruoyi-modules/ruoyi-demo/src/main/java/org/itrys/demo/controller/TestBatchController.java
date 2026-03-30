@@ -2,7 +2,7 @@ package org.itrys.demo.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.itrys.boot.domain.R;
-import org.dromara.common.web.core.BaseController;
+import org.itrys.boot.web.core.BaseController;
 import org.itrys.demo.domain.TestDemo;
 import org.itrys.demo.mapper.TestDemoMapper;
 import lombok.RequiredArgsConstructor;

@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.itrys.boot.constant.SystemConstants;
-import org.dromara.common.mybatis.core.domain.BaseEntity;
+import org.itrys.boot.mybatis.core.domain.BaseEntity;
 
 /**
  * 字典数据表 sys_dict_data

@@ -3,7 +3,7 @@ package org.itrys.boot.social.utils;
 import lombok.AllArgsConstructor;
 import me.zhyd.oauth.cache.AuthStateCache;
 import org.itrys.boot.constant.GlobalConstants;
-import org.dromara.common.redis.utils.RedisUtils;
+import org.itrys.boot.redis.utils.RedisUtils;
 
 import java.time.Duration;
 

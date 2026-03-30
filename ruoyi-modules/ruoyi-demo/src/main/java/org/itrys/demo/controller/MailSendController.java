@@ -2,7 +2,7 @@ package org.itrys.demo.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.itrys.boot.domain.R;
-import org.dromara.common.mail.utils.MailUtils;
+import org.itrys.boot.mail.utils.MailUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

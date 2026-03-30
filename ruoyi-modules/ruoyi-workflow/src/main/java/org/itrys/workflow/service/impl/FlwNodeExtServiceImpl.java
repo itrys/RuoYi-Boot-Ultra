@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.itrys.boot.domain.dto.DictTypeDTO;
 import org.itrys.boot.service.DictService;
 import org.itrys.boot.utils.StringUtils;
-import org.dromara.common.json.utils.JsonUtils;
+import org.itrys.boot.json.utils.JsonUtils;
 import org.dromara.warm.flow.core.FlowEngine;
 import org.dromara.warm.flow.core.utils.CollUtil;
 import org.dromara.warm.flow.core.utils.ExpressionUtil;

@@ -1,4 +1,4 @@
-package org.dromara.common.oss.model;
+package org.itrys.boot.oss.model;
 
 /**
  * Put文件对象结果

@@ -1,7 +1,7 @@
 package org.itrys.boot.web.advice;
 
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.json.enhance.JsonValueEnhancer;
+import org.itrys.boot.json.enhance.JsonValueEnhancer;
 import org.jspecify.annotations.NonNull;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
