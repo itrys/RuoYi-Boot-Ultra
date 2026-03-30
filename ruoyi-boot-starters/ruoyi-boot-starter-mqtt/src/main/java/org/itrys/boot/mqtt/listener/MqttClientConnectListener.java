@@ -1,4 +1,4 @@
-package org.dromara.common.mqtt.listener;
+package org.itrys.boot.mqtt.listener;
 
 import lombok.extern.slf4j.Slf4j;
 import org.dromara.mica.mqtt.core.client.IMqttClientConnectListener;

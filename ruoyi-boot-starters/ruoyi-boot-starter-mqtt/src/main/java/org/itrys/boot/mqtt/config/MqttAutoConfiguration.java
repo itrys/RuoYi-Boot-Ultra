@@ -1,7 +1,7 @@
-package org.dromara.common.mqtt.config;
+package org.itrys.boot.mqtt.config;
 
-import org.dromara.common.mqtt.listener.MqttClientConnectListener;
-import org.dromara.common.mqtt.listener.MqttClientGlobalMessageListener;
+import org.itrys.boot.mqtt.listener.MqttClientConnectListener;
+import org.itrys.boot.mqtt.listener.MqttClientGlobalMessageListener;
 import org.dromara.mica.mqtt.core.client.MqttClientCreator;
 import org.dromara.mica.mqtt.core.client.MqttClientCustomizer;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
