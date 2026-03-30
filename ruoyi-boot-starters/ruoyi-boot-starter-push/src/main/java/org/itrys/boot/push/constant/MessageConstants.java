@@ -1,4 +1,4 @@
-package org.dromara.common.push.constant;
+package org.itrys.boot.push.constant;
 
 /**
  * 模块通用消息常量定义。

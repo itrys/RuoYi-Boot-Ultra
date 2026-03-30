@@ -1,10 +1,10 @@
-package org.dromara.common.push.config;
+package org.itrys.boot.push.config;
 
-import org.dromara.common.push.listener.MessageTopicListener;
-import org.dromara.common.push.core.WebSocketSessionManager;
-import org.dromara.common.push.handler.PlusWebSocketHandler;
-import org.dromara.common.push.interceptor.PlusWebSocketInterceptor;
-import org.dromara.common.push.properties.MessageProperties;
+import org.itrys.boot.push.listener.MessageTopicListener;
+import org.itrys.boot.push.core.WebSocketSessionManager;
+import org.itrys.boot.push.handler.PlusWebSocketHandler;
+import org.itrys.boot.push.interceptor.PlusWebSocketInterceptor;
+import org.itrys.boot.push.properties.MessageProperties;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

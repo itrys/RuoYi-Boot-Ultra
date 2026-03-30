@@ -1,6 +1,6 @@
-package org.dromara.common.push.config;
+package org.itrys.boot.push.config;
 
-import org.dromara.common.push.properties.MessageProperties;
+import org.itrys.boot.push.properties.MessageProperties;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

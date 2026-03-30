@@ -1,8 +1,8 @@
-package org.dromara.common.push.config;
+package org.itrys.boot.push.config;
 
-import org.dromara.common.push.controller.SseController;
-import org.dromara.common.push.core.SseEmitterSessionManager;
-import org.dromara.common.push.listener.MessageTopicListener;
+import org.itrys.boot.push.controller.SseController;
+import org.itrys.boot.push.core.SseEmitterSessionManager;
+import org.itrys.boot.push.listener.MessageTopicListener;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

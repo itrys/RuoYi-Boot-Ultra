@@ -1,4 +1,4 @@
-package org.dromara.common.push.dto;
+package org.itrys.boot.push.dto;
 
 import lombok.Data;
 import org.dromara.common.core.domain.dto.PushPayloadDTO;

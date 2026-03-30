@@ -1,4 +1,4 @@
-package org.dromara.common.push.handler;
+package org.itrys.boot.push.handler;
 
 import cn.hutool.core.util.ObjectUtil;
 import lombok.RequiredArgsConstructor;
@@ -7,9 +7,9 @@ import org.dromara.common.core.domain.dto.PushPayloadDTO;
 import org.dromara.common.core.domain.model.LoginUser;
 import org.dromara.common.core.enums.PushSourceEnum;
 import org.dromara.common.core.enums.PushTypeEnum;
-import org.dromara.common.push.constant.MessageConstants;
-import org.dromara.common.push.core.WebSocketSessionManager;
-import org.dromara.common.push.dto.PushDTO;
+import org.itrys.boot.push.constant.MessageConstants;
+import org.itrys.boot.push.core.WebSocketSessionManager;
+import org.itrys.boot.push.dto.PushDTO;
 import org.springframework.web.socket.BinaryMessage;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.PongMessage;

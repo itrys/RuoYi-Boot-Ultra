@@ -1,4 +1,4 @@
-package org.dromara.common.push.interceptor;
+package org.itrys.boot.push.interceptor;
 
 import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.stp.StpUtil;
@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.dromara.common.core.domain.model.LoginUser;
 import org.dromara.common.core.utils.ServletUtils;
 import org.dromara.common.core.utils.StringUtils;
-import org.dromara.common.push.constant.MessageConstants;
+import org.itrys.boot.push.constant.MessageConstants;
 import org.dromara.common.satoken.utils.LoginHelper;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;

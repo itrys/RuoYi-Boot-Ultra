@@ -1,7 +1,7 @@
-package org.dromara.common.push.properties;
+package org.itrys.boot.push.properties;
 
 import lombok.Data;
-import org.dromara.common.push.enums.MessageTransportEnum;
+import org.itrys.boot.push.enums.MessageTransportEnum;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**

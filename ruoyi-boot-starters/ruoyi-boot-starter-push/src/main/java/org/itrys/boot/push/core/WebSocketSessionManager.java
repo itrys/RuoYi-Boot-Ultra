@@ -1,4 +1,4 @@
-package org.dromara.common.push.core;
+package org.itrys.boot.push.core;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.map.MapUtil;
@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.dromara.common.core.domain.dto.PushPayloadDTO;
 import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.common.json.utils.JsonUtils;
-import org.dromara.common.push.dto.PushDTO;
+import org.itrys.boot.push.dto.PushDTO;
 import org.dromara.common.redis.utils.RedisUtils;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.PongMessage;
@@ -23,7 +23,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
-import static org.dromara.common.push.constant.MessageConstants.MESSAGE_TOPIC;
+import static org.itrys.boot.push.constant.MessageConstants.MESSAGE_TOPIC;
 
 /**
  * WebSocket 会话管理器。

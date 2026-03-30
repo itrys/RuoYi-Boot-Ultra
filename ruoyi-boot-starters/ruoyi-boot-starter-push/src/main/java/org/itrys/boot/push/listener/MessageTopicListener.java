@@ -1,9 +1,9 @@
-package org.dromara.common.push.listener;
+package org.itrys.boot.push.listener;
 
 import cn.hutool.core.collection.CollUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.push.core.PushSessionManager;
+import org.itrys.boot.push.core.PushSessionManager;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.Ordered;
