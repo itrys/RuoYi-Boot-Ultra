@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>ruoyi-boot-starter-parent</artifactId>
-        <groupId>org.dromara</groupId>
+        <groupId>org.itrys</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -46,45 +46,45 @@
 <!--        </dependency>-->
 
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-common-doc</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-common-social</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-common-mail</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-system</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-job</artifactId>
         </dependency>
 
         <!-- 代码生成-->
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-gen</artifactId>
         </dependency>
 
         <!--  demo模块  -->
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-demo</artifactId>
         </dependency>
 
         <!--  工作流模块  -->
         <dependency>
-            <groupId>org.dromara</groupId>
+            <groupId>org.itrys</groupId>
             <artifactId>ruoyi-workflow</artifactId>
         </dependency>
 
