@@ -1,4 +1,4 @@
-package org.dromara.common.doc.config.properties;
+package org.itrys.boot.doc.config.properties;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.ExternalDocumentation;

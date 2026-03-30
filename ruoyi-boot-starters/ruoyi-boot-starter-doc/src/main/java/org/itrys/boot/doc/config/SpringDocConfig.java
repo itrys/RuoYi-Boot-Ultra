@@ -1,4 +1,4 @@
-package org.dromara.common.doc.config;
+package org.itrys.boot.doc.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.Paths;
@@ -6,10 +6,10 @@ import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import org.dromara.common.core.utils.StringUtils;
-import org.dromara.common.doc.config.properties.SpringDocProperties;
-import org.dromara.common.doc.core.resolver.JavadocResolver;
-import org.dromara.common.doc.core.resolver.SaTokenAnnotationMetadataJavadocResolver;
-import org.dromara.common.doc.handler.OpenApiHandler;
+import org.itrys.boot.doc.config.properties.SpringDocProperties;
+import org.itrys.boot.doc.core.resolver.JavadocResolver;
+import org.itrys.boot.doc.core.resolver.SaTokenAnnotationMetadataJavadocResolver;
+import org.itrys.boot.doc.handler.OpenApiHandler;
 import org.springdoc.core.configuration.SpringDocConfiguration;
 import org.springdoc.core.customizers.OpenApiBuilderCustomizer;
 import org.springdoc.core.customizers.OpenApiCustomizer;

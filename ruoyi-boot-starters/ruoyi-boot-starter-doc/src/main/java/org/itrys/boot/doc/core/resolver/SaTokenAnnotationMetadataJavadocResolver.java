@@ -1,10 +1,10 @@
-package org.dromara.common.doc.core.resolver;
+package org.itrys.boot.doc.core.resolver;
 
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.ClassLoaderUtil;
 import io.swagger.v3.oas.models.Operation;
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.doc.core.model.SaTokenSecurityMetadata;
+import org.itrys.boot.doc.core.model.SaTokenSecurityMetadata;
 import org.springframework.web.method.HandlerMethod;
 
 import java.lang.annotation.Annotation;

@@ -1,4 +1,4 @@
-package org.dromara.common.doc.core.model;
+package org.itrys.boot.doc.core.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
