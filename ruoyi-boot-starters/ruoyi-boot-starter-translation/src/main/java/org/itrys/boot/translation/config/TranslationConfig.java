@@ -1,7 +1,7 @@
-package org.dromara.common.translation.config;
+package org.itrys.boot.translation.config;
 
-import org.dromara.common.translation.core.TranslationInterface;
-import org.dromara.common.translation.core.handler.TranslationJsonFieldProcessor;
+import org.itrys.boot.translation.core.TranslationInterface;
+import org.itrys.boot.translation.core.handler.TranslationJsonFieldProcessor;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 

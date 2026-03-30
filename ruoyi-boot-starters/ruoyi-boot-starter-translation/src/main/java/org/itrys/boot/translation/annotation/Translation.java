@@ -1,4 +1,4 @@
-package org.dromara.common.translation.annotation;
+package org.itrys.boot.translation.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

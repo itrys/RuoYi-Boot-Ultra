@@ -1,39 +1,42 @@
-package org.dromara.common.translation.core.impl;
+package org.itrys.boot.translation.core.impl;
 
 import cn.hutool.core.convert.Convert;
 import lombok.AllArgsConstructor;
-import org.dromara.common.core.domain.dto.UserDTO;
 import org.dromara.common.core.service.UserService;
-import org.dromara.common.core.utils.StreamUtils;
-import org.dromara.common.translation.annotation.TranslationType;
-import org.dromara.common.translation.constant.TransConstant;
-import org.dromara.common.translation.core.TranslationInterface;
+import org.itrys.boot.translation.annotation.TranslationType;
+import org.itrys.boot.translation.constant.TransConstant;
+import org.itrys.boot.translation.core.TranslationInterface;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * 用户名翻译实现
+ * 用户昵称翻译实现
  *
- * @author Lion Li
+ * @author may
  */
 @AllArgsConstructor
-@TranslationType(type = TransConstant.USER_ID_TO_NAME)
-public class UserNameTranslationImpl implements TranslationInterface<String> {
+@TranslationType(type = TransConstant.USER_ID_TO_NICKNAME)
+public class NicknameTranslationImpl implements TranslationInterface<String> {
 
     private final UserService userService;
 
     /**
-     * 将用户 ID 翻译为用户名。
+     * 将用户 ID 或 ID 集合翻译为用户昵称。
      *
-     * @param key 用户 ID
+     * @param key 用户 ID 或逗号分隔的 ID 字符串
      * @param other 额外参数
-     * @return 用户名
+     * @return 用户昵称
      */
     @Override
     public String translation(Object key, String other) {
-        return userService.selectUserNameById(Convert.toLong(key));
+        if (key instanceof Long id) {
+            return userService.selectNicknameById(id);
+        } else if (key instanceof String ids) {
+            return userService.selectNicknameByIds(ids);
+        }
+        return null;
     }
 
     @Override
@@ -42,7 +45,7 @@ public class UserNameTranslationImpl implements TranslationInterface<String> {
         if (userIds.isEmpty()) {
             return Map.of();
         }
-        Map<Long, String> userNames = new LinkedHashMap<>(StreamUtils.toMap(userService.selectListByIds(userIds), UserDTO::getUserId, UserDTO::getUserName));
+        Map<Long, String> userNames = userService.selectUserNicksByIds(userIds);
         Map<Object, String> result = new LinkedHashMap<>(keys.size());
         for (Object key : keys) {
             result.put(key, buildValue(key, userNames));
@@ -54,6 +57,6 @@ public class UserNameTranslationImpl implements TranslationInterface<String> {
         if (source instanceof String ids) {
             return joinMappedValues(ids, userNames::get);
         }
-        return userNames.get(Convert.toLong(source));
+        return source == null ? null : userNames.get(Convert.toLong(source));
     }
 }

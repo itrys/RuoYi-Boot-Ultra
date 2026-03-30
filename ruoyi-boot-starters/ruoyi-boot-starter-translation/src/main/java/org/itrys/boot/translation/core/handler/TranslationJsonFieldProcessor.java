@@ -1,4 +1,4 @@
-package org.dromara.common.translation.core.handler;
+package org.itrys.boot.translation.core.handler;
 
 import cn.hutool.core.util.ObjectUtil;
 import lombok.RequiredArgsConstructor;
@@ -8,9 +8,9 @@ import org.dromara.common.core.utils.reflect.ReflectUtils;
 import org.dromara.common.json.enhance.JsonEnhancementContext;
 import org.dromara.common.json.enhance.JsonFieldContext;
 import org.dromara.common.json.enhance.JsonFieldProcessor;
-import org.dromara.common.translation.annotation.Translation;
-import org.dromara.common.translation.annotation.TranslationType;
-import org.dromara.common.translation.core.TranslationInterface;
+import org.itrys.boot.translation.annotation.Translation;
+import org.itrys.boot.translation.annotation.TranslationType;
+import org.itrys.boot.translation.core.TranslationInterface;
 import org.springframework.core.annotation.Order;
 
 import java.util.LinkedHashMap;

@@ -1,11 +1,11 @@
-package org.dromara.common.translation.core.impl;
+package org.itrys.boot.translation.core.impl;
 
 import cn.hutool.core.convert.Convert;
 import lombok.AllArgsConstructor;
 import org.dromara.common.core.service.DeptService;
-import org.dromara.common.translation.annotation.TranslationType;
-import org.dromara.common.translation.constant.TransConstant;
-import org.dromara.common.translation.core.TranslationInterface;
+import org.itrys.boot.translation.annotation.TranslationType;
+import org.itrys.boot.translation.constant.TransConstant;
+import org.itrys.boot.translation.core.TranslationInterface;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
