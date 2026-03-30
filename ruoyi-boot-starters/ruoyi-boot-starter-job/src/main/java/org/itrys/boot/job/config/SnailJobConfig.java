@@ -1,4 +1,4 @@
-package org.dromara.common.job.config;
+package org.itrys.boot.job.config;
 
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
