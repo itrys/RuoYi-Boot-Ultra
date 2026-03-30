@@ -88,15 +88,6 @@
         </profile>
     </profiles>
 
-    <modules>
-        <module>ruoyi-admin</module>
-        <module>ruoyi-boot-starters</module>
-        <module>ruoyi-extensions</module>
-        <module>ruoyi-modules</module>
-        <module>ruoyi-dependencies</module>
-    </modules>
-    <packaging>pom</packaging>
-
     <build>
         <plugins>
             <plugin>
