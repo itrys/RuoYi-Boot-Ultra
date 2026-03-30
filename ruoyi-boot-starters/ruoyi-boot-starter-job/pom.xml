@@ -9,7 +9,6 @@
         <version>${revision}</version>
     </parent>
 
-
     <artifactId>ruoyi-boot-starter-job</artifactId>
     <packaging>jar</packaging>
     <description>

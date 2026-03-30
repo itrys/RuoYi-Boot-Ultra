@@ -11,7 +11,7 @@
 
 
     <artifactId>ruoyi-boot-starter-json</artifactId>
-
+    <packaging>jar</packaging>
     <description>
         ruoyi-boot-starter-json 序列化模块
     </description>
