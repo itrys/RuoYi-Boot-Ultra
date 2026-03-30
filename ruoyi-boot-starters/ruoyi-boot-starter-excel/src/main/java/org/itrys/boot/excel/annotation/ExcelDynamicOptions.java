@@ -1,6 +1,6 @@
-package org.dromara.common.excel.annotation;
+package org.itrys.boot.excel.annotation;
 
-import org.dromara.common.excel.core.ExcelOptionsProvider;
+import org.itrys.boot.excel.core.ExcelOptionsProvider;
 
 import java.lang.annotation.*;
 
@@ -17,7 +17,7 @@ public @interface ExcelDynamicOptions {
     /**
      * 提供者类全限定名
      * <p>
-     * {@link org.dromara.common.excel.core.ExcelOptionsProvider} 接口实现类 class
+     * {@link ExcelOptionsProvider} 接口实现类 class
      */
     Class<? extends ExcelOptionsProvider> providerClass();
 }
