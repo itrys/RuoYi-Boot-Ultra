@@ -1,11 +1,11 @@
-package org.dromara.common.oss.client;
+package org.itrys.boot.oss.client;
 
 import cn.hutool.core.util.IdUtil;
-import org.dromara.common.oss.config.OssClientConfig;
-import org.dromara.common.oss.io.OutputStreamDownloadSubscriber;
+import org.itrys.boot.oss.config.OssClientConfig;
+import org.itrys.boot.oss.io.OutputStreamDownloadSubscriber;
 import org.dromara.common.oss.model.GetObjectResult;
 import org.dromara.common.oss.model.HandleAsyncResult;
-import org.dromara.common.oss.model.Options;
+import org.itrys.boot.oss.model.Options;
 import org.dromara.common.oss.model.PutObjectResult;
 import software.amazon.awssdk.core.async.AsyncRequestBody;
 import software.amazon.awssdk.core.async.AsyncResponseTransformer;

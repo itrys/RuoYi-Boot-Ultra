@@ -1,15 +1,15 @@
-package org.dromara.common.oss.factory;
+package org.itrys.boot.oss.factory;
 
 import lombok.extern.slf4j.Slf4j;
 import org.dromara.common.core.constant.CacheNames;
 import org.dromara.common.core.utils.StringUtils;
 import org.dromara.common.json.utils.JsonUtils;
-import org.dromara.common.oss.client.DefaultOssClientImpl;
-import org.dromara.common.oss.client.OssClient;
-import org.dromara.common.oss.config.OssClientConfig;
-import org.dromara.common.oss.constant.OssConstant;
-import org.dromara.common.oss.exception.S3StorageException;
-import org.dromara.common.oss.properties.OssProperties;
+import org.itrys.boot.oss.client.DefaultOssClientImpl;
+import org.itrys.boot.oss.client.OssClient;
+import org.itrys.boot.oss.config.OssClientConfig;
+import org.itrys.boot.oss.constant.OssConstant;
+import org.itrys.boot.oss.exception.S3StorageException;
+import org.itrys.boot.oss.properties.OssProperties;
 import org.dromara.common.redis.utils.CacheUtils;
 import org.dromara.common.redis.utils.RedisUtils;
 

@@ -1,4 +1,4 @@
-package org.dromara.common.oss.util;
+package org.itrys.boot.oss.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

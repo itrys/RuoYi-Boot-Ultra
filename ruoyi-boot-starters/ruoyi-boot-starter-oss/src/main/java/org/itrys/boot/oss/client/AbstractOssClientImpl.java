@@ -1,15 +1,15 @@
-package org.dromara.common.oss.client;
+package org.itrys.boot.oss.client;
 
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.IdUtil;
 import org.dromara.common.core.utils.DateUtils;
 import org.dromara.common.core.utils.StringUtils;
-import org.dromara.common.oss.config.OssClientConfig;
-import org.dromara.common.oss.exception.S3StorageException;
-import org.dromara.common.oss.io.OutputStreamDownloadSubscriber;
+import org.itrys.boot.oss.config.OssClientConfig;
+import org.itrys.boot.oss.exception.S3StorageException;
+import org.itrys.boot.oss.io.OutputStreamDownloadSubscriber;
 import org.dromara.common.oss.model.GetObjectResult;
 import org.dromara.common.oss.model.HandleAsyncResult;
-import org.dromara.common.oss.model.Options;
+import org.itrys.boot.oss.model.Options;
 import org.dromara.common.oss.model.PutObjectResult;
 import org.jspecify.annotations.NullMarked;
 import software.amazon.awssdk.core.ResponseInputStream;

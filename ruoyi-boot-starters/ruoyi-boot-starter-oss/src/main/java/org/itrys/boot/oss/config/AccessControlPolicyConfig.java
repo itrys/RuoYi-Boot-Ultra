@@ -1,11 +1,11 @@
 package org.dromara.common.oss.config;
 
 import lombok.Builder;
-import org.dromara.common.oss.enums.AccessPolicy;
+import org.itrys.boot.oss.config.Config;
+import org.itrys.boot.oss.enums.AccessPolicy;
 import org.jspecify.annotations.NonNull;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.Optional;
 
 /**

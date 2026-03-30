@@ -1,8 +1,8 @@
-package org.dromara.common.oss.enums;
+package org.itrys.boot.oss.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.dromara.common.oss.exception.S3StorageException;
+import org.itrys.boot.oss.exception.S3StorageException;
 import software.amazon.awssdk.services.s3.model.BucketCannedACL;
 import software.amazon.awssdk.services.s3.model.ObjectCannedACL;
 

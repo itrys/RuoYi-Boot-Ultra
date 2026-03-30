@@ -1,4 +1,4 @@
-package org.dromara.common.oss.config;
+package org.itrys.boot.oss.config;
 
 /**
  * 配置对象接口

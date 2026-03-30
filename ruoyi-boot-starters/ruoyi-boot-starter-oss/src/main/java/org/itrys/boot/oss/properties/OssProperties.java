@@ -1,4 +1,4 @@
-package org.dromara.common.oss.properties;
+package org.itrys.boot.oss.properties;
 
 import lombok.Data;
 

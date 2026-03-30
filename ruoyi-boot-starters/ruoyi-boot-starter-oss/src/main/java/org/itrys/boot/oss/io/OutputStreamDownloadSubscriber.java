@@ -1,6 +1,6 @@
-package org.dromara.common.oss.io;
+package org.itrys.boot.oss.io;
 
-import org.dromara.common.oss.exception.S3StorageException;
+import org.itrys.boot.oss.exception.S3StorageException;
 
 import java.io.FileOutputStream;
 import java.io.OutputStream;

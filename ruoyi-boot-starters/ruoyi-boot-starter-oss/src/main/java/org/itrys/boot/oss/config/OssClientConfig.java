@@ -1,4 +1,4 @@
-package org.dromara.common.oss.config;
+package org.itrys.boot.oss.config;
 
 import cn.hutool.http.HttpUtil;
 import lombok.Builder;
@@ -6,11 +6,11 @@ import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 import org.dromara.common.core.constant.SystemConstants;
 import org.dromara.common.core.utils.StringUtils;
-import org.dromara.common.oss.constant.OssConstant;
-import org.dromara.common.oss.enums.AccessPolicy;
-import org.dromara.common.oss.exception.S3StorageException;
-import org.dromara.common.oss.properties.OssProperties;
-import org.dromara.common.oss.util.BucketUrlUtil;
+import org.itrys.boot.oss.constant.OssConstant;
+import org.itrys.boot.oss.enums.AccessPolicy;
+import org.itrys.boot.oss.exception.S3StorageException;
+import org.itrys.boot.oss.properties.OssProperties;
+import org.itrys.boot.oss.util.BucketUrlUtil;
 import org.jspecify.annotations.NonNull;
 import software.amazon.awssdk.regions.Region;
 
