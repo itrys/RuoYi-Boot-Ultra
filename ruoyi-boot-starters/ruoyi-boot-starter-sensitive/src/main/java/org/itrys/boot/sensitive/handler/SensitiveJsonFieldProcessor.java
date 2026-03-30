@@ -1,4 +1,4 @@
-package org.dromara.common.sensitive.handler;
+package org.itrys.boot.sensitive.handler;
 
 import cn.hutool.core.util.ObjectUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -6,8 +6,8 @@ import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.common.json.enhance.JsonEnhancementContext;
 import org.dromara.common.json.enhance.JsonFieldContext;
 import org.dromara.common.json.enhance.JsonFieldProcessor;
-import org.dromara.common.sensitive.annotation.Sensitive;
-import org.dromara.common.sensitive.core.SensitiveService;
+import org.itrys.boot.sensitive.annotation.Sensitive;
+import org.itrys.boot.sensitive.core.SensitiveService;
 import org.springframework.beans.BeansException;
 import org.springframework.core.annotation.Order;
 

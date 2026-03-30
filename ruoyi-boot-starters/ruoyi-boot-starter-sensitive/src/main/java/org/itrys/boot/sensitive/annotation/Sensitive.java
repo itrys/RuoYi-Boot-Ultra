@@ -1,6 +1,6 @@
-package org.dromara.common.sensitive.annotation;
+package org.itrys.boot.sensitive.annotation;
 
-import org.dromara.common.sensitive.core.SensitiveStrategy;
+import org.itrys.boot.sensitive.core.SensitiveStrategy;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

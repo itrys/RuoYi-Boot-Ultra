@@ -1,4 +1,4 @@
-package org.dromara.common.sensitive.core;
+package org.itrys.boot.sensitive.core;
 
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.DesensitizedUtil;

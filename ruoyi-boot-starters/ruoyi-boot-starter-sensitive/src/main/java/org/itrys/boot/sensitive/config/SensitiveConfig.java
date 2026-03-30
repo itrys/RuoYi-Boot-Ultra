@@ -1,6 +1,6 @@
-package org.dromara.common.sensitive.config;
+package org.itrys.boot.sensitive.config;
 
-import org.dromara.common.sensitive.handler.SensitiveJsonFieldProcessor;
+import org.itrys.boot.sensitive.handler.SensitiveJsonFieldProcessor;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
