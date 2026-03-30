@@ -154,8 +154,8 @@
 
             <!-- 消息推送模块 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-push</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-push</artifactId>
                 <version>${revision}</version>
             </dependency>
 

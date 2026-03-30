@@ -35,7 +35,7 @@
         <module>ruoyi-common-sensitive</module>
         <module>ruoyi-boot-starter-json</module>
         <module>ruoyi-boot-starter-encrypt</module>
-        <module>ruoyi-common-push</module>
+        <module>ruoyi-boot-starter-push</module>
         <module>ruoyi-boot-starter-mqtt</module>
     </modules>
 
