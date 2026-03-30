@@ -1,4 +1,4 @@
-package org.dromara.job.snailjob;
+package org.itrys.job.snailjob;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.StrUtil;

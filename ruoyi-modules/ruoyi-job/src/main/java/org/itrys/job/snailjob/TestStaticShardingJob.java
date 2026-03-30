@@ -1,4 +1,4 @@
-package org.dromara.job.snailjob;
+package org.itrys.job.snailjob;
 
 import cn.hutool.core.convert.Convert;
 import com.aizuda.snailjob.client.job.core.annotation.JobExecutor;
