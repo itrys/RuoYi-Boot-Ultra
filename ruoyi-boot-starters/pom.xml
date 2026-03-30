@@ -28,7 +28,7 @@
         <module>ruoyi-boot-starter-oss</module>
         <module>ruoyi-boot-starter-redis</module>
         <module>ruoyi-boot-starter-satoken</module>
-        <module>ruoyi-common-security</module>
+        <module>ruoyi-boot-starter-security</module>
         <module>ruoyi-common-sms</module>
         <module>ruoyi-common-web</module>
         <module>ruoyi-common-translation</module>

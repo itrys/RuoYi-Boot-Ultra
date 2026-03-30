@@ -59,8 +59,8 @@
             <artifactId>ruoyi-common-translation</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-security</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-security</artifactId>
         </dependency>
         <dependency>
             <groupId>org.dromara.warm</groupId>
