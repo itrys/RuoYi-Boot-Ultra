@@ -17,8 +17,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-core</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot</artifactId>
         </dependency>
 
         <dependency>

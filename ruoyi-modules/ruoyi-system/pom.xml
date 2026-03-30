@@ -18,12 +18,12 @@
     <dependencies>
         <!-- 通用工具-->
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-core</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.itrys</groupId>
+            <groupId>org.itrys.boot</groupId>
             <artifactId>ruoyi-boot-starter-doc</artifactId>
         </dependency>
 
