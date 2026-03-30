@@ -1,4 +1,4 @@
-package org.dromara.common.sms.core.dao;
+package org.itrys.boot.sms.core.dao;
 
 import org.dromara.common.core.constant.GlobalConstants;
 import org.dromara.common.redis.utils.RedisUtils;
