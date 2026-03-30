@@ -3,17 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.itrys.boot</groupId>
+        <artifactId>ruoyi-boot-dependencies</artifactId>
+        <version>${revision}</version>
+    </parent>
 
-    <groupId>org.itrys</groupId>
-    <artifactId>ruoyi-boot-ultra</artifactId>
-    <version>${revision}</version>
-
-    <name>RuoYi-Boot-Ultra</name>
-    <url>https://github.com/itrys/RuoYi-Boot-Ultra</url>
-    <description>Dromara RuoYi-Vue-Plus多租户管理系统</description>
+    <artifactId>ruoyi-boot-starter-parent</artifactId>
+    <packaging>pom</packaging>
 
     <properties>
-        <revision>1.0.0</revision>
         <ruoyi-boot-ultra.version>${revision}</ruoyi-boot-ultra.version>
         <!-- 关键：明确记录派生来源 -->
         <upstream.ruoyi-vue-plus.version>5.5.3</upstream.ruoyi-vue-plus.version>
@@ -199,31 +198,29 @@
         </resources>
     </build>
 
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>public</id>-->
-<!--            <name>huawei nexus</name>-->
-<!--            <url>https://mirrors.huaweicloud.com/repository/maven/</url>-->
-<!--            <releases>-->
-<!--                <enabled>true</enabled>-->
-<!--            </releases>-->
-<!--        </repository>-->
-<!--    </repositories>-->
+    <!--    <repositories>-->
+    <!--        <repository>-->
+    <!--            <id>public</id>-->
+    <!--            <name>huawei nexus</name>-->
+    <!--            <url>https://mirrors.huaweicloud.com/repository/maven/</url>-->
+    <!--            <releases>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </releases>-->
+    <!--        </repository>-->
+    <!--    </repositories>-->
 
-<!--    <pluginRepositories>-->
-<!--        <pluginRepository>-->
-<!--            <id>public</id>-->
-<!--            <name>huawei nexus</name>-->
-<!--            <url>https://mirrors.huaweicloud.com/repository/maven/</url>-->
-<!--            <releases>-->
-<!--                <enabled>true</enabled>-->
-<!--            </releases>-->
-<!--            <snapshots>-->
-<!--                <enabled>false</enabled>-->
-<!--            </snapshots>-->
-<!--        </pluginRepository>-->
-<!--    </pluginRepositories>-->
+    <!--    <pluginRepositories>-->
+    <!--        <pluginRepository>-->
+    <!--            <id>public</id>-->
+    <!--            <name>huawei nexus</name>-->
+    <!--            <url>https://mirrors.huaweicloud.com/repository/maven/</url>-->
+    <!--            <releases>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </releases>-->
+    <!--            <snapshots>-->
+    <!--                <enabled>false</enabled>-->
+    <!--            </snapshots>-->
+    <!--        </pluginRepository>-->
+    <!--    </pluginRepositories>-->
 
 </project>
-
-

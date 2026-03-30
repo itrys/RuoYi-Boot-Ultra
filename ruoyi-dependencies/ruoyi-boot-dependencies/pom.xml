@@ -16,6 +16,9 @@
     <description>
         ruoyi-boot-dependencies starter依赖项
     </description>
+    <modules>
+        <module>ruoyi-boot-starter-parent</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
