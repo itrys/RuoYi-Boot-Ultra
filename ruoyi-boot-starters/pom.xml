@@ -36,6 +36,7 @@
         <module>ruoyi-boot-starter-encrypt</module>
         <module>ruoyi-boot-starter-push</module>
         <module>ruoyi-boot-starter-mqtt</module>
+        <module>ruoyi-boot-starter</module>
     </modules>
 
 </project>
