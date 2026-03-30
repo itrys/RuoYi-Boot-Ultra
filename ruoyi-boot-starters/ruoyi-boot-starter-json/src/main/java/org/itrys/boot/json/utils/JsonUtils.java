@@ -1,4 +1,4 @@
-package org.dromara.common.json.utils;
+package org.itrys.boot.json.utils;
 
 import cn.hutool.core.lang.Dict;
 import cn.hutool.core.util.ArrayUtil;

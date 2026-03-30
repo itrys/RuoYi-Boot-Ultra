@@ -1,4 +1,4 @@
-package org.dromara.common.json.validate;
+package org.itrys.boot.json.validate;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

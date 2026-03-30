@@ -1,2 +1,2 @@
-org.dromara.common.json.config.JacksonConfig
-org.dromara.common.json.config.JsonEnhancementConfig
+org.itrys.boot.json.config.JacksonConfig
+org.itrys.boot.json.config.JsonEnhancementConfig

@@ -1,8 +1,8 @@
-package org.dromara.common.json.config;
+package org.itrys.boot.json.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.json.handler.BigNumberSerializer;
-import org.dromara.common.json.handler.CustomDateDeserializer;
+import org.itrys.boot.json.handler.BigNumberSerializer;
+import org.itrys.boot.json.handler.CustomDateDeserializer;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.jackson.autoconfigure.JacksonAutoConfiguration;
 import org.springframework.boot.jackson.autoconfigure.JsonMapperBuilderCustomizer;

@@ -1,7 +1,7 @@
-package org.dromara.common.json.config;
+package org.itrys.boot.json.config;
 
-import org.dromara.common.json.enhance.JsonFieldProcessor;
-import org.dromara.common.json.enhance.JsonValueEnhancer;
+import org.itrys.boot.json.enhance.JsonFieldProcessor;
+import org.itrys.boot.json.enhance.JsonValueEnhancer;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import tools.jackson.databind.json.JsonMapper;

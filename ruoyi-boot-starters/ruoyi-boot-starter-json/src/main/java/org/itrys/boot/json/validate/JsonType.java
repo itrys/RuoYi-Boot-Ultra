@@ -1,4 +1,4 @@
-package org.dromara.common.json.validate;
+package org.itrys.boot.json.validate;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
