@@ -1,4 +1,4 @@
-package org.dromara.common.web.handler;
+package org.itrys.boot.web.handler;
 
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.http.HttpStatus;

@@ -1,6 +1,6 @@
-package org.dromara.common.web.config;
+package org.itrys.boot.web.config;
 
-import org.dromara.common.web.core.I18nLocaleResolver;
+import org.itrys.boot.web.core.I18nLocaleResolver;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration;
 import org.springframework.context.annotation.Bean;

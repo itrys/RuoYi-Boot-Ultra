@@ -1,4 +1,4 @@
-org.dromara.common.web.config.CaptchaConfig
-org.dromara.common.web.config.FilterConfig
-org.dromara.common.web.config.I18nConfig
-org.dromara.common.web.config.ResourcesConfig
+org.itrys.boot.web.config.CaptchaConfig
+org.itrys.boot.web.config.FilterConfig
+org.itrys.boot.web.config.I18nConfig
+org.itrys.boot.web.config.ResourcesConfig

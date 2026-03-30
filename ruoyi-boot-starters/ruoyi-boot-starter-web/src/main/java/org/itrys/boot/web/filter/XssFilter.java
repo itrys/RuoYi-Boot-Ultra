@@ -1,8 +1,8 @@
-package org.dromara.common.web.filter;
+package org.itrys.boot.web.filter;
 
 import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.common.core.utils.StringUtils;
-import org.dromara.common.web.config.properties.XssProperties;
+import org.itrys.boot.web.config.properties.XssProperties;
 import org.springframework.http.HttpMethod;
 
 import jakarta.servlet.*;

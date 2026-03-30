@@ -1,4 +1,4 @@
-package org.dromara.common.web.interceptor;
+package org.itrys.boot.web.interceptor;
 
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.map.MapUtil;
@@ -11,7 +11,7 @@ import org.apache.commons.lang3.time.StopWatch;
 import org.dromara.common.core.constant.SystemConstants;
 import org.dromara.common.core.utils.StringUtils;
 import org.dromara.common.json.utils.JsonUtils;
-import org.dromara.common.web.filter.RepeatedlyRequestWrapper;
+import org.itrys.boot.web.filter.RepeatedlyRequestWrapper;
 import org.springframework.http.MediaType;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

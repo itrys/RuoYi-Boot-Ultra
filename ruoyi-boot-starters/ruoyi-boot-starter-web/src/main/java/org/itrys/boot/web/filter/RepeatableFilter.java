@@ -1,4 +1,4 @@
-package org.dromara.common.web.filter;
+package org.itrys.boot.web.filter;
 
 import org.dromara.common.core.utils.StringUtils;
 import org.springframework.http.MediaType;

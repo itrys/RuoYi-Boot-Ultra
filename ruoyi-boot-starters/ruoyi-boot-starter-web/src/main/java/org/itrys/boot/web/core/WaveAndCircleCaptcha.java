@@ -1,4 +1,4 @@
-package org.dromara.common.web.core;
+package org.itrys.boot.web.core;
 
 import cn.hutool.captcha.AbstractCaptcha;
 import cn.hutool.captcha.generator.CodeGenerator;

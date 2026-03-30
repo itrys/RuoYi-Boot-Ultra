@@ -1,6 +1,6 @@
-package org.dromara.common.web.config;
+package org.itrys.boot.web.config;
 
-import org.dromara.common.web.config.properties.CaptchaProperties;
+import org.itrys.boot.web.config.properties.CaptchaProperties;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
