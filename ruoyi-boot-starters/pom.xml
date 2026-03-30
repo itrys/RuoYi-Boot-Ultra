@@ -18,7 +18,7 @@
 
     <modules>
         <module>ruoyi-boot</module>
-        <module>ruoyi-common-social</module>
+        <module>ruoyi-boot-starter-social</module>
         <module>ruoyi-boot-starter-doc</module>
         <module>ruoyi-boot-starter-excel</module>
         <module>ruoyi-boot-starter-job</module>

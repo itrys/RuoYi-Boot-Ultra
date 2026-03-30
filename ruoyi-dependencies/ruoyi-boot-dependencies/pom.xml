@@ -112,8 +112,8 @@
 
             <!-- 授权认证 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-social</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-social</artifactId>
                 <version>${revision}</version>
             </dependency>
 
