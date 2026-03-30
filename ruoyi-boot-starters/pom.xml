@@ -2,22 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>ruoyi-boot-starter-parent</artifactId>
         <groupId>org.itrys</groupId>
+        <artifactId>ruoyi-boot-starter-parent</artifactId>
         <version>${revision}</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.itrys.boot</groupId>
     <artifactId>ruoyi-boot-starters</artifactId>
     <packaging>pom</packaging>
 
     <description>
-        common 通用模块
+        starters 通用模块
     </description>
 
     <modules>
+        <module>ruoyi-boot</module>
         <module>ruoyi-common-social</module>
-        <module>ruoyi-common-core</module>
         <module>ruoyi-common-doc</module>
         <module>ruoyi-common-excel</module>
         <module>ruoyi-common-job</module>

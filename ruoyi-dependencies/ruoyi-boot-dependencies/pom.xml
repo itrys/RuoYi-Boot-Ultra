@@ -28,8 +28,8 @@
             </dependency>
             <!-- 核心模块 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-core</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot</artifactId>
                 <version>${revision}</version>
             </dependency>
 
