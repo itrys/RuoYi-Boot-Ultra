@@ -133,8 +133,8 @@
 
             <!-- 脱敏模块 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-sensitive</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-sensitive</artifactId>
                 <version>${revision}</version>
             </dependency>
 
