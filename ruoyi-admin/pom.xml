@@ -47,7 +47,7 @@
 
         <dependency>
             <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-doc</artifactId>
+            <artifactId>ruoyi-boot-starter-doc</artifactId>
         </dependency>
 
         <dependency>
