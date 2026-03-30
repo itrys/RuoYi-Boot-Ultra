@@ -24,9 +24,7 @@ import org.dromara.common.redis.utils.RedisUtils;
 import org.dromara.common.satoken.utils.LoginHelper;
 import org.dromara.system.domain.SysUser;
 import org.dromara.system.domain.bo.SysSocialBo;
-import org.dromara.system.domain.vo.*;
 import org.dromara.system.mapper.SysUserMapper;
-import org.dromara.system.service.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
