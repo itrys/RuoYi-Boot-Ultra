@@ -141,7 +141,7 @@
             <!-- 序列化模块 -->
             <dependency>
                 <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-json</artifactId>
+                <artifactId>ruoyi-boot-starter-json</artifactId>
                 <version>${revision}</version>
             </dependency>
 

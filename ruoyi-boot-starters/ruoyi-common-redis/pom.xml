@@ -23,8 +23,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-json</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-json</artifactId>
         </dependency>
 
         <!--redisson-->
