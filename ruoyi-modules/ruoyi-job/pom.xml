@@ -24,8 +24,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-job</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-job</artifactId>
         </dependency>
 
     </dependencies>

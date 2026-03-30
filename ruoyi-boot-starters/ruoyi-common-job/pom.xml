@@ -3,16 +3,16 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.itrys</groupId>
+        <groupId>org.itrys.boot</groupId>
         <artifactId>ruoyi-boot-starters</artifactId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ruoyi-common-job</artifactId>
-
+    <artifactId>ruoyi-boot-starter-job</artifactId>
+    <packaging>jar</packaging>
     <description>
-        ruoyi-common-job 定时任务
+        ruoyi-boot-starter-job 定时任务
     </description>
 
     <dependencies>
