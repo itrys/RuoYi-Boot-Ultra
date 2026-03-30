@@ -1,4 +1,4 @@
-package org.dromara.common.satoken.utils;
+package org.itrys.boot.satoken.utils;
 
 import cn.dev33.satoken.session.SaSession;
 import cn.dev33.satoken.stp.StpUtil;

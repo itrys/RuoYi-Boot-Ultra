@@ -1,4 +1,4 @@
-package org.dromara.common.satoken.handler;
+package org.itrys.boot.satoken.handler;
 
 import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.exception.NotPermissionException;

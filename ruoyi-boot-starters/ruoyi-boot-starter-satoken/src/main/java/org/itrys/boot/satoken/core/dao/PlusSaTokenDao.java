@@ -1,4 +1,4 @@
-package org.dromara.common.satoken.core.dao;
+package org.itrys.boot.satoken.core.dao;
 
 import cn.dev33.satoken.dao.auto.SaTokenDaoBySessionFollowObject;
 import cn.dev33.satoken.util.SaFoxUtil;
