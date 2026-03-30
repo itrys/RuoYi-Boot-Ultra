@@ -1,4 +1,4 @@
-package org.dromara.common.redis.annotation;
+package org.itrys.boot.redis.annotation;
 
 import java.lang.annotation.*;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package org.dromara.common.redis.config.properties;
+package org.itrys.boot.redis.config.properties;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

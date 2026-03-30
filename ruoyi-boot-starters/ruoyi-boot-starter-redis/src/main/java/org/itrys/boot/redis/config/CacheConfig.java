@@ -1,8 +1,8 @@
-package org.dromara.common.redis.config;
+package org.itrys.boot.redis.config;
 
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
-import org.dromara.common.redis.manager.PlusSpringCacheManager;
+import org.itrys.boot.redis.manager.PlusSpringCacheManager;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;

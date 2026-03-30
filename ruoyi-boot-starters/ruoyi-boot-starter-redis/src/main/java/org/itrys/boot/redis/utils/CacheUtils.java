@@ -1,4 +1,4 @@
-package org.dromara.common.redis.utils;
+package org.itrys.boot.redis.utils;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

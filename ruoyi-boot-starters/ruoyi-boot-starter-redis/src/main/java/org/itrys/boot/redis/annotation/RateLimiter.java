@@ -1,6 +1,6 @@
-package org.dromara.common.redis.annotation;
+package org.itrys.boot.redis.annotation;
 
-import org.dromara.common.redis.enums.LimitType;
+import org.itrys.boot.redis.enums.LimitType;
 
 import java.lang.annotation.*;
 

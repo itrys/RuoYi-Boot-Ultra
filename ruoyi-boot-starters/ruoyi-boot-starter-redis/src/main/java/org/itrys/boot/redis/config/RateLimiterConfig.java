@@ -1,6 +1,6 @@
-package org.dromara.common.redis.config;
+package org.itrys.boot.redis.config;
 
-import org.dromara.common.redis.aspectj.RateLimiterAspect;
+import org.itrys.boot.redis.aspectj.RateLimiterAspect;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.connection.RedisConfiguration;

@@ -1,4 +1,4 @@
-package org.dromara.common.redis.manager;
+package org.itrys.boot.redis.manager;
 
 import org.dromara.common.core.utils.SpringUtils;
 import org.springframework.cache.Cache;

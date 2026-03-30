@@ -1,4 +1,4 @@
-package org.dromara.common.redis.enums;
+package org.itrys.boot.redis.enums;
 
 /**
  * 限流类型

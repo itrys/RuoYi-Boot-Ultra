@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.dromara.common.redis.manager;
+package org.itrys.boot.redis.manager;
 
-import org.dromara.common.redis.utils.RedisUtils;
+import org.itrys.boot.redis.utils.RedisUtils;
 import org.redisson.api.RMap;
 import org.redisson.api.RMapCache;
 import org.redisson.api.map.event.MapEntryListener;
