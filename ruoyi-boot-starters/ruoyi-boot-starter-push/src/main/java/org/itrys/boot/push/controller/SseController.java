@@ -3,7 +3,7 @@ package org.itrys.boot.push.controller;
 import cn.dev33.satoken.annotation.SaIgnore;
 import cn.dev33.satoken.stp.StpUtil;
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.core.domain.R;
+import org.itrys.boot.domain.R;
 import org.itrys.boot.push.core.SseEmitterSessionManager;
 import org.dromara.common.satoken.utils.LoginHelper;
 import org.springframework.beans.factory.DisposableBean;

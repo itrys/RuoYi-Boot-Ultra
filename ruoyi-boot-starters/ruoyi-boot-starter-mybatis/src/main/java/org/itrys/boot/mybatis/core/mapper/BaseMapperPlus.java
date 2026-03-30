@@ -11,8 +11,8 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.toolkit.Db;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
-import org.dromara.common.core.utils.MapstructUtils;
-import org.dromara.common.core.utils.StreamUtils;
+import org.itrys.boot.utils.MapstructUtils;
+import org.itrys.boot.utils.StreamUtils;
 
 import java.io.Serializable;
 import java.util.Collection;

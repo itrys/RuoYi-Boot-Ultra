@@ -1,10 +1,10 @@
 package org.itrys.demo.controller;
 
-import org.dromara.common.core.domain.R;
-import org.dromara.common.core.domain.dto.PushPayloadDTO;
-import org.dromara.common.core.enums.PushSourceEnum;
-import org.dromara.common.core.enums.PushTypeEnum;
-import org.dromara.common.core.service.MessageService;
+import org.itrys.boot.domain.R;
+import org.itrys.boot.domain.dto.PushPayloadDTO;
+import org.itrys.boot.enums.PushSourceEnum;
+import org.itrys.boot.enums.PushTypeEnum;
+import org.itrys.boot.service.MessageService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

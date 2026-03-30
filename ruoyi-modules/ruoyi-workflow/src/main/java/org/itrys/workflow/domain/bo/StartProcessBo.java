@@ -4,7 +4,7 @@ package org.itrys.workflow.domain.bo;
 import cn.hutool.core.util.ObjectUtil;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
-import org.dromara.common.core.validate.AddGroup;
+import org.itrys.boot.validate.AddGroup;
 import org.itrys.workflow.domain.FlowInstanceBizExt;
 
 import java.io.Serial;

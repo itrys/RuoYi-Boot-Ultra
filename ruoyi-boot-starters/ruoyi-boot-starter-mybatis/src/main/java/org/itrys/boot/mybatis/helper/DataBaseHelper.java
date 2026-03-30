@@ -4,8 +4,8 @@ import cn.hutool.core.convert.Convert;
 import com.baomidou.dynamic.datasource.DynamicRoutingDataSource;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.exception.ServiceException;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.exception.ServiceException;
+import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.mybatis.enums.DataBaseType;
 
 import javax.sql.DataSource;

@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.constant.SystemConstants;
+import org.itrys.boot.constant.SystemConstants;
 import org.itrys.system.domain.SysRole;
 
 import java.io.Serial;

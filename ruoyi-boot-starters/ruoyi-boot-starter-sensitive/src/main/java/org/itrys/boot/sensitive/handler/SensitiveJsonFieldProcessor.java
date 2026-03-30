@@ -2,7 +2,7 @@ package org.itrys.boot.sensitive.handler;
 
 import cn.hutool.core.util.ObjectUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.utils.SpringUtils;
 import org.dromara.common.json.enhance.JsonEnhancementContext;
 import org.dromara.common.json.enhance.JsonFieldContext;
 import org.dromara.common.json.enhance.JsonFieldProcessor;

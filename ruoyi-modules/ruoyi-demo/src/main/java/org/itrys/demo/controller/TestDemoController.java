@@ -1,16 +1,16 @@
 package org.itrys.demo.controller;
 
 import cn.dev33.satoken.annotation.SaCheckPermission;
-import org.dromara.common.core.domain.R;
-import org.dromara.common.core.utils.MapstructUtils;
-import org.dromara.common.core.utils.ValidatorUtils;
-import org.dromara.common.core.validate.AddGroup;
-import org.dromara.common.core.validate.EditGroup;
-import org.dromara.common.core.validate.QueryGroup;
+import org.itrys.boot.domain.R;
+import org.itrys.boot.utils.MapstructUtils;
+import org.itrys.boot.utils.ValidatorUtils;
+import org.itrys.boot.validate.AddGroup;
+import org.itrys.boot.validate.EditGroup;
+import org.itrys.boot.validate.QueryGroup;
 import org.dromara.common.web.core.BaseController;
 import org.dromara.common.redis.annotation.RepeatSubmit;
 import org.dromara.common.mybatis.core.page.PageQuery;
-import org.dromara.common.core.domain.PageResult;
+import org.itrys.boot.domain.PageResult;
 import org.dromara.common.excel.core.ExcelResult;
 import org.dromara.common.excel.utils.ExcelUtil;
 import org.dromara.common.log.annotation.Log;

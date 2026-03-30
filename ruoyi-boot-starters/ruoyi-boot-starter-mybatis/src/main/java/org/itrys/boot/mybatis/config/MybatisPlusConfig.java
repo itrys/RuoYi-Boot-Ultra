@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.incrementer.IdentifierGenerator;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
-import org.dromara.common.core.factory.YmlPropertySourceFactory;
+import org.itrys.boot.factory.YmlPropertySourceFactory;
 import org.itrys.boot.mybatis.aspect.DataPermissionPointcutAdvisor;
 import org.itrys.boot.mybatis.handler.InjectionMetaObjectHandler;
 import org.itrys.boot.mybatis.handler.MybatisExceptionHandler;

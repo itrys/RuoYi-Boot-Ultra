@@ -7,7 +7,7 @@ import me.zhyd.oauth.model.AuthCallback;
 import me.zhyd.oauth.model.AuthResponse;
 import me.zhyd.oauth.model.AuthUser;
 import me.zhyd.oauth.request.*;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.social.config.properties.SocialLoginConfigProperties;
 import org.itrys.boot.social.config.properties.SocialProperties;
 import org.itrys.boot.social.gitea.AuthGiteaRequest;

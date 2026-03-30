@@ -1,7 +1,7 @@
 package org.itrys.boot.web.filter;
 
 import cn.hutool.core.io.IoUtil;
-import org.dromara.common.core.constant.Constants;
+import org.itrys.boot.constant.Constants;
 
 import jakarta.servlet.ReadListener;
 import jakarta.servlet.ServletInputStream;

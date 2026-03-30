@@ -1,8 +1,8 @@
 package org.itrys.boot.translation.core;
 
 import cn.hutool.core.convert.Convert;
-import org.dromara.common.core.utils.StreamUtils;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StreamUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.translation.annotation.TranslationType;
 
 import java.util.Arrays;

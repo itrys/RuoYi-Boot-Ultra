@@ -1,9 +1,9 @@
 package org.itrys.boot.translation.core.impl;
 
 import lombok.AllArgsConstructor;
-import org.dromara.common.core.service.DictService;
-import org.dromara.common.core.utils.StreamUtils;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.service.DictService;
+import org.itrys.boot.utils.StreamUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.translation.annotation.TranslationType;
 import org.itrys.boot.translation.constant.TransConstant;
 import org.itrys.boot.translation.core.TranslationInterface;

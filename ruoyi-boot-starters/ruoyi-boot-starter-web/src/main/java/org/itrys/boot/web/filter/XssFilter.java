@@ -1,7 +1,7 @@
 package org.itrys.boot.web.filter;
 
-import org.dromara.common.core.utils.SpringUtils;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.SpringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.web.config.properties.XssProperties;
 import org.springframework.http.HttpMethod;
 

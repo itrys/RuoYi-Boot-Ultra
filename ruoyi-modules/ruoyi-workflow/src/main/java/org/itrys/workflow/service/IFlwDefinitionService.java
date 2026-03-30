@@ -1,7 +1,7 @@
 package org.itrys.workflow.service;
 
 import jakarta.servlet.http.HttpServletResponse;
-import org.dromara.common.core.domain.PageResult;
+import org.itrys.boot.domain.PageResult;
 import org.dromara.common.mybatis.core.page.PageQuery;
 import org.dromara.warm.flow.orm.entity.FlowDefinition;
 import org.itrys.workflow.domain.vo.FlowDefinitionVo;

@@ -2,7 +2,7 @@ package org.itrys.boot.redis.utils;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.utils.SpringUtils;
 import org.redisson.api.*;
 import org.redisson.api.options.KeysScanOptions;
 

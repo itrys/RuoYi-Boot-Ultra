@@ -2,7 +2,7 @@ package org.itrys.boot.service;
 
 import org.itrys.boot.domain.dto.CompleteTaskDTO;
 import org.itrys.boot.domain.dto.StartProcessDTO;
-import org.dromara.common.core.domain.dto.StartProcessReturnDTO;
+import org.itrys.boot.domain.dto.StartProcessReturnDTO;
 
 import java.util.List;
 import java.util.Map;

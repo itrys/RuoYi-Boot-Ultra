@@ -2,7 +2,7 @@ package org.itrys.boot.json.validate;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.json.utils.JsonUtils;
 
 /**

@@ -1,6 +1,6 @@
 package org.itrys.system.service;
 
-import org.dromara.common.core.domain.PageResult;
+import org.itrys.boot.domain.PageResult;
 import org.dromara.common.mybatis.core.page.PageQuery;
 import org.itrys.system.domain.bo.SysDictTypeBo;
 import org.itrys.system.domain.vo.SysDictDataVo;

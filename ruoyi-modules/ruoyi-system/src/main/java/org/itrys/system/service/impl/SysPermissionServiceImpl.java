@@ -2,10 +2,10 @@ package org.itrys.system.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.core.constant.SystemConstants;
-import org.dromara.common.core.domain.dto.RoleDTO;
-import org.dromara.common.core.service.PermissionService;
-import org.dromara.common.core.utils.StreamUtils;
+import org.itrys.boot.constant.SystemConstants;
+import org.itrys.boot.domain.dto.RoleDTO;
+import org.itrys.boot.service.PermissionService;
+import org.itrys.boot.utils.StreamUtils;
 import org.dromara.common.satoken.utils.LoginHelper;
 import org.itrys.system.service.ISysMenuService;
 import org.itrys.system.service.ISysPermissionService;

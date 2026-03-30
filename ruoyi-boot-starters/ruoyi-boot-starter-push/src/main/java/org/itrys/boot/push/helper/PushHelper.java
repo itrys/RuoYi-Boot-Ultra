@@ -2,10 +2,10 @@ package org.itrys.boot.push.helper;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.domain.dto.PushPayloadDTO;
-import org.dromara.common.core.enums.PushSourceEnum;
-import org.dromara.common.core.enums.PushTypeEnum;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.domain.dto.PushPayloadDTO;
+import org.itrys.boot.enums.PushSourceEnum;
+import org.itrys.boot.enums.PushTypeEnum;
+import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.push.core.PushSessionManager;
 import org.itrys.boot.push.dto.PushDTO;
 

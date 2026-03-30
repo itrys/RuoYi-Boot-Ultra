@@ -1,6 +1,6 @@
 package org.itrys.demo.controller;
 
-import org.dromara.common.core.domain.R;
+import org.itrys.boot.domain.R;
 import org.dromara.common.redis.annotation.RateLimiter;
 import org.dromara.common.redis.enums.LimitType;
 import lombok.extern.slf4j.Slf4j;

@@ -2,7 +2,7 @@ package org.itrys.boot.json.handler;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
-import org.dromara.common.core.utils.ObjectUtils;
+import org.itrys.boot.utils.ObjectUtils;
 import tools.jackson.core.JsonParser;
 import tools.jackson.databind.DeserializationContext;
 import tools.jackson.databind.ValueDeserializer;

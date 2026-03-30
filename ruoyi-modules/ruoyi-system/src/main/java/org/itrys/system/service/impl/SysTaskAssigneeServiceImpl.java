@@ -2,11 +2,11 @@ package org.itrys.system.service.impl;
 
 import cn.hutool.core.convert.Convert;
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.core.constant.SystemConstants;
-import org.dromara.common.core.domain.PageResult;
-import org.dromara.common.core.domain.dto.TaskAssigneeDTO;
-import org.dromara.common.core.domain.model.TaskAssigneeBody;
-import org.dromara.common.core.service.TaskAssigneeService;
+import org.itrys.boot.constant.SystemConstants;
+import org.itrys.boot.domain.PageResult;
+import org.itrys.boot.domain.dto.TaskAssigneeDTO;
+import org.itrys.boot.domain.model.TaskAssigneeBody;
+import org.itrys.boot.service.TaskAssigneeService;
 import org.dromara.common.mybatis.core.page.PageQuery;
 import org.itrys.system.domain.bo.SysDeptBo;
 import org.itrys.system.domain.bo.SysPostBo;

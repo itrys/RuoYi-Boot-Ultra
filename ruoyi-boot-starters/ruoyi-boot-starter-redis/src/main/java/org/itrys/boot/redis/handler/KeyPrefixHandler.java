@@ -1,6 +1,6 @@
 package org.itrys.boot.redis.handler;
 
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.redisson.config.NameMapper;
 
 /**

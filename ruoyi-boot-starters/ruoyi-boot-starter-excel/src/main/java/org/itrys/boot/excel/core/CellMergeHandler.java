@@ -8,7 +8,7 @@ import org.apache.fesod.sheet.annotation.ExcelIgnoreUnannotated;
 import org.apache.fesod.sheet.annotation.ExcelProperty;
 import lombok.SneakyThrows;
 import org.apache.poi.ss.util.CellRangeAddress;
-import org.dromara.common.core.utils.reflect.ReflectUtils;
+import org.itrys.boot.utils.reflect.ReflectUtils;
 import org.itrys.boot.excel.annotation.CellMerge;
 
 import java.lang.reflect.Field;

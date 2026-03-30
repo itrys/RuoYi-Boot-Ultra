@@ -2,8 +2,8 @@ package org.itrys.workflow.common.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.dromara.common.core.exception.ServiceException;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.exception.ServiceException;
+import org.itrys.boot.utils.StringUtils;
 
 import java.util.Arrays;
 import java.util.List;

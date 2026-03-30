@@ -7,9 +7,9 @@ import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.ObjectUtil;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.constant.SystemConstants;
-import org.dromara.common.core.domain.model.LoginUser;
-import org.dromara.common.core.enums.UserType;
+import org.itrys.boot.constant.SystemConstants;
+import org.itrys.boot.domain.model.LoginUser;
+import org.itrys.boot.enums.UserType;
 
 
 /**

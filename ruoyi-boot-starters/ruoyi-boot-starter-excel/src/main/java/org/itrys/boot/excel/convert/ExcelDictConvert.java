@@ -10,9 +10,9 @@ import org.apache.fesod.sheet.metadata.data.ReadCellData;
 import org.apache.fesod.sheet.metadata.data.WriteCellData;
 import org.apache.fesod.sheet.metadata.property.ExcelContentProperty;
 import org.itrys.boot.excel.annotation.ExcelDictFormat;
-import org.dromara.common.core.service.DictService;
-import org.dromara.common.core.utils.SpringUtils;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.service.DictService;
+import org.itrys.boot.utils.SpringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.excel.utils.ExcelUtil;
 import lombok.extern.slf4j.Slf4j;
 

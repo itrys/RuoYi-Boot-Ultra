@@ -2,7 +2,7 @@ package org.itrys.system.listener;
 
 import cn.hutool.core.lang.tree.Tree;
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.core.utils.TreeBuildUtils;
+import org.itrys.boot.utils.TreeBuildUtils;
 import org.dromara.common.excel.core.ExcelOptionsProvider;
 import org.itrys.system.domain.bo.SysDeptBo;
 import org.itrys.system.service.ISysDeptService;

@@ -1,6 +1,6 @@
 package org.itrys.boot.oss.constant;
 
-import org.dromara.common.core.constant.GlobalConstants;
+import org.itrys.boot.constant.GlobalConstants;
 
 import java.util.Arrays;
 import java.util.List;

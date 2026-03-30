@@ -3,7 +3,7 @@ package org.itrys.boot.sensitive.core;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.DesensitizedUtil;
 import lombok.AllArgsConstructor;
-import org.dromara.common.core.utils.DesensitizedUtils;
+import org.itrys.boot.utils.DesensitizedUtils;
 
 import java.util.function.Function;
 

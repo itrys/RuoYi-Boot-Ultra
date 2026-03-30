@@ -1,7 +1,7 @@
 package org.itrys.demo.controller;
 
-import org.dromara.common.core.domain.R;
-import org.dromara.common.core.utils.MessageUtils;
+import org.itrys.boot.domain.R;
+import org.itrys.boot.utils.MessageUtils;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 import org.springframework.validation.annotation.Validated;

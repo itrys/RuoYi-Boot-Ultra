@@ -5,8 +5,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-import org.dromara.common.core.validate.AddGroup;
-import org.dromara.common.core.validate.EditGroup;
+import org.itrys.boot.validate.AddGroup;
+import org.itrys.boot.validate.EditGroup;
 import org.itrys.system.domain.SysOssConfig;
 
 import java.io.Serial;

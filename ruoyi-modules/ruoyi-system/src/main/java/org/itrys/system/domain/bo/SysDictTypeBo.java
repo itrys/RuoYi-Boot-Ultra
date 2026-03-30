@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-import org.dromara.common.core.constant.RegexConstants;
+import org.itrys.boot.constant.RegexConstants;
 import org.itrys.system.domain.SysDictType;
 
 import java.io.Serial;

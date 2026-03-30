@@ -2,7 +2,7 @@ package org.itrys.boot.translation.core.impl;
 
 import cn.hutool.core.convert.Convert;
 import lombok.AllArgsConstructor;
-import org.dromara.common.core.service.DeptService;
+import org.itrys.boot.service.DeptService;
 import org.itrys.boot.translation.annotation.TranslationType;
 import org.itrys.boot.translation.constant.TransConstant;
 import org.itrys.boot.translation.core.TranslationInterface;

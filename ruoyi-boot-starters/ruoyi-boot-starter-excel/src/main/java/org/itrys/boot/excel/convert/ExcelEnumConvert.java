@@ -9,7 +9,7 @@ import org.apache.fesod.sheet.metadata.GlobalConfiguration;
 import org.apache.fesod.sheet.metadata.data.ReadCellData;
 import org.apache.fesod.sheet.metadata.data.WriteCellData;
 import org.apache.fesod.sheet.metadata.property.ExcelContentProperty;
-import org.dromara.common.core.utils.reflect.ReflectUtils;
+import org.itrys.boot.utils.reflect.ReflectUtils;
 import org.itrys.boot.excel.annotation.ExcelEnumFormat;
 import lombok.extern.slf4j.Slf4j;
 

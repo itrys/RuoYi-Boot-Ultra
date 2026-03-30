@@ -5,8 +5,8 @@ import io.github.linpeilie.annotations.AutoMapper;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import org.dromara.common.core.validate.AddGroup;
-import org.dromara.common.core.validate.EditGroup;
+import org.itrys.boot.validate.AddGroup;
+import org.itrys.boot.validate.EditGroup;
 import org.itrys.workflow.domain.TestLeave;
 import org.springframework.format.annotation.DateTimeFormat;
 

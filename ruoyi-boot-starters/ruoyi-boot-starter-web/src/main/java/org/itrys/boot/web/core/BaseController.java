@@ -1,7 +1,7 @@
 package org.itrys.boot.web.core;
 
-import org.dromara.common.core.domain.R;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.domain.R;
+import org.itrys.boot.utils.StringUtils;
 
 /**
  * web层通用数据处理

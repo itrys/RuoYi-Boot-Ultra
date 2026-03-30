@@ -3,12 +3,12 @@ package org.itrys.boot.satoken.core.service;
 import cn.dev33.satoken.stp.StpInterface;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjectUtil;
-import org.dromara.common.core.domain.model.LoginUser;
-import org.dromara.common.core.enums.UserType;
-import org.dromara.common.core.exception.ServiceException;
-import org.dromara.common.core.service.PermissionService;
-import org.dromara.common.core.utils.SpringUtils;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.domain.model.LoginUser;
+import org.itrys.boot.enums.UserType;
+import org.itrys.boot.exception.ServiceException;
+import org.itrys.boot.service.PermissionService;
+import org.itrys.boot.utils.SpringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.satoken.utils.LoginHelper;
 
 import java.util.ArrayList;

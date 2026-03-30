@@ -4,7 +4,7 @@ import cn.dev33.satoken.dao.SaTokenDao;
 import cn.dev33.satoken.jwt.StpLogicJwtForSimple;
 import cn.dev33.satoken.stp.StpInterface;
 import cn.dev33.satoken.stp.StpLogic;
-import org.dromara.common.core.factory.YmlPropertySourceFactory;
+import org.itrys.boot.factory.YmlPropertySourceFactory;
 import org.itrys.boot.satoken.core.dao.PlusSaTokenDao;
 import org.itrys.boot.satoken.core.service.SaPermissionImpl;
 import org.itrys.boot.satoken.handler.SaTokenExceptionHandler;

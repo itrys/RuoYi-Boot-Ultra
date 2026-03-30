@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.annotation.FieldStrategy;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.dromara.common.mybatis.core.domain.BaseEntity;
 import org.itrys.gen.constant.GenConstants;
 import jakarta.validation.Valid;

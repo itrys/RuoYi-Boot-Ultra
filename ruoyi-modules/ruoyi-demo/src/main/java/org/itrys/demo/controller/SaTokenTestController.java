@@ -2,7 +2,7 @@ package org.itrys.demo.controller;
 
 import cn.dev33.satoken.annotation.*;
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.core.domain.R;
+import org.itrys.boot.domain.R;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

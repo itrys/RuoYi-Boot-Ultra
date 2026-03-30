@@ -1,7 +1,7 @@
 package org.itrys.demo.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.dromara.common.core.domain.R;
+import org.itrys.boot.domain.R;
 import org.dromara.common.web.core.BaseController;
 import org.itrys.demo.domain.TestDemo;
 import org.itrys.demo.mapper.TestDemoMapper;

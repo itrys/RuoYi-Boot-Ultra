@@ -1,10 +1,10 @@
 package org.itrys.demo.controller;
 
 import cn.dev33.satoken.annotation.SaCheckPermission;
-import org.dromara.common.core.domain.R;
-import org.dromara.common.core.validate.AddGroup;
-import org.dromara.common.core.validate.EditGroup;
-import org.dromara.common.core.validate.QueryGroup;
+import org.itrys.boot.domain.R;
+import org.itrys.boot.validate.AddGroup;
+import org.itrys.boot.validate.EditGroup;
+import org.itrys.boot.validate.QueryGroup;
 import org.dromara.common.web.core.BaseController;
 import org.dromara.common.excel.utils.ExcelUtil;
 import org.dromara.common.redis.annotation.RepeatSubmit;

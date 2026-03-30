@@ -2,8 +2,8 @@ package org.itrys.workflow.domain.bo;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import org.dromara.common.core.validate.AddGroup;
-import org.dromara.common.core.validate.EditGroup;
+import org.itrys.boot.validate.AddGroup;
+import org.itrys.boot.validate.EditGroup;
 
 import java.io.Serial;
 import java.io.Serializable;

@@ -4,7 +4,7 @@ import io.github.linpeilie.annotations.AutoMapper;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-import org.dromara.common.core.xss.Xss;
+import org.itrys.boot.xss.Xss;
 import org.itrys.system.domain.SysNotice;
 
 import java.io.Serial;

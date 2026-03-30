@@ -1,11 +1,11 @@
 package org.itrys.workflow.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.core.domain.PageResult;
-import org.dromara.common.core.domain.R;
-import org.dromara.common.core.domain.dto.StartProcessReturnDTO;
-import org.dromara.common.core.domain.dto.UserDTO;
-import org.dromara.common.core.validate.AddGroup;
+import org.itrys.boot.domain.PageResult;
+import org.itrys.boot.domain.R;
+import org.itrys.boot.domain.dto.StartProcessReturnDTO;
+import org.itrys.boot.domain.dto.UserDTO;
+import org.itrys.boot.validate.AddGroup;
 import org.dromara.common.log.annotation.Log;
 import org.dromara.common.log.enums.BusinessType;
 import org.dromara.common.mybatis.core.page.PageQuery;

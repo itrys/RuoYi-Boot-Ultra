@@ -1,7 +1,7 @@
 package org.itrys.workflow.service;
 
-import org.dromara.common.core.enums.BusinessStatusEnum;
-import org.dromara.common.core.domain.dto.UserDTO;
+import org.itrys.boot.enums.BusinessStatusEnum;
+import org.itrys.boot.domain.dto.UserDTO;
 
 import java.util.List;
 

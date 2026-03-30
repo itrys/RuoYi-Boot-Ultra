@@ -1,6 +1,6 @@
 package org.itrys.boot.encrypt.core.encryptor;
 
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.encrypt.core.EncryptContext;
 import org.itrys.boot.encrypt.enums.AlgorithmType;
 import org.itrys.boot.encrypt.enums.EncodeType;

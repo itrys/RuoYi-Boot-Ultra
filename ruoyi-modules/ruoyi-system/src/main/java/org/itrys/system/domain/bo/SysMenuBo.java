@@ -7,7 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-import org.dromara.common.core.constant.RegexConstants;
+import org.itrys.boot.constant.RegexConstants;
 import org.dromara.common.json.validate.JsonPattern;
 import org.dromara.common.json.validate.JsonType;
 import org.itrys.system.domain.SysMenu;

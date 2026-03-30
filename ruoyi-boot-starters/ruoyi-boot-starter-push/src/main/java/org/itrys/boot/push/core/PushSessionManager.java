@@ -1,6 +1,6 @@
 package org.itrys.boot.push.core;
 
-import org.dromara.common.core.domain.dto.PushPayloadDTO;
+import org.itrys.boot.domain.dto.PushPayloadDTO;
 import org.itrys.boot.push.dto.PushDTO;
 
 import java.util.function.Consumer;

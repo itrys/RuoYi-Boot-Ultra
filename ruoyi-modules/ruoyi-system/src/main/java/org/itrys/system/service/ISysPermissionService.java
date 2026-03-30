@@ -1,6 +1,6 @@
 package org.itrys.system.service;
 
-import org.dromara.common.core.domain.dto.RoleDTO;
+import org.itrys.boot.domain.dto.RoleDTO;
 
 import java.util.List;
 import java.util.Map;

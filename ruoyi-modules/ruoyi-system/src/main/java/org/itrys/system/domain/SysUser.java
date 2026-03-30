@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.constant.SystemConstants;
+import org.itrys.boot.constant.SystemConstants;
 import org.dromara.common.mybatis.core.domain.BaseEntity;
 
 import java.util.Date;

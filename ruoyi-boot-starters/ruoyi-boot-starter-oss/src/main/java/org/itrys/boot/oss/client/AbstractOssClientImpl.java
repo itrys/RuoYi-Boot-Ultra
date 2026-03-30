@@ -2,8 +2,8 @@ package org.itrys.boot.oss.client;
 
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.IdUtil;
-import org.dromara.common.core.utils.DateUtils;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.DateUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.oss.config.OssClientConfig;
 import org.itrys.boot.oss.exception.S3StorageException;
 import org.itrys.boot.oss.io.OutputStreamDownloadSubscriber;

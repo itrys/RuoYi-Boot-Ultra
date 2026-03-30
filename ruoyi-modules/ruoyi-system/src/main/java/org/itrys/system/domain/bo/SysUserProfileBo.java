@@ -5,8 +5,8 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.constant.RegexConstants;
-import org.dromara.common.core.xss.Xss;
+import org.itrys.boot.constant.RegexConstants;
+import org.itrys.boot.xss.Xss;
 import org.dromara.common.sensitive.annotation.Sensitive;
 import org.dromara.common.sensitive.core.SensitiveStrategy;
 

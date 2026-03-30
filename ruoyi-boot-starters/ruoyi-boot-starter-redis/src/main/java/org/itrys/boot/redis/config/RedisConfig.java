@@ -4,7 +4,7 @@ import cn.hutool.core.util.ObjectUtil;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.redis.config.properties.RedissonProperties;
 import org.itrys.boot.redis.handler.KeyPrefixHandler;
 import org.itrys.boot.redis.handler.RedisExceptionHandler;

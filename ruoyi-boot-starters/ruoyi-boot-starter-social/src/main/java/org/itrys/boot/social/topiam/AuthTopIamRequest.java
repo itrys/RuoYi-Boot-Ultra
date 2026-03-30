@@ -16,7 +16,7 @@ import me.zhyd.oauth.model.AuthUser;
 import me.zhyd.oauth.request.AuthDefaultRequest;
 import me.zhyd.oauth.utils.HttpUtils;
 import me.zhyd.oauth.utils.UrlBuilder;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.utils.SpringUtils;
 import org.dromara.common.json.utils.JsonUtils;
 
 import static org.itrys.boot.social.topiam.AuthTopIamSource.TOPIAM;

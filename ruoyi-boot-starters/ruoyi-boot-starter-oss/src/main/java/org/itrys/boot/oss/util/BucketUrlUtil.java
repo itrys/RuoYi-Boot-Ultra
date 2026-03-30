@@ -2,7 +2,7 @@ package org.itrys.boot.oss.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StringUtils;
 
 /**
  * 桶链接工具类

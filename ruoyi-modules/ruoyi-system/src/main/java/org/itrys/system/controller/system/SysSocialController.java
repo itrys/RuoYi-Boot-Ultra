@@ -1,7 +1,7 @@
 package org.itrys.system.controller.system;
 
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.core.domain.R;
+import org.itrys.boot.domain.R;
 import org.dromara.common.satoken.utils.LoginHelper;
 import org.dromara.common.web.core.BaseController;
 import org.itrys.system.domain.vo.SysSocialVo;

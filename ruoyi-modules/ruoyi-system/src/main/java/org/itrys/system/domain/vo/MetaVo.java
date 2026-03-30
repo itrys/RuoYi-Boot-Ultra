@@ -1,7 +1,7 @@
 package org.itrys.system.domain.vo;
 
 import lombok.Data;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StringUtils;
 
 /**
  * 路由显示信息

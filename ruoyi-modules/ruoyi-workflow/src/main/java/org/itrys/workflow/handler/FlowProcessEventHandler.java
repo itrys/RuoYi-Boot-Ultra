@@ -1,10 +1,10 @@
 package org.itrys.workflow.handler;
 
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.core.domain.event.ProcessDeleteEvent;
-import org.dromara.common.core.domain.event.ProcessEvent;
-import org.dromara.common.core.domain.event.ProcessTaskEvent;
-import org.dromara.common.core.utils.SpringUtils;
+import org.itrys.boot.domain.event.ProcessDeleteEvent;
+import org.itrys.boot.domain.event.ProcessEvent;
+import org.itrys.boot.domain.event.ProcessTaskEvent;
+import org.itrys.boot.utils.SpringUtils;
 import org.dromara.warm.flow.core.entity.Instance;
 import org.dromara.warm.flow.core.entity.Task;
 import org.itrys.workflow.common.ConditionalOnEnable;

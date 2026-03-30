@@ -1,7 +1,7 @@
 package org.itrys.system.service;
 
 import cn.hutool.core.lang.tree.Tree;
-import org.dromara.common.core.domain.PageResult;
+import org.itrys.boot.domain.PageResult;
 import org.dromara.common.mybatis.core.page.PageQuery;
 import org.itrys.system.domain.bo.SysDeptBo;
 import org.itrys.system.domain.vo.SysDeptVo;

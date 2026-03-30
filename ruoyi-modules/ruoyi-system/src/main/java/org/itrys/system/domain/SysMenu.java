@@ -5,9 +5,9 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.dromara.common.core.constant.Constants;
-import org.dromara.common.core.constant.SystemConstants;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.constant.Constants;
+import org.itrys.boot.constant.SystemConstants;
+import org.itrys.boot.utils.StringUtils;
 import org.dromara.common.mybatis.core.domain.BaseEntity;
 
 import java.util.ArrayList;

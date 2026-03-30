@@ -2,8 +2,8 @@ package org.itrys.boot.mybatis.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.dromara.common.core.domain.model.LoginUser;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.domain.model.LoginUser;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.mybatis.helper.DataPermissionHelper;
 
 /**

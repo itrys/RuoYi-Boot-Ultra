@@ -5,7 +5,7 @@ import io.swagger.v3.oas.models.Paths;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.itrys.boot.doc.config.properties.SpringDocProperties;
 import org.itrys.boot.doc.core.resolver.JavadocResolver;
 import org.itrys.boot.doc.core.resolver.SaTokenAnnotationMetadataJavadocResolver;

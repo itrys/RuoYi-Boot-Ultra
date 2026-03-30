@@ -1,7 +1,7 @@
 package org.itrys.boot.push.dto;
 
 import lombok.Data;
-import org.dromara.common.core.domain.dto.PushPayloadDTO;
+import org.itrys.boot.domain.dto.PushPayloadDTO;
 
 import java.io.Serial;
 import java.io.Serializable;

@@ -1,8 +1,8 @@
 package org.itrys.boot.oss.factory;
 
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.core.constant.CacheNames;
-import org.dromara.common.core.utils.StringUtils;
+import org.itrys.boot.constant.CacheNames;
+import org.itrys.boot.utils.StringUtils;
 import org.dromara.common.json.utils.JsonUtils;
 import org.itrys.boot.oss.client.DefaultOssClientImpl;
 import org.itrys.boot.oss.client.OssClient;

@@ -1,7 +1,7 @@
 package org.dromara.workflow.domain.bo;
 
 import jakarta.validation.constraints.NotBlank;
-import org.dromara.common.core.validate.AddGroup;
+import org.itrys.boot.validate.AddGroup;
 
 /**
  * 撤销流程请求对象。

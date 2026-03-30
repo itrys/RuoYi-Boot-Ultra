@@ -1,6 +1,6 @@
 package org.itrys.demo.controller;
 
-import org.dromara.common.core.domain.R;
+import org.itrys.boot.domain.R;
 import org.itrys.demo.domain.TestDemoEncrypt;
 import org.itrys.demo.mapper.TestDemoEncryptMapper;
 import org.springframework.beans.factory.annotation.Autowired;

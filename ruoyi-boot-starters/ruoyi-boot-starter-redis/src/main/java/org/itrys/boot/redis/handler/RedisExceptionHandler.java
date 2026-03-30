@@ -4,7 +4,7 @@ import cn.hutool.http.HttpStatus;
 import com.baomidou.lock.exception.LockFailureException;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import org.dromara.common.core.domain.R;
+import org.itrys.boot.domain.R;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

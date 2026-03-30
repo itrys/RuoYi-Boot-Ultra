@@ -1,6 +1,6 @@
 package org.dromara.test;
 
-import org.dromara.common.core.enums.UserType;
+import org.itrys.boot.enums.UserType;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
