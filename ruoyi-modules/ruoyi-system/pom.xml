@@ -66,8 +66,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-web</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>

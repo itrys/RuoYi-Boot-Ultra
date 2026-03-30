@@ -119,8 +119,8 @@
 
             <!-- web服务 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-web</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-web</artifactId>
                 <version>${revision}</version>
             </dependency>
 
