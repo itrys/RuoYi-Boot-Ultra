@@ -25,7 +25,7 @@
         <module>ruoyi-boot-starter-log</module>
         <module>ruoyi-boot-starter-mail</module>
         <module>ruoyi-boot-starter-mybatis</module>
-        <module>ruoyi-common-oss</module>
+        <module>ruoyi-boot-starter-oss</module>
         <module>ruoyi-common-redis</module>
         <module>ruoyi-common-satoken</module>
         <module>ruoyi-common-security</module>

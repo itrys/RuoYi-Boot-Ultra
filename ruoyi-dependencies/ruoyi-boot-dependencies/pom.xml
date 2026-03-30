@@ -77,8 +77,8 @@
 
             <!-- OSS -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-oss</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-oss</artifactId>
                 <version>${revision}</version>
             </dependency>
 

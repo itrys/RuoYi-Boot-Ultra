@@ -39,8 +39,8 @@
 
         <!-- OSS功能模块 -->
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-oss</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-oss</artifactId>
         </dependency>
 
         <dependency>

@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ruoyi-boot-starter-mybatis</artifactId>
-
+    <packaging>jar</packaging>
     <description>
         ruoyi-boot-starter-mybatis 数据库服务
     </description>
