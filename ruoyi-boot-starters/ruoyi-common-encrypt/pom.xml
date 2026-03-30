@@ -3,23 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.itrys</groupId>
+        <groupId>org.itrys.boot</groupId>
         <artifactId>ruoyi-boot-starters</artifactId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ruoyi-common-encrypt</artifactId>
-
+    <artifactId>ruoyi-boot-starter-encrypt</artifactId>
+    <packaging>jar</packaging>
     <description>
-        ruoyi-common-encrypt 数据加解密模块
+        ruoyi-boot-starter-encrypt 数据加解密模块
     </description>
 
     <dependencies>
 
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-core</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot</artifactId>
         </dependency>
 
         <dependency>
