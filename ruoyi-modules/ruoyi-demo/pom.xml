@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>ruoyi-demo</artifactId>
-cs
+    <packaging>jar</packaging>
     <description>
         demo模块
     </description>
@@ -94,5 +94,4 @@ cs
         </dependency>
 
     </dependencies>
-
 </project>
