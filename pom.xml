@@ -84,7 +84,7 @@
 
     <modules>
         <module>ruoyi-admin</module>
-        <module>ruoyi-common</module>
+        <module>ruoyi-boot-starters</module>
         <module>ruoyi-extend</module>
         <module>ruoyi-modules</module>
         <module>ruoyi-dependencies</module>
