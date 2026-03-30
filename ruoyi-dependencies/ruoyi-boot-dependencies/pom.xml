@@ -35,8 +35,8 @@
 
             <!-- 接口模块 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-doc</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-doc</artifactId>
                 <version>${revision}</version>
             </dependency>
 
