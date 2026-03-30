@@ -147,8 +147,8 @@
 
             <!-- 数据库加解密模块 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-encrypt</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-encrypt</artifactId>
                 <version>${revision}</version>
             </dependency>
 
