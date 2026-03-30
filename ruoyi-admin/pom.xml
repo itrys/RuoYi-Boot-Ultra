@@ -47,7 +47,7 @@
 <!--        </dependency>-->
 
         <dependency>
-            <groupId>org.itrys</groupId>
+            <groupId>org.itrys.boot</groupId>
             <artifactId>ruoyi-boot-starter-doc</artifactId>
         </dependency>
 
