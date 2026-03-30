@@ -31,7 +31,7 @@
         <module>ruoyi-boot-starter-security</module>
         <module>ruoyi-boot-starter-sms</module>
         <module>ruoyi-common-web</module>
-        <module>ruoyi-common-translation</module>
+        <module>ruoyi-boot-starter-translation</module>
         <module>ruoyi-boot-starter-sensitive</module>
         <module>ruoyi-boot-starter-json</module>
         <module>ruoyi-boot-starter-encrypt</module>

@@ -126,8 +126,8 @@
 
             <!-- 翻译模块 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-translation</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-translation</artifactId>
                 <version>${revision}</version>
             </dependency>
 
