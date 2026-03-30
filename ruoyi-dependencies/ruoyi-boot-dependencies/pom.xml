@@ -56,8 +56,8 @@
 
             <!-- 日志记录 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-log</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-log</artifactId>
                 <version>${revision}</version>
             </dependency>
 

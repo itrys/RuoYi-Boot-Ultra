@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ruoyi-common-log</artifactId>
+    <artifactId>ruoyi-boot-starter-log</artifactId>
 
     <description>
-        ruoyi-common-log 日志记录
+        ruoyi-boot-starter-log 日志记录
     </description>
 
     <dependencies>
