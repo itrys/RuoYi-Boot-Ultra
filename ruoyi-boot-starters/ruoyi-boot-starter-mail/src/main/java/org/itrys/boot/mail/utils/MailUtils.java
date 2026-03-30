@@ -1,4 +1,4 @@
-package org.dromara.common.mail.utils;
+package org.itrys.boot.mail.utils;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.io.IoUtil;
