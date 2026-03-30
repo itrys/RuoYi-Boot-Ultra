@@ -18,8 +18,8 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-satoken</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-satoken</artifactId>
         </dependency>
 
         <dependency>

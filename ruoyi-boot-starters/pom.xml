@@ -27,7 +27,7 @@
         <module>ruoyi-boot-starter-mybatis</module>
         <module>ruoyi-boot-starter-oss</module>
         <module>ruoyi-boot-starter-redis</module>
-        <module>ruoyi-common-satoken</module>
+        <module>ruoyi-boot-starter-satoken</module>
         <module>ruoyi-common-security</module>
         <module>ruoyi-common-sms</module>
         <module>ruoyi-common-web</module>
