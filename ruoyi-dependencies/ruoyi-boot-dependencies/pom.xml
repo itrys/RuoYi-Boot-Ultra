@@ -63,8 +63,8 @@
 
             <!-- 邮件服务 -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-mail</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-mail</artifactId>
                 <version>${revision}</version>
             </dependency>
 

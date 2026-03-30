@@ -23,7 +23,7 @@
         <module>ruoyi-boot-starter-excel</module>
         <module>ruoyi-boot-starter-job</module>
         <module>ruoyi-boot-starter-log</module>
-        <module>ruoyi-common-mail</module>
+        <module>ruoyi-boot-starter-mail</module>
         <module>ruoyi-common-mybatis</module>
         <module>ruoyi-common-oss</module>
         <module>ruoyi-common-redis</module>

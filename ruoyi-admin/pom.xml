@@ -56,8 +56,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-mail</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-mail</artifactId>
         </dependency>
 
         <dependency>
