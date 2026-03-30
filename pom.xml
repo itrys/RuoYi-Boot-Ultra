@@ -91,6 +91,7 @@
 
     <modules>
         <module>ruoyi-admin</module>
+        <module>ruoyi-boot</module>
         <module>ruoyi-boot-starters</module>
         <module>ruoyi-extensions</module>
         <module>ruoyi-modules</module>

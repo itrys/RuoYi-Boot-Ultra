@@ -1,4 +1,4 @@
-package org.dromara.common.core.domain.dto;
+package org.itrys.boot.domain.dto;
 
 /**
  * 启动流程后的返回结果对象。

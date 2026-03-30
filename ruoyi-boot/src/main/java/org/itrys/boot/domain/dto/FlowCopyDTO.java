@@ -1,4 +1,4 @@
-package org.dromara.common.core.domain.dto;
+package org.itrys.boot.domain.dto;
 
 /**
  * 抄送
