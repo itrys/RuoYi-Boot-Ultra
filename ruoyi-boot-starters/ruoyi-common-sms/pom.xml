@@ -24,8 +24,8 @@
 
         <!-- RuoYi Common Redis-->
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-redis</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-redis</artifactId>
         </dependency>
 
     </dependencies>
