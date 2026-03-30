@@ -1,4 +1,4 @@
-package org.dromara.common.social.topiam;
+package org.itrys.boot.social.topiam;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.lang.Dict;
@@ -19,7 +19,7 @@ import me.zhyd.oauth.utils.UrlBuilder;
 import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.common.json.utils.JsonUtils;
 
-import static org.dromara.common.social.topiam.AuthTopIamSource.TOPIAM;
+import static org.itrys.boot.social.topiam.AuthTopIamSource.TOPIAM;
 
 /**
  * TopIAM 认证请求

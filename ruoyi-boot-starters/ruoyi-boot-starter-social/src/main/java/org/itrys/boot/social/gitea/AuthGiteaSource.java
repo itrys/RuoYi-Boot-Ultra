@@ -1,4 +1,4 @@
-package org.dromara.common.social.gitea;
+package org.itrys.boot.social.gitea;
 
 import me.zhyd.oauth.config.AuthSource;
 import me.zhyd.oauth.request.AuthDefaultRequest;

@@ -1,4 +1,4 @@
-package org.dromara.common.social.maxkey;
+package org.itrys.boot.social.maxkey;
 
 import cn.hutool.core.lang.Dict;
 import me.zhyd.oauth.cache.AuthStateCache;

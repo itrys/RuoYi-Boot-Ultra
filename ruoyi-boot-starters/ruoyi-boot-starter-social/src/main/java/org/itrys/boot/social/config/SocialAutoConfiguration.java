@@ -1,8 +1,8 @@
-package org.dromara.common.social.config;
+package org.itrys.boot.social.config;
 
 import me.zhyd.oauth.cache.AuthStateCache;
-import org.dromara.common.social.config.properties.SocialProperties;
-import org.dromara.common.social.utils.AuthRedisStateCache;
+import org.itrys.boot.social.config.properties.SocialProperties;
+import org.itrys.boot.social.utils.AuthRedisStateCache;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

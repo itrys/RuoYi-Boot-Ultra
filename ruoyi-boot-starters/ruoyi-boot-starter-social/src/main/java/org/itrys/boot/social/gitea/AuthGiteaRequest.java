@@ -1,4 +1,4 @@
-package org.dromara.common.social.gitea;
+package org.itrys.boot.social.gitea;
 
 import cn.hutool.core.lang.Dict;
 import cn.hutool.http.HttpRequest;

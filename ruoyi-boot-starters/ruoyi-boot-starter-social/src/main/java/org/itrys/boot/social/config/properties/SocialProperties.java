@@ -1,4 +1,4 @@
-package org.dromara.common.social.config.properties;
+package org.itrys.boot.social.config.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

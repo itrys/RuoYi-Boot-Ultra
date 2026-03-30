@@ -1,4 +1,4 @@
-package org.dromara.common.social.topiam;
+package org.itrys.boot.social.maxkey;
 
 import me.zhyd.oauth.config.AuthSource;
 import me.zhyd.oauth.request.AuthDefaultRequest;
@@ -6,21 +6,22 @@ import me.zhyd.oauth.request.AuthDefaultRequest;
 /**
  * Oauth2 默认接口说明
  *
- * @author xlsea
- * @since 2024-01-06
+ * @author 长春叭哥 2023年03月26日
+ *
  */
-public enum AuthTopIamSource implements AuthSource {
+public enum AuthMaxKeySource implements AuthSource {
 
     /**
-     * 测试
+     * 自己搭建的 maxkey 私服
      */
-    TOPIAM {
+    MAXKEY {
+
         /**
          * 授权的api
          */
         @Override
         public String authorize() {
-            return AuthTopIamRequest.SERVER_URL + "/oauth2/auth";
+            return AuthMaxKeyRequest.SERVER_URL + "/sign/authz/oauth/v20/authorize";
         }
 
         /**
@@ -28,7 +29,7 @@ public enum AuthTopIamSource implements AuthSource {
          */
         @Override
         public String accessToken() {
-            return AuthTopIamRequest.SERVER_URL + "/oauth2/token";
+            return AuthMaxKeyRequest.SERVER_URL + "/sign/authz/oauth/v20/token";
         }
 
         /**
@@ -36,7 +37,7 @@ public enum AuthTopIamSource implements AuthSource {
          */
         @Override
         public String userInfo() {
-            return AuthTopIamRequest.SERVER_URL + "/oauth2/userinfo";
+            return AuthMaxKeyRequest.SERVER_URL + "/sign/api/oauth/v20/me";
         }
 
         /**
@@ -44,7 +45,7 @@ public enum AuthTopIamSource implements AuthSource {
          */
         @Override
         public Class<? extends AuthDefaultRequest> getTargetClass() {
-            return AuthTopIamRequest.class;
+            return AuthMaxKeyRequest.class;
         }
 
     }
