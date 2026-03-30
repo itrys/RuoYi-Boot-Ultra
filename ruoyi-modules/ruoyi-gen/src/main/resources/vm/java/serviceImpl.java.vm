@@ -1,9 +1,9 @@
 package ${packageName}.service.impl;
 
-import org.dromara.common.core.utils.MapstructUtils;
-import org.dromara.common.core.utils.StringUtils;
+import utils.org.dromara.boot.MapstructUtils;
+import utils.org.dromara.boot.StringUtils;
 #if($table.crud)
-import org.dromara.common.core.domain.PageResult;
+import domain.org.dromara.boot.PageResult;
 import org.dromara.common.mybatis.core.page.PageQuery;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 #end

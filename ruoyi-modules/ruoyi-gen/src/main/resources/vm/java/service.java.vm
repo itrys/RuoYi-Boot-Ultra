@@ -3,7 +3,7 @@ package ${packageName}.service;
 import ${packageName}.domain.vo.${ClassName}Vo;
 import ${packageName}.domain.bo.${ClassName}Bo;
 #if($table.crud)
-import org.dromara.common.core.domain.PageResult;
+import domain.org.dromara.boot.PageResult;
 import org.dromara.common.mybatis.core.page.PageQuery;
 #end
 

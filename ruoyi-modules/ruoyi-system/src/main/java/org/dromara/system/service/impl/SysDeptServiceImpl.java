@@ -16,7 +16,6 @@ import org.dromara.common.core.domain.PageResult;
 import org.dromara.common.core.domain.dto.DeptDTO;
 import org.dromara.common.core.exception.ServiceException;
 import org.dromara.common.core.service.DeptService;
-import org.dromara.common.core.utils.*;
 import org.dromara.common.mybatis.core.page.PageQuery;
 import org.dromara.common.mybatis.helper.DataBaseHelper;
 import org.dromara.common.redis.utils.CacheUtils;
