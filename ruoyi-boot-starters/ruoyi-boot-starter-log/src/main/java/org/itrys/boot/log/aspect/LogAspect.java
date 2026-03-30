@@ -1,4 +1,4 @@
-package org.dromara.common.log.aspect;
+package org.itrys.boot.log.aspect;
 
 import cn.hutool.core.lang.Dict;
 import cn.hutool.core.map.MapUtil;
@@ -19,9 +19,9 @@ import org.dromara.common.core.utils.ServletUtils;
 import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.common.core.utils.StringUtils;
 import org.dromara.common.json.utils.JsonUtils;
-import org.dromara.common.log.annotation.Log;
-import org.dromara.common.log.enums.BusinessStatus;
-import org.dromara.common.log.event.OperLogEvent;
+import org.itrys.boot.log.annotation.Log;
+import org.itrys.boot.log.enums.BusinessStatus;
+import org.itrys.boot.log.event.OperLogEvent;
 import org.dromara.common.satoken.utils.LoginHelper;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.http.HttpMethod;

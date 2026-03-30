@@ -1,7 +1,7 @@
-package org.dromara.common.log.annotation;
+package org.itrys.boot.log.annotation;
 
-import org.dromara.common.log.enums.BusinessType;
-import org.dromara.common.log.enums.OperatorType;
+import org.itrys.boot.log.enums.BusinessType;
+import org.itrys.boot.log.enums.OperatorType;
 
 import java.lang.annotation.*;
 

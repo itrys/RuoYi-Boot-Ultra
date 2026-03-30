@@ -1,4 +1,4 @@
-package org.dromara.common.log.enums;
+package org.itrys.boot.log.enums;
 
 /**
  * 业务操作类型
