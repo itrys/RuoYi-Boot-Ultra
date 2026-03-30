@@ -89,8 +89,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.itrys</groupId>
-            <artifactId>ruoyi-common-mqtt</artifactId>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-mqtt</artifactId>
         </dependency>
 
     </dependencies>
