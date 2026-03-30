@@ -1,4 +1,4 @@
-package org.dromara.gen.config;
+package org.itrys.gen.config;
 
 import com.baomidou.dynamic.datasource.DynamicRoutingDataSource;
 import com.baomidou.dynamic.datasource.toolkit.DynamicDataSourceContextHolder;

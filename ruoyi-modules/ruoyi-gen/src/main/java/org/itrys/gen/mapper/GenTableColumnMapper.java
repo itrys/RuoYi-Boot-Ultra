@@ -1,8 +1,8 @@
-package org.dromara.gen.mapper;
+package org.itrys.gen.mapper;
 
 import com.baomidou.mybatisplus.annotation.InterceptorIgnore;
 import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
-import org.dromara.gen.domain.GenTableColumn;
+import org.itrys.gen.domain.GenTableColumn;
 
 /**
  * 业务字段 数据层

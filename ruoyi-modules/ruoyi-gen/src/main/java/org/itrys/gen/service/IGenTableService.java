@@ -1,9 +1,9 @@
-package org.dromara.gen.service;
+package org.itrys.gen.service;
 
 import org.dromara.common.mybatis.core.page.PageQuery;
 import org.dromara.common.core.domain.PageResult;
-import org.dromara.gen.domain.GenTable;
-import org.dromara.gen.domain.GenTableColumn;
+import org.itrys.gen.domain.GenTable;
+import org.itrys.gen.domain.GenTableColumn;
 
 import java.util.List;
 import java.util.Map;

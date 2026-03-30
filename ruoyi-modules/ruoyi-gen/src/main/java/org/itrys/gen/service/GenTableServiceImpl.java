@@ -1,4 +1,4 @@
-package org.dromara.gen.service;
+package org.itrys.gen.service;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.io.IoUtil;
@@ -24,14 +24,14 @@ import org.dromara.common.core.utils.file.FileUtils;
 import org.dromara.common.json.utils.JsonUtils;
 import org.dromara.common.mybatis.core.page.PageQuery;
 import org.dromara.common.mybatis.utils.IdGeneratorUtil;
-import org.dromara.gen.constant.GenConstants;
-import org.dromara.gen.domain.GenTable;
-import org.dromara.gen.domain.GenTableColumn;
-import org.dromara.gen.mapper.GenTableColumnMapper;
-import org.dromara.gen.mapper.GenTableMapper;
-import org.dromara.gen.util.GenUtils;
-import org.dromara.gen.util.TemplateEngineUtils;
-import org.dromara.gen.util.template.PathNamedTemplate;
+import org.itrys.gen.constant.GenConstants;
+import org.itrys.gen.domain.GenTable;
+import org.itrys.gen.domain.GenTableColumn;
+import org.itrys.gen.mapper.GenTableColumnMapper;
+import org.itrys.gen.mapper.GenTableMapper;
+import org.itrys.gen.util.GenUtils;
+import org.itrys.gen.util.TemplateEngineUtils;
+import org.itrys.gen.util.template.PathNamedTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

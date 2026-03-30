@@ -1,4 +1,4 @@
-package org.dromara.gen.util.template;
+package org.itrys.gen.util.template;
 
 import cn.hutool.extra.template.Template;
 import cn.hutool.extra.template.TemplateEngine;

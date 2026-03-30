@@ -1,4 +1,4 @@
-package org.dromara.gen.util;
+package org.itrys.gen.util;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.convert.Convert;
@@ -14,16 +14,16 @@ import org.dromara.common.core.utils.StringUtils;
 import org.dromara.common.json.utils.JsonUtils;
 import org.dromara.common.mybatis.enums.DataBaseType;
 import org.dromara.common.mybatis.helper.DataBaseHelper;
-import org.dromara.gen.config.properties.GenProperties;
-import org.dromara.gen.constant.GenConstants;
-import org.dromara.gen.domain.GenTable;
-import org.dromara.gen.domain.GenTableColumn;
-import org.dromara.gen.util.template.PathNamedTemplate;
+import org.itrys.gen.config.properties.GenProperties;
+import org.itrys.gen.constant.GenConstants;
+import org.itrys.gen.domain.GenTable;
+import org.itrys.gen.domain.GenTableColumn;
+import org.itrys.gen.util.template.PathNamedTemplate;
 
 import java.util.*;
 import java.util.function.Consumer;
 
-import static org.dromara.gen.constant.GenConstants.TS_TYPES_TEMPLATE_PATH;
+import static org.itrys.gen.constant.GenConstants.TS_TYPES_TEMPLATE_PATH;
 
 /**
  * 模板引擎工具

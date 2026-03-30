@@ -1,9 +1,9 @@
-package org.dromara.gen.mapper;
+package org.itrys.gen.mapper;
 
 import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.annotation.InterceptorIgnore;
 import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
-import org.dromara.gen.domain.GenTable;
+import org.itrys.gen.domain.GenTable;
 
 import java.util.List;
 

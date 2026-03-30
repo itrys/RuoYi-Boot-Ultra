@@ -1,4 +1,4 @@
-package org.dromara.gen.config.properties;
+package org.itrys.gen.config.properties;
 
 import cn.hutool.extra.template.TemplateConfig;
 import lombok.Data;

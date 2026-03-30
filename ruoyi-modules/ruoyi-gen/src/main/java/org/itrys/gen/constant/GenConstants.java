@@ -1,4 +1,4 @@
-package org.dromara.gen.constant;
+package org.itrys.gen.constant;
 
 import cn.hutool.core.collection.CollUtil;
 

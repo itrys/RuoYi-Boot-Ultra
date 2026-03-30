@@ -1,4 +1,4 @@
-package org.dromara.gen.controller;
+package org.itrys.gen.controller;
 
 import cn.dev33.satoken.annotation.SaCheckPermission;
 import cn.hutool.core.convert.Convert;
@@ -14,9 +14,9 @@ import org.dromara.common.mybatis.core.page.PageQuery;
 import org.dromara.common.core.domain.PageResult;
 import org.dromara.common.mybatis.helper.DataBaseHelper;
 import org.dromara.common.web.core.BaseController;
-import org.dromara.gen.domain.GenTable;
-import org.dromara.gen.domain.GenTableColumn;
-import org.dromara.gen.service.IGenTableService;
+import org.itrys.gen.domain.GenTable;
+import org.itrys.gen.domain.GenTableColumn;
+import org.itrys.gen.service.IGenTableService;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 

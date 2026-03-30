@@ -1,14 +1,14 @@
-package org.dromara.gen.util;
+package org.itrys.gen.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.RegExUtils;
 import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.common.core.utils.StringUtils;
-import org.dromara.gen.config.properties.GenProperties;
-import org.dromara.gen.constant.GenConstants;
-import org.dromara.gen.domain.GenTable;
-import org.dromara.gen.domain.GenTableColumn;
+import org.itrys.gen.config.properties.GenProperties;
+import org.itrys.gen.constant.GenConstants;
+import org.itrys.gen.domain.GenTable;
+import org.itrys.gen.domain.GenTableColumn;
 
 import java.util.Arrays;
 

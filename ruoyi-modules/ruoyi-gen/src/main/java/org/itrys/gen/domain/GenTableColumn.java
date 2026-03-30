@@ -1,4 +1,4 @@
-package org.dromara.gen.domain;
+package org.itrys.gen.domain;
 
 import com.baomidou.mybatisplus.annotation.FieldStrategy;
 import com.baomidou.mybatisplus.annotation.TableField;
