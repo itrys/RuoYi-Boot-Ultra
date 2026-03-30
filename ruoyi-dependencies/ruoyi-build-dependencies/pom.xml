@@ -211,12 +211,19 @@
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-cache</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>lock4j-redisson-spring-boot-starter</artifactId>
                 <version>${lock4j.version}</version>
             </dependency>
+
+
 
             <!-- SnailJob Client -->
             <dependency>
