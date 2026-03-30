@@ -1,4 +1,4 @@
-package org.dromara.common.security.config;
+package org.itrys.boot.security.config;
 
 import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.filter.SaServletFilter;
@@ -17,8 +17,8 @@ import org.dromara.common.core.utils.ServletUtils;
 import org.dromara.common.core.utils.SpringUtils;
 import org.dromara.common.core.utils.StringUtils;
 import org.dromara.common.satoken.utils.LoginHelper;
-import org.dromara.common.security.config.properties.SecurityProperties;
-import org.dromara.common.security.handler.AllUrlHandler;
+import org.itrys.boot.security.config.properties.SecurityProperties;
+import org.itrys.boot.security.handler.AllUrlHandler;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

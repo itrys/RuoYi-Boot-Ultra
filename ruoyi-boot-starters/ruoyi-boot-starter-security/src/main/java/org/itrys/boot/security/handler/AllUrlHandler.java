@@ -1,4 +1,4 @@
-package org.dromara.common.security.handler;
+package org.itrys.boot.security.handler;
 
 import cn.hutool.core.util.ReUtil;
 import org.dromara.common.core.utils.SpringUtils;

@@ -1,2 +1,2 @@
-org.dromara.common.security.handler.AllUrlHandler
-org.dromara.common.security.config.SecurityConfig
+org.itrys.boot.security.handler.AllUrlHandler
+org.itrys.boot.security.config.SecurityConfig
