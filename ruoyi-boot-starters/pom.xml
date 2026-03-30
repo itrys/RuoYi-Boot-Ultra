@@ -20,7 +20,7 @@
         <module>ruoyi-boot</module>
         <module>ruoyi-common-social</module>
         <module>ruoyi-boot-starter-doc</module>
-        <module>ruoyi-common-excel</module>
+        <module>ruoyi-boot-starter-excel</module>
         <module>ruoyi-common-job</module>
         <module>ruoyi-common-log</module>
         <module>ruoyi-common-mail</module>

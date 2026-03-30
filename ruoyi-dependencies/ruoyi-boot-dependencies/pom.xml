@@ -42,8 +42,8 @@
 
             <!-- excel -->
             <dependency>
-                <groupId>org.itrys</groupId>
-                <artifactId>ruoyi-common-excel</artifactId>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter-excel</artifactId>
                 <version>${revision}</version>
             </dependency>
 
