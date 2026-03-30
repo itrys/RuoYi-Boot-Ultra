@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.itrys</groupId>
+        <artifactId>ruoyi-dependencies</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>ruoyi-admin-dependencies</artifactId>
+    <packaging>pom</packaging>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-dependencies</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-system</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-job</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-gen</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-demo</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!--  工作流模块  -->
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-workflow</artifactId>
+                <version>${revision}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

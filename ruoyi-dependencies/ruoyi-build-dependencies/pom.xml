@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.itrys</groupId>
+        <artifactId>ruoyi-dependencies</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <groupId>org.itrys.boot</groupId>
+    <artifactId>ruoyi-build-dependencies</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <spring-boot.version>4.0.3</spring-boot.version>
+        <mybatis.version>3.5.19</mybatis.version>
+        <springdoc.version>3.0.2</springdoc.version>
+        <therapi-javadoc.version>0.15.0</therapi-javadoc.version>
+        <fesod.version>2.0.1-incubating</fesod.version>
+        <velocity.version>2.4.1</velocity.version>
+        <satoken.version>1.45.0</satoken.version>
+        <mybatis-plus.version>3.5.16</mybatis-plus.version>
+        <mybatis-plus-join.version>1.5.6</mybatis-plus-join.version>
+        <p6spy.version>3.9.1</p6spy.version>
+        <hutool.version>5.8.43</hutool.version>
+        <spring-boot-admin.version>4.0.2</spring-boot-admin.version>
+        <redisson.version>4.3.0</redisson.version>
+        <lock4j.version>2.2.7</lock4j.version>
+        <dynamic-ds.version>4.5.0</dynamic-ds.version>
+        <snailjob.version>1.9.0</snailjob.version>
+        <mapstruct-plus.version>1.5.0</mapstruct-plus.version>
+        <mapstruct-plus.lombok.version>0.2.0</mapstruct-plus.lombok.version>
+        <lombok.version>1.18.42</lombok.version>
+        <bouncycastle.version>1.83</bouncycastle.version>
+        <justauth.version>1.16.7</justauth.version>
+        <!-- 离线IP地址定位库 -->
+        <ip2region.version>3.3.6</ip2region.version>
+        <!-- OSS 配置 -->
+        <aws.sdk.version>2.42.9</aws.sdk.version>
+        <!-- SMS 配置 -->
+        <sms4j.version>3.3.5</sms4j.version>
+        <!-- 限制框架中的fastjson版本 -->
+        <fastjson.version>1.2.83</fastjson.version>
+        <!-- 面向运行时的D-ORM依赖 -->
+        <anyline.version>8.7.3-20260306</anyline.version>
+        <!-- 工作流配置 -->
+        <warm-flow.version>1.8.4</warm-flow.version>
+        <!-- mqtt客户端 -->
+        <mica-mqtt.version>2.5.12</mica-mqtt.version>
+    </properties>
+    <!-- 依赖声明 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringBoot的依赖配置-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- hutool 的依赖配置-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-bom</artifactId>
+                <version>${hutool.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- sa-token-bom 依赖 -->
+            <!-- Sa-Token 权限认证, 在线文档：http://sa-token.dev33.cn/ -->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-bom</artifactId>
+                <version>${satoken.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- common 的依赖配置-->
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-common-bom</artifactId>
+                <version>${revision}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.therapi</groupId>
+                <artifactId>therapi-runtime-javadoc</artifactId>
+                <version>${therapi-javadoc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- fesod (EasyExcel/FastExcel的前身) 的依赖 -->
+            <dependency>
+                <groupId>org.apache.fesod</groupId>
+                <artifactId>fesod-sheet</artifactId>
+                <version>${fesod.version}</version>
+            </dependency>
+
+            <!-- velocity代码生成使用模板 -->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${velocity.version}</version>
+            </dependency>
+
+            <!-- dynamic-datasource 多数据源-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot4-starter</artifactId>
+                <version>${dynamic-ds.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot4-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-jsqlparser</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.yulichang</groupId>
+                <artifactId>mybatis-plus-join-boot-starter</artifactId>
+                <version>${mybatis-plus-join.version}</version>
+            </dependency>
+
+            <!-- sql性能分析插件 -->
+            <dependency>
+                <groupId>p6spy</groupId>
+                <artifactId>p6spy</artifactId>
+                <version>${p6spy.version}</version>
+            </dependency>
+
+            <!--  AWS SDK for Java 2.x  -->
+            <dependency>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>s3</artifactId>
+                <version>${aws.sdk.version}</version>
+            </dependency>
+            <!-- 客户端的性能增强传输管理器 -->
+            <dependency>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>s3-transfer-manager</artifactId>
+                <version>${aws.sdk.version}</version>
+            </dependency>
+            <!-- 适用于 Netty 的客户端 -->
+            <dependency>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>netty-nio-client</artifactId>
+                <version>${aws.sdk.version}</version>
+            </dependency>
+            <!--短信sms4j-->
+            <dependency>
+                <groupId>org.dromara.sms4j</groupId>
+                <artifactId>sms4j-spring-boot-starter</artifactId>
+                <version>${sms4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+
+            <!--redisson-->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>lock4j-redisson-spring-boot-starter</artifactId>
+                <version>${lock4j.version}</version>
+            </dependency>
+
+            <!-- SnailJob Client -->
+            <dependency>
+                <groupId>com.aizuda</groupId>
+                <artifactId>snail-job-client-starter</artifactId>
+                <version>${snailjob.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aizuda</groupId>
+                <artifactId>snail-job-client-job-core</artifactId>
+                <version>${snailjob.version}</version>
+            </dependency>
+
+            <!-- 加密包引入 -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk18on</artifactId>
+                <version>${bouncycastle.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.linpeilie</groupId>
+                <artifactId>mapstruct-plus-spring-boot-starter</artifactId>
+                <version>${mapstruct-plus.version}</version>
+            </dependency>
+
+            <!-- Warm-Flow国产工作流引擎, 在线文档：http://warm-flow.cn/ -->
+            <dependency>
+                <groupId>org.dromara.warm</groupId>
+                <artifactId>warm-flow-mybatis-plus-sb3-starter</artifactId>
+                <version>${warm-flow.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.dromara.warm</groupId>
+                <artifactId>warm-flow-plugin-ui-sb-web</artifactId>
+                <version>${warm-flow.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.dromara.mica-mqtt</groupId>
+                <artifactId>mica-mqtt-client-spring-boot-starter</artifactId>
+                <version>${mica-mqtt.version}</version>
+            </dependency>
+
+            <!-- JustAuth 的依赖配置-->
+            <dependency>
+                <groupId>me.zhyd.oauth</groupId>
+                <artifactId>JustAuth</artifactId>
+                <version>${justauth.version}</version>
+            </dependency>
+
+            <!-- 离线IP地址定位库 ip2region -->
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

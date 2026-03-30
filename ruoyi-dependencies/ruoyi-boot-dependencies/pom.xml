@@ -3,22 +3,29 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.itrys</groupId>
+        <artifactId>ruoyi-dependencies</artifactId>
+        <version>${revision}</version>
+    </parent>
 
-    <groupId>org.itrys</groupId>
-    <artifactId>ruoyi-common-bom</artifactId>
-    <version>${revision}</version>
+    <groupId>org.itrys.boot</groupId>
+    <artifactId>ruoyi-boot-dependencies</artifactId>
     <packaging>pom</packaging>
 
     <description>
-        ruoyi-common-bom common依赖项
+        ruoyi-boot-dependencies starter依赖项
     </description>
-
-    <properties>
-        <revision>5.5.3</revision>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-build-dependencies</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!-- 核心模块 -->
             <dependency>
                 <groupId>org.itrys</groupId>
