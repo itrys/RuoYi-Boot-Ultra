@@ -19,7 +19,7 @@
 
         <dependency>
             <groupId>org.itrys.boot</groupId>
-            <artifactId>ruoyi-boot</artifactId>
+            <artifactId>ruoyi-boot-starter</artifactId>
         </dependency>
 
         <dependency>
@@ -48,7 +48,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 </project>
