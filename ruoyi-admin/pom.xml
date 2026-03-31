@@ -9,9 +9,9 @@
         <version>${revision}</version>
     </parent>
 
-    <packaging>jar</packaging>
-    <artifactId>ruoyi-admin</artifactId>
 
+    <artifactId>ruoyi-admin</artifactId>
+    <packaging>jar</packaging>
     <description>
         web服务入口
     </description>
