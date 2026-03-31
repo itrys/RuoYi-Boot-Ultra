@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>org.itrys.boot</groupId>
-            <artifactId>ruoyi-boot</artifactId>
+            <artifactId>ruoyi-boot-starter</artifactId>
         </dependency>
 
         <!-- RuoYi Common Redis-->
@@ -55,6 +55,11 @@
         <dependency>
             <groupId>com.github.ben-manes.caffeine</groupId>
             <artifactId>caffeine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
