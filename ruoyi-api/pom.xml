@@ -9,19 +9,12 @@
         <version>${revision}${changelist}</version>
     </parent>
 
-    <artifactId>ruoyi-modules</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>ruoyi-api</artifactId>
 
-    <description>
-        ruoyi-modules 业务模块
-    </description>
-
-    <modules>
-        <module>ruoyi-demo</module>
-        <module>ruoyi-gen</module>
-        <module>ruoyi-job</module>
-        <module>ruoyi-system</module>
-        <module>ruoyi-workflow</module>
-    </modules>
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 </project>

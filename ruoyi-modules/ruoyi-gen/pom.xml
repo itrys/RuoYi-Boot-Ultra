@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.itrys</groupId>
         <artifactId>ruoyi-modules</artifactId>
-        <version>${revision}</version>
+        <version>${revision}${changelist}</version>
     </parent>
 
     <artifactId>ruoyi-gen</artifactId>

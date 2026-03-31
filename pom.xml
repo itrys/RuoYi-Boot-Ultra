@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.itrys</groupId>
     <artifactId>ruoyi-boot-ultra</artifactId>
-    <version>${revision}</version>
+    <version>${revision}${changelist}</version>
 
     <name>RuoYi-Boot-Ultra</name>
     <url>https://github.com/itrys/RuoYi-Boot-Ultra</url>
@@ -14,6 +14,8 @@
     <properties>
         <revision>1.0.0</revision>
         <ruoyi-boot-ultra.version>${revision}</ruoyi-boot-ultra.version>
+        <!-- Maven CI-Friendly 版本机制要求，值示例：-SNAPSHOT -->
+        <changelist></changelist>
         <!-- 关键：明确记录派生来源 -->
         <upstream.ruoyi-vue-plus.version>5.5.3</upstream.ruoyi-vue-plus.version>
         <upstream.project.url>https://gitee.com/dromara/RuoYi-Vue-Plus</upstream.project.url>
@@ -95,6 +97,7 @@
         <module>ruoyi-extensions</module>
         <module>ruoyi-modules</module>
         <module>ruoyi-dependencies</module>
+        <module>ruoyi-api</module>
     </modules>
     <packaging>pom</packaging>
 
