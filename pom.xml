@@ -9,7 +9,7 @@
 
     <name>RuoYi-Boot-Ultra</name>
     <url>https://github.com/itrys/RuoYi-Boot-Ultra</url>
-    <description>RuoYi Boot Ultra</description>
+    <description>RuoYi-Boot-Ultra 通过 DHF 分层架构，解决 RuoYi-Vue-Plus 项目 技术债累积快、难以演进、多端复用难 的根本问题。</description>
 
     <properties>
         <revision>1.0.0</revision>
