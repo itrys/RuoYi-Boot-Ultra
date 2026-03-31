@@ -33,140 +33,145 @@
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.itrys.boot</groupId>
+                <artifactId>ruoyi-boot-starter</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 接口模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-doc</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- excel -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-excel</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 调度模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-job</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 日志记录 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-log</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 邮件服务 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-mail</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 数据库服务 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-mybatis</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- OSS -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-oss</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 缓存服务 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-redis</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- satoken -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-satoken</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 安全模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-security</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 短信模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-sms</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 授权认证 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-social</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- web服务 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-web</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 翻译模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-translation</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 脱敏模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-sensitive</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 序列化模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-json</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 数据库加解密模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-encrypt</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- 消息推送模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-push</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
             <!-- mqtt模块 -->
             <dependency>
                 <groupId>org.itrys.boot</groupId>
                 <artifactId>ruoyi-boot-starter-mqtt</artifactId>
-                <version>${revision}</version>
+                <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
 
         </dependencies>
