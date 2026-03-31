@@ -1,4 +1,4 @@
-package org.dromara.workflow.domain.bo;
+package org.itrys.workflow.domain.bo;
 
 import jakarta.validation.constraints.NotNull;
 import org.itrys.boot.validate.AddGroup;

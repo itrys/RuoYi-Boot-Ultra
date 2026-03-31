@@ -1,20 +1,19 @@
 package org.itrys.workflow.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.dromara.warm.flow.core.entity.Node;
+import org.dromara.warm.flow.orm.entity.FlowNode;
 import org.itrys.boot.domain.PageResult;
 import org.itrys.boot.domain.R;
 import org.itrys.boot.domain.dto.StartProcessReturnDTO;
 import org.itrys.boot.domain.dto.UserDTO;
-import org.itrys.boot.validate.AddGroup;
 import org.itrys.boot.log.annotation.Log;
 import org.itrys.boot.log.enums.BusinessType;
 import org.itrys.boot.mybatis.core.page.PageQuery;
 import org.itrys.boot.redis.annotation.RepeatSubmit;
+import org.itrys.boot.validate.AddGroup;
 import org.itrys.boot.web.core.BaseController;
-import org.dromara.warm.flow.core.entity.Node;
-import org.dromara.warm.flow.orm.entity.FlowNode;
 import org.itrys.workflow.common.ConditionalOnEnable;
-import org.dromara.workflow.domain.bo.*;
 import org.itrys.workflow.domain.bo.*;
 import org.itrys.workflow.domain.vo.FlowHisTaskVo;
 import org.itrys.workflow.domain.vo.FlowTaskVo;
@@ -160,7 +159,7 @@ public class FlwTaskController extends BaseController {
     @Log(title = "任务管理", businessType = BusinessType.INSERT)
     @RepeatSubmit()
     @PostMapping("/terminationTask")
-    public R<Boolean> terminationTask(@RequestBody FlowTerminationBo bo) {
+    public R<Boolean> terminationTask(@RequestBody org.itrys.workflow.domain.bo.FlowTerminationBo bo) {
         return R.ok(flwTaskService.terminationTask(bo));
     }
 
