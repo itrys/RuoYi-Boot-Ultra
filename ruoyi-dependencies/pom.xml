@@ -10,7 +10,9 @@
 
     <properties>
         <revision>1.0.0</revision>
-        <ruoyi-boot-ultra.version>${revision}</ruoyi-boot-ultra.version>
+        <!-- Maven CI-Friendly 版本机制要求，值示例：-SNAPSHOT -->
+        <changelist></changelist>
+        <ruoyi-boot-ultra.version>${revision}${changelist}</ruoyi-boot-ultra.version>
         <flatten-maven-plugin.version>1.7.3</flatten-maven-plugin.version>
         <maven-jar-plugin.version>3.5.0</maven-jar-plugin.version>
         <build-helper-maven-plugin.version>3.6.1</build-helper-maven-plugin.version>

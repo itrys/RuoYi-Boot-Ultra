@@ -13,7 +13,7 @@
 
     <properties>
         <revision>1.0.0</revision>
-        <ruoyi-boot-ultra.version>${revision}</ruoyi-boot-ultra.version>
+        <ruoyi-boot-ultra.version>${revision}${changelist}</ruoyi-boot-ultra.version>
         <!-- Maven CI-Friendly 版本机制要求，值示例：-SNAPSHOT -->
         <changelist></changelist>
         <!-- 关键：明确记录派生来源 -->
