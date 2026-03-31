@@ -4,184 +4,292 @@
 - - -
 ## 平台简介
 
-[![码云Gitee](https://gitee.com/dromara/RuoYi-Vue-Plus/badge/star.svg?theme=blue)](https://gitee.com/dromara/RuoYi-Vue-Plus)
-[![GitHub](https://img.shields.io/github/stars/dromara/RuoYi-Vue-Plus.svg?label=Github%20Stars)](https://github.com/dromara/RuoYi-Vue-Plus)
-[![Star](https://gitcode.com/dromara/RuoYi-Vue-Plus/star/badge.svg)](https://gitcode.com/dromara/RuoYi-Vue-Plus)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://gitee.com/dromara/RuoYi-Vue-Plus/blob/5.X/LICENSE)
+[![GitHub](https://img.shields.io/github/stars/itrys/RuoYi-Boot-Ultra.svg?label=Github%20Stars)](https://github.com/itrys/RuoYi-Boot-Ultra)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/itrys/RuoYi-Boot-Ultra/blob/main/LICENSE)
 <br>
-[![RuoYi-Vue-Plus](https://img.shields.io/badge/RuoYi_Vue_Plus-5.5.3-success.svg)](https://gitee.com/dromara/RuoYi-Vue-Plus)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-blue.svg)]()
-[![JDK-17](https://img.shields.io/badge/JDK-17-green.svg)]()
+[![RuoYi-Boot-Ultra](https://img.shields.io/badge/RuoYi_Boot_Ultra-1.0.0-success.svg)](https://github.com/itrys/RuoYi-Boot-Ultra)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.3-blue.svg)]()
 [![JDK-21](https://img.shields.io/badge/JDK-21-green.svg)]()
 
-> Dromara RuoYi-Vue-Plus 是重写 RuoYi-Vue 针对 `分布式集群与多租户` 场景全方位升级(不兼容原框架)
+> **RuoYi-Boot-Ultra** 是基于 RuoYi-Vue-Plus 5.5.3 版本重构的企业级后台管理系统，采用 DHF（Domain-Helper-Facade）架构，蜕变技术基座，同步更新代码，业务代码剥离，技术自主迭代，业务逻辑恒稳运行。
 
-> 项目代码、文档 均开源免费可商用 遵循开源协议在项目中保留开源协议文件即可<br>
-活到老写到老 为兴趣而开源 为学习而开源 为让大家真正可以学到技术而开源
+> 对标 Spring Boot 源码，规整模块与依赖，作为纯粹技术基座，与业务代码分离，实现如 Spring Boot 般的便捷使用体验。
 
-> 系统演示: [传送门](https://plus-doc.dromara.org/#/common/demo_system)
+> 项目代码、文档均开源免费可商用，遵循开源协议在项目中保留开源协议文件即可。
 
-> 官方前端项目地址: [gitee](https://gitee.com/JavaLionLi/plus-ui) - [github](https://github.com/JavaLionLi/plus-ui) - [gitcode](https://gitcode.com/dromara/plus-ui)<br>
-> 成员前端项目地址: 基于vben5 [ruoyi-plus-vben5](https://github.com/imdap/ruoyi-plus-vben5)<br>
-> 成员前端项目地址: 基于soybean [ruoyi-plus-soybean](https://gitee.com/xlsea/ruoyi-plus-soybean)<br>
-> 成员项目地址: 删除多租户与工作流 [RuoYi-Vue-Plus-Single](https://gitee.com/ColorDreams/RuoYi-Vue-Plus-Single)<br>
+---
 
-> 文档地址: [plus-doc](https://plus-doc.dromara.org) 国内加速: [plus-doc.top](https://plus-doc.top)
+## 🎯 重构愿景
 
-## 赞助商
+**RuoYi-Vue-Plus 重构聚焦提升维护性、扩展性与专业度，契合现代工程实践。**
 
-MaxKey 业界领先单点登录产品 - https://gitee.com/dromara/MaxKey <br>
-CCFlow 驰聘低代码-流程-表单 - https://gitee.com/opencc/RuoYi-JFlow <br>
-数舵科技 软件定制开发APP小程序等 - https://www.shuduokeji.com/ <br>
-引迈信息 软件开发平台 - https://www.jnpfsoft.com/index.html?from=plus-doc <br>
-Mall4J 高质量Java商城系统 - https://www.mall4j.com/cn/?statId=11 <br>
-aizuda flowlong 工作流 - https://gitee.com/aizuda/flowlong <br>
-Ruoyi-Plus-Uniapp - https://ruoyi.plus <br>
-Topiam IAM/IDaaS身份管理平台 - https://www.topiam.cn/ <br>
+- **蜕变技术基座**：同步更新代码，业务代码剥离，技术自主迭代，业务逻辑恒稳运行
+- **对标 Spring Boot 源码**：规整模块与依赖，作为纯粹技术基座，与业务代码分离
+- **便捷使用体验**：实现如 Spring Boot 般的便捷使用体验，简注解、轻配置
 
-[如何成为赞助商 加群联系作者详谈 每日PV2500-3000 IP1700-2500](https://plus-doc.dromara.org/#/common/add_group)
+---
 
-# 本框架与RuoYi的功能差异
+## ✨ 重构特性
 
-| 功能          | 本框架                                                                                                               | RuoYi                                                                              |
-|-------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 前端项目        | 采用 Vue3 + TS + ElementPlus 重写                                                                                     | 基于Vue2/Vue3 + JS                                                                   | 
-| 后端项目结构      | 采用插件化 + 扩展包形式 结构解耦 易于扩展                                                                                           | 模块相互注入耦合严重难以扩展                                                                     | 
-| 后端代码风格      | 参考 Alibaba 规范与项目统一配置的代码格式化                                                                                        | 代码书写与常规结构不同阅读障碍大                                                                   |
-| Web容器       | 采用 Jetty 基于 Netty 的高性能容器                                                                                          | 采用 Tomcat                                                                          |
-| 权限认证        | 采用 Sa-Token、Jwt 静态使用功能齐全 低耦合 高扩展                                                                                  | Spring Security 配置繁琐扩展性极差                                                          |
-| 权限注解        | 采用 Sa-Token 支持注解 登录校验、角色校验、权限校验、二级认证校验、HttpBasic校验、忽略校验<br/>角色与权限校验支持多种条件 如 `AND` `OR` 或 `权限 OR 角色` 等复杂表达式        | 只支持是否存在匹配                                                                          |
-| 三方鉴权        | 采用 JustAuth 第三方登录组件 支持微信、钉钉等数十种三方认证                                                                               | 无                                                                                  |
-| 关系数据库支持     | 原生支持 MySQL、Oracle、PostgreSQL、SQLServer<br/>可同时使用异构切换(支持其他 mybatis-plus 支持的所有数据库 只需要增加jdbc依赖即可使用 达梦金仓等均有成功案例)      | 支持 Mysql、Oracle 不支持同时使用、不支持异构切换                                                    |
-| 缓存数据库       | 支持 Redis >= 6 支持大部分新功能特性 如 分布式限流、分布式队列                                                                            | Redis 简单 get set 支持                                                                |
-| Redis客户端    | 采用 Redisson Redis官方推荐 基于Netty的客户端工具<br/>支持Redis 90%以上的命令 底层优化规避很多不正确的用法 例如: keys被转换为scan<br/>支持单机、哨兵、单主集群、多主集群等模式 | Lettuce + RedisTemplate 支持模式少 工具使用繁琐<br/>连接池采用 common-pool Bug多经常性出问题              |
-| 缓存注解        | 采用 Spring-Cache 注解 对其扩展了实现支持了更多功能<br/>例如 过期时间 最大空闲时间 组最大长度等 只需一个注解即可完成数据自动缓存                                      | 需手动编写Redis代码逻辑                                                                     |
-| ORM框架       | 采用 Mybatis-Plus 基于对象几乎不用写SQL全java操作 功能强大插件众多<br/>例如多租户插件 分页插件 乐观锁插件等等                                             | 采用 Mybatis 基于XML需要手写SQL                                                            |
-| SQL监控       | 采用 p6spy 可输出完整SQL与执行时间监控                                                                                          | log输出 需手动拼接sql与参数无法快速查看调试问题                                                        |
-| 数据分页        | 采用 Mybatis-Plus 分页插件<br/>框架对其进行了扩展 对象化分页对象 支持多种方式传参 支持前端多排序 复杂排序                                                  | 采用 PageHelper 仅支持单查询分页 参数只能从param传 只能单排序 功能扩展性差 体验不好                               |
-| 数据权限        | 采用 Mybatis-Plus 插件 自行分析拼接SQL 无感式过滤<br/>只需为Mapper设置好注解条件 支持多种自定义 不限于部门角色                                           | 采用 注解+aop 实现 基于部门角色 生成的sql兼容性差 不支持其他业务扩展<br/>生成sql后需手动拼接到具体业务sql上 对于多个Mapper查询不起作用 |
-| 数据脱敏        | 采用 注解 + jackson 序列化期间脱敏 支持不同模块不同的脱敏条件<br/>支持多种策略 如身份证、手机号、地址、邮箱、银行卡等 可自行扩展                                        | 无                                                                                  |
-| 数据加解密       | 采用 注解 + mybatis 拦截器 对存取数据期间自动加解密<br/>支持多种策略 如BASE64、AES、RSA、SM2、SM4等                                              | 无                                                                                  |
-| 接口传输加密      | 采用 动态 AES + RSA 加密请求 body 每一次请求秘钥都不同大幅度降低可破解性                                                                     | 无                                                                                  |
-| 数据翻译        | 采用 注解 + jackson 序列化期间动态修改数据 数据进行翻译<br/>支持多种模式: `映射翻译` `直接翻译` `其他扩展条件翻译` 接口化两步即可完成自定义扩展 内置多种翻译实现                   | 无                                                                                  |
-| 多数据源框架      | 采用 dynamic-datasource 支持市面大部分数据库<br/>通过yml配置即可动态管理异构不同种类的数据库 也可通过前端页面添加数据源<br/>支持spel表达式从请求头参数等条件切换数据源            | 基于 druid 手动编写代码配置数据源 配置繁琐 支持性差                                                     |
-| 多数据源事务      | 采用 dynamic-datasource 支持多数据源不同种类的数据库事务回滚                                                                          | 不支持                                                                                |
-| 数据库连接池      | 采用 HikariCP Spring官方内置连接池 配置简单 以性能与稳定性闻名天下                                                                        | 采用 druid bug众多 社区维护差 活跃度低 配置众多繁琐性能一般                                               |
-| 数据库主键       | 采用 雪花ID 基于时间戳的 有序增长 唯一ID 再也不用为分库分表 数据合并主键冲突重复而发愁                                                                  | 采用 数据库自增ID 支持数据量有限 不支持多数据源主键唯一                                                     |
-| WebSocket协议 | 基于 Spring 封装的 WebSocket 协议 扩展了Token鉴权与分布式会话同步 不再只是基于单机的废物                                                         | 无                                                                                  |
-| SSE推送       | 采用 Spring SSE 实现 扩展了Token鉴权与分布式会话同步                                                                               | 无                                                                                  |
-| 序列化         | 采用 Jackson Spring官方内置序列化 靠谱!!!                                                                                    | 采用 fastjson bugjson 远近闻名                                                           | 
-| 分布式幂等       | 参考美团GTIS防重系统简化实现(细节可看文档)                                                                                          | 手动编写注解基于aop实现                                                                      |
-| 分布式锁        | 采用 Lock4j 底层基于 Redisson                                                                                           | 无                                                                                  |
-| 分布式任务调度     | 采用 SnailJob 天生支持分布式 统一的管理中心 支持多种数据库 支持分片重试DAG任务流等                                                                 | 采用 Quartz 基于数据库锁性能差 集群需要做很多配置与改造                                                   | 
-| 文件存储        | 采用 Minio、RustFS 分布式文件存储 天生支持多机、多硬盘、多分片、多副本存储<br/>支持权限管理 安全可靠 文件可加密存储                                              | 采用 本机文件存储 文件裸漏 易丢失泄漏 不支持集群有单点效应                                                    |
-| 云存储         | 采用 AWS S3 协议客户端 支持 七牛、阿里、腾讯 等一切支持S3协议的厂家                                                                          | 不支持                                                                                |
-| 短信          | 采用 sms4j 短信融合包 支持数十种短信厂家 只需在yml配置好厂家密钥即可使用 可多厂家共用                                                                 | 不支持                                                                                |
-| 邮件          | 采用 mail-api 通用协议支持大部分邮件厂商                                                                                         | 不支持                                                                                |
-| 接口文档        | 采用 SpringDoc、javadoc 无注解零入侵基于java注释<br/>只需把注释写好 无需再写一大堆的文档注解了                                                     | 采用 Springfox 已停止维护 需要编写大量的注解来支持文档生成                                                | 
-| 校验框架        | 采用 Validation 支持注解与工具类校验 注解支持国际化                                                                                  | 仅支持注解 且注解不支持国际化                                                                    |
-| Excel框架     | 采用 Apache Fesod(原Alibaba EasyExcel) 基于插件化<br/>框架对其增加了很多功能 例如 自动合并相同内容 自动排列布局 字典翻译等                                | 基于 POI 手写实现 功能有限 复杂 扩展性差                                                           |
-| 工作流支持       | 采用 WarmFlow 支持各种复杂审批 转办 委派 加减签 会签 或签 票签 等功能                                                                       | 无                                                                                  |
-| 工具类框架       | 采用 Hutool、Lombok 上百种工具覆盖90%的使用需求 基于注解自动生成 get set 等简化框架大量代码                                                       | 手写工具稳定性差易出问题 工具数量有限 代码臃肿需自己手写 get set 等                                            | 
-| 监控框架        | 采用 SpringBoot-Admin 基于SpringBoot官方 actuator 探针机制<br/>实时监控服务状态 框架还为其扩展了在线日志查看监控                                    | 无                                                                                  | 
-| 链路追踪        | 采用 Apache SkyWalking 还在为请求不知道去哪了 到哪出了问题而烦恼吗<br/>用了它即可实时查看请求经过的每一处每一个节点                                            | 无                                                                                  |
-| 代码生成器       | 只需设计好表结构 一键生成所有crud代码与页面<br/>降低80%的开发量 把精力都投入到业务设计上<br/>框架为其适配MP、SpringDoc规范化代码 同时支持动态多数据源代码生成                    | 代码生成原生结构 只支持单数据源生成                                                                 |
-| 部署方式        | 支持 Docker 编排 一键搭建所有环境 让开发人员从此不再为搭建环境而烦恼                                                                           | 原生jar部署 其他环境需手动下载安装 自行搭建                                                           | 
-| 项目路径修改      | 提供详细的修改方案文档 并为其做了一些改动 非常简单即可修改成自己想要的                                                                              | 需要做很多改造 文档说明有限                                                                     |
-| 国际化         | 基于请求头动态返回不同语种的文本内容 开发难度低 有对应的工具类 支持大部分注解内容国际化                                                                     | 只提供基础功能 其他需自行编写扩展                                                                  |
-| 代码单例测试      | 提供单例测试 使用方式编写方法与maven多环境单测插件                                                                                      | 只提供基础功能 其他需自行编写扩展                                                                  |
-| Demo案例      | 提供框架功能的实际使用案例 单独一个模块提供了很多很全                                                                                       | 无                                                                                  |
+| 特性 | 说明 |
+|------|------|
+| 🧱 **模块细分** | RuoYi-Vue-Plus 核心功能重塑为独立模块，各司其职，确保高内聚低耦合 |
+| ♿️ **依赖精炼** | Maven 细控模块间依赖，剔除冗余，加速构建，稳固项目根基 |
+| 🍃 **边界明晰** | 技术基座与业务代码泾渭分明，前者专注基础设施与服务，后者专攻逻辑实现 |
+| 🚀 **升级无痕** | 技术基座平滑迭代，业务逻辑运行如常，规避升级之扰 |
+| ♻️ **功能共享** | 承袭 RuoYi-Vue-Plus 后端精华，组件化封装，按需启用，灵活适配 |
+| 🏗️ **前端无缝** | 直连 RuoYi-Vue-Plus 前端，无需额外配置，体验一贯 |
+| 🎡 **独立开发** | 业务代码独立测试，技术栈变动无虞，保障业务连续性 |
+| 🦺 **集成简化** | 业务变动仅需局部调整，集成测试与持续交付提速增效 |
 
+---
 
-## 本框架与RuoYi的业务差异
+## 🙋 适用群体
 
-| 业务     | 功能说明                                                                 | 本框架 | RuoYi            |
-|--------|----------------------------------------------------------------------|-----|------------------|
-| 客户端管理  | 系统内对接的所有客户端管理 如: pc端、小程序端等<br>支持动态授权登录方式 如: 短信登录、密码登录等 支持动态控制token时效 | 支持  | 无                |
-| 用户管理   | 用户的管理配置 如:新增用户、分配用户所属部门、角色、岗位等                                       | 支持  | 支持               |
-| 部门管理   | 配置系统组织机构（公司、部门、小组） 树结构展现支持数据权限                                       | 支持  | 支持               |
-| 岗位管理   | 配置系统用户所属担任职务                                                         | 支持  | 支持               |
-| 菜单管理   | 配置系统菜单、操作权限、按钮权限标识等                                                  | 支持  | 支持               |
-| 角色管理   | 角色菜单权限分配、设置角色按机构进行数据范围权限划分                                           | 支持  | 支持               |
-| 字典管理   | 对系统中经常使用的一些较为固定的数据进行维护                                               | 支持  | 支持               |
-| 参数管理   | 对系统动态配置常用参数                                                          | 支持  | 支持               |
-| 通知公告   | 系统通知公告信息发布维护                                                         | 支持  | 支持               |
-| 操作日志   | 系统正常操作日志记录和查询 系统异常信息日志记录和查询                                          | 支持  | 支持               |
-| 登录日志   | 系统登录日志记录查询包含登录异常                                                     | 支持  | 支持               |
-| 文件管理   | 系统文件展示、上传、下载、删除等管理                                                   | 支持  | 无                |
-| 文件配置管理 | 系统文件上传、下载所需要的配置信息动态添加、修改、删除等管理                                       | 支持  | 无                |
-| 在线用户管理 | 已登录系统的在线用户信息监控与强制踢出操作                                                | 支持  | 支持               |
-| 定时任务   | 运行报表、任务管理(添加、修改、删除)、日志管理、执行器管理等                                      | 支持  | 仅支持任务与日志管理       |
-| 代码生成   | 多数据源前后端代码的生成（java、html、xml、sql）支持CRUD下载                              | 支持  | 仅支持单数据源          |
-| 系统接口   | 根据业务代码自动生成相关的api接口文档                                                 | 支持  | 支持               |
-| 服务监控   | 监视集群系统CPU、内存、磁盘、堆栈、在线日志、Spring相关配置等                                  | 支持  | 仅支持单机CPU、内存、磁盘监控 |
-| 缓存监控   | 对系统的缓存信息查询，命令统计等。                                                    | 支持  | 支持               |
-| 使用案例   | 系统的一些功能案例                                                            | 支持  | 不支持              |
+| 群体 | 说明 |
+|------|------|
+| 👽 **快速启动派** | RuoYi-Boot-Ultra 打造即拿即用的开发环境，简注解、轻配置，速构应用骨架，直击业务逻辑开发 |
+| 🙈 **非侵入式用户** | 无需触碰 RuoYi-Vue-Plus 源码，RuoYi-Boot-Ultra 配置先行，功能定制无忧，专注业务不改码 |
+| 🧐 **轻配置高手** | 微调配置项，驾驭大部分开发场景，免底层代码深潜，业务创新焦点不偏移 |
 
-## 参考文档
+---
 
-使用框架前请仔细阅读文档重点注意事项
-<br>
->[初始化项目 必看](https://plus-doc.dromara.org/#/ruoyi-vue-plus/quickstart/init)
->>[https://plus-doc.dromara.org/#/ruoyi-vue-plus/quickstart/init](https://plus-doc.dromara.org/#/ruoyi-vue-plus/quickstart/init)
->
->[专栏与视频 入门必看](https://plus-doc.dromara.org/#/common/column)
->>[https://plus-doc.dromara.org/#/common/column](https://plus-doc.dromara.org/#/common/column)
->
->[部署项目 必看](https://plus-doc.dromara.org/#/ruoyi-vue-plus/quickstart/deploy)
->>[https://plus-doc.dromara.org/#/ruoyi-vue-plus/quickstart/deploy](https://plus-doc.dromara.org/#/ruoyi-vue-plus/quickstart/deploy)
->
->[如何加群](https://plus-doc.dromara.org/#/common/add_group)
->>[https://plus-doc.dromara.org/#/common/add_group](https://plus-doc.dromara.org/#/common/add_group)
->
->[参考文档 Wiki](https://plus-doc.dromara.org)
->>[https://plus-doc.dromara.org](https://plus-doc.dromara.org)
+## 🏗️ 架构理念
 
-## 软件架构图
+### DHF（Domain-Helper-Facade）架构
 
-![Plus部署架构图](https://foruda.gitee.com/images/1678981882624240692/ae2a3f3e_1766278.png "Plus部署架构图.png")
+DHF 是一套面向现代 Java 项目的架构治理方案，通过三个正交维度组织系统：
 
-## 如何参与贡献
+| 维度 | 职责 | 关键原则 |
+|------|------|----------|
+| **Domain（业务域）** | 封装核心业务能力 | 以业务为第一拆分单元（如订单、用户） |
+| **Helper（能力助手）** | 封装通用技术能力 | 以 Spring Boot Starter 形式提供（如 Redis、幂等） |
+| **Facade（协议门面）** | 处理客户端协议适配 | Controller 仅做 DTO 转换，无业务逻辑 |
 
-[参与贡献的方式 https://plus-doc.dromara.org/#/common/contribution](https://plus-doc.dromara.org/#/common/contribution)
+### 核心优势
 
-## 捐献作者
-作者为兼职做开源,平时还需要工作,如果帮到了您可以请作者吃个盒饭  
-<img src="https://foruda.gitee.com/images/1678975784848381069/d8661ed9_1766278.png" width="300px" height="450px" />
-<img src="https://foruda.gitee.com/images/1678975801230205215/6f96229d_1766278.png" width="300px" height="450px" />
+- **逻辑隔离**：业务逻辑与技术实现分离，模块边界清晰
+- **契约协作**：标准化的接口设计，提升团队协作效率
+- **平滑演进**：模块化设计便于未来向微服务架构演进
+- **规范即代码**：自动化的架构检查，确保规范执行
 
-## 演示图例
+---
 
-|                                                                                            |                                                                                            |
-|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| ![输入图片说明](https://foruda.gitee.com/images/1680077524361362822/270bb429_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680077619939771291/989bf9b6_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680077681751513929/1c27c5bd_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680077721559267315/74d63e23_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680077765638904515/1b75d4a6_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078026375951297/eded7a4b_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078237104531207/0eb1b6a7_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078254306078709/5931e22f_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078287971528493/0b9af60a_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078308138770249/8d3b6696_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078352553634393/db5ef880_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078378238393374/601e4357_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078414983206024/2aae27c1_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078446738419874/ecce7d59_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078475971341775/149e8634_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078491666717143/3fadece7_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078558863188826/fb8ced2a_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078574561685461/ae68a0b2_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078594932772013/9d8bfec6_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078626493093532/fcfe4ff6_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078643608812515/0295bd4f_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078685196286463/d7612c81_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078703877318597/56fce0bc_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078716586545643/b6dbd68f_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078734103217688/eb1e6aa6_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078759131415480/73c525d8_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078779416197879/75e3ed02_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078802329118061/77e10915_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078893627848351/34a1c342_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078928175016986/f126ec4a_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680078941718318363/b68a0f72_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680078963175518631/3bb769a1_1766278.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1735829153637063344/3c21fd4c_1419627.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1735829181303499815/4522cefa_1419627.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1735829377205259767/76a705d7_1419627.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1722959592856812900/e2d0d342_1419627.png "屏幕截图") |
-| ![输入图片说明](https://foruda.gitee.com/images/1680079274333484664/4dfdc7c0_1766278.png "屏幕截图") | ![输入图片说明](https://foruda.gitee.com/images/1680079290467458224/d6715fcf_1766278.png "屏幕截图") |
+## 📁 项目结构
 
+```
+RuoYi-Boot-Ultra/
+├── ruoyi-dependencies/        # 依赖管理
+├── ruoyi-boot/                # 核心助手层
+│   ├── config/                # 配置类
+│   ├── constant/              # 常量定义
+│   ├── domain/                # 领域模型
+│   ├── enums/                 # 枚举类
+│   ├── exception/             # 异常体系
+│   ├── service/               # 服务接口
+│   └── utils/                 # 工具类
+├── ruoyi-boot-starters/       # 能力助手（Starter形式）
+│   ├── ruoyi-boot-starter-doc/       # 文档插件
+│   ├── ruoyi-boot-starter-security/  # 安全插件
+│   └── ... 其他插件
+├── ruoyi-extensions/          # 扩展模块
+├── ruoyi-modules/             # 业务域
+│   ├── ruoyi-system/          # 系统管理
+│   ├── ruoyi-gen/             # 代码生成
+│   ├── ruoyi-job/             # 定时任务
+│   └── ruoyi-demo/            # 演示模块
+├── ruoyi-admin/               # 协议门面
+└── pom.xml                    # 项目构建
+```
 
+---
 
+## 🛠️ 技术栈
 
+### 核心框架
+- **Spring Boot 4.0.3** - 基础框架
+- **MyBatis-Plus 3.5.16** - ORM框架
+- **Sa-Token 1.45.0** - 权限认证框架
+- **Redisson 4.3.0** - Redis客户端
 
+### 数据库支持
+- MySQL、Oracle、PostgreSQL、SQLServer
+- 多数据源支持
+- 雪花ID主键策略
 
+### 工具库
+- **Hutool 5.8.43** - Java工具库
+- **Mapstruct-Plus 1.5.0** - 对象映射
+- **Lombok 1.18.42** - 代码简化
 
+### 其他组件
+- **SpringDoc 3.0.2** - API文档
+- **Fesod 2.0.1** - Excel处理
+- **SnailJob 1.9.0** - 分布式任务调度
+- **WarmFlow 1.8.4** - 工作流引擎
+- **Lock4j 2.2.7** - 分布式锁
+- **SMS4J 3.3.5** - 短信服务
+- **JustAuth 1.16.7** - 第三方登录
 
+---
 
+## ⭐ 核心特性
 
+### 1. **多租户支持**
+- 完整的多租户架构设计
+- 租户隔离的数据权限控制
 
+### 2. **安全特性**
+- Sa-Token JWT认证
+- 数据加解密（AES、RSA、SM2、SM4）
+- 接口传输加密
+- XSS防护
+- 数据脱敏
 
+### 3. **分布式能力**
+- Redis分布式缓存
+- Redisson分布式锁
+- 分布式限流
+- 分布式任务调度
+
+### 4. **代码生成器**
+- 一键生成CRUD代码
+- 支持多数据源
+- 生成Vue3前端代码
+
+### 5. **工作流**
+- 基于WarmFlow
+- 支持审批、转办、委派、会签等
+
+### 6. **DHF架构优势**
+- **架构清晰**：三层划分，职责明确
+- **可维护性强**：模块化设计，易于扩展
+- **演进顺畅**：便于未来拆分为微服务
+- **开发效率高**：标准化的项目结构
+
+---
+
+## 📦 功能模块
+
+| 模块 | 功能说明 |
+|------|----------|
+| **客户端管理** | 系统内对接的所有客户端管理，支持动态授权登录方式 |
+| **用户管理** | 用户的管理配置，如新增用户、分配用户所属部门、角色、岗位等 |
+| **部门管理** | 配置系统组织机构（公司、部门、小组），树结构展现支持数据权限 |
+| **岗位管理** | 配置系统用户所属担任职务 |
+| **菜单管理** | 配置系统菜单、操作权限、按钮权限标识等 |
+| **角色管理** | 角色菜单权限分配、设置角色按机构进行数据范围权限划分 |
+| **字典管理** | 对系统中经常使用的一些较为固定的数据进行维护 |
+| **参数管理** | 对系统动态配置常用参数 |
+| **通知公告** | 系统通知公告信息发布维护 |
+| **操作日志** | 系统正常操作日志记录和查询，系统异常信息日志记录和查询 |
+| **登录日志** | 系统登录日志记录查询包含登录异常 |
+| **文件管理** | 系统文件展示、上传、下载、删除等管理 |
+| **文件配置管理** | 系统文件上传、下载所需要的配置信息动态添加、修改、删除等管理 |
+| **在线用户管理** | 已登录系统的在线用户信息监控与强制踢出操作 |
+| **定时任务** | 运行报表、任务管理(添加、修改、删除)、日志管理、执行器管理等 |
+| **代码生成** | 多数据源前后端代码的生成（java、html、xml、sql）支持CRUD下载 |
+| **系统接口** | 根据业务代码自动生成相关的api接口文档 |
+| **服务监控** | 监视集群系统CPU、内存、磁盘、堆栈、在线日志、Spring相关配置等 |
+| **缓存监控** | 对系统的缓存信息查询，命令统计等 |
+| **使用案例** | 系统的一些功能案例 |
+
+---
+
+## 🚀 快速开始
+
+### 环境要求
+- JDK 21+
+- Maven 3.9+
+- MySQL 8.0+
+- Redis 6.0+
+
+### 初始化步骤
+1. **克隆项目**
+   ```bash
+   git clone https://github.com/itrys/RuoYi-Boot-Ultra.git
+   ```
+
+2. **配置数据库**
+   - 创建数据库 `ry-boot-ultra`
+   - 执行 `sql` 目录下的初始化脚本
+
+3. **配置Redis**
+   - 确保Redis服务运行在 `localhost:6379`
+
+4. **编译项目**
+   ```bash
+   mvn clean install -DskipTests
+   ```
+
+5. **运行项目**
+   ```bash
+   cd ruoyi-admin
+   mvn spring-boot:run
+   ```
+
+6. **访问系统**
+   - 地址：`http://localhost:8080`
+   - 用户名：`admin`
+   - 密码：`123456`
+
+---
+
+## 📤 部署说明
+
+### 打包部署
+1. **构建项目**
+   ```bash
+   mvn clean package -DskipTests
+   ```
+
+2. **部署jar包**
+   ```bash
+   java -jar ruoyi-admin/target/ruoyi-admin.jar
+   ```
+
+### Docker部署
+1. **构建镜像**
+   ```bash
+   docker build -t ruoyi-boot-ultra:1.0.0 .
+   ```
+
+2. **运行容器**
+   ```bash
+   docker run -d -p 8080:8080 --name ruoyi-boot-ultra ruoyi-boot-ultra:1.0.0
+   ```
+
+---
+
+## 🤝 贡献指南
+
+1. **Fork 项目**
+2. **创建分支**
+3. **提交代码**
+4. **发起 Pull Request**
+
+---
+
+## 📚 参考文档
+
+- [DHF架构规范](https://github.com/itrys/RuoYi-Boot-Ultra/wiki/DHF-Architecture)
+- [Spring Boot官方文档](https://spring.io/projects/spring-boot)
+- [MyBatis-Plus文档](https://baomidou.com/)
+- [Sa-Token文档](http://sa-token.dev33.cn/)
+
+---
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+
+---
+
+## 🙏 致谢
+
+- 感谢 [RuoYi-Vue-Plus](https://gitee.com/dromara/RuoYi-Vue-Plus) 提供的基础架构
+- 感谢所有为项目做出贡献的开发者
+
+---
+
+**RuoYi-Boot-Ultra** - 基于 DHF 架构的企业级后台管理系统，为您的业务发展提供坚实的技术支撑！
