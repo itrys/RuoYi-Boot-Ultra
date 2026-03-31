@@ -5,13 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.itrys</groupId>
-        <artifactId>ruoyi-api</artifactId>
+        <artifactId>ruoyi-admin-api</artifactId>
         <version>${revision}${changelist}</version>
     </parent>
 
-    <artifactId>ruoyi-public-api</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>ruoyi-public-api-captcha</module>
-    </modules>
+    <artifactId>ruoyi-admin-api-auth</artifactId>
+    <packaging>jar</packaging>
+
 </project>
