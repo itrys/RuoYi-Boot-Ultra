@@ -1,9 +1,9 @@
 package org.itrys.boot.oss.config;
 
 import lombok.Builder;
-import org.itrys.boot.oss.config.Config;
 
 import java.io.Serial;
+import java.io.Serializable;
 
 /**
  * S3 异步执行器配置
