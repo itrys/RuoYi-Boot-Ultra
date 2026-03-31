@@ -21,7 +21,11 @@
             <groupId>org.itrys.boot</groupId>
             <artifactId>ruoyi-boot-starter-json</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 </project>
