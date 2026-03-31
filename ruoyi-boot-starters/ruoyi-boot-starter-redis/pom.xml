@@ -19,7 +19,7 @@
         <!-- RuoYi Common Core-->
         <dependency>
             <groupId>org.itrys.boot</groupId>
-            <artifactId>ruoyi-boot</artifactId>
+            <artifactId>ruoyi-boot-starter</artifactId>
         </dependency>
 
         <dependency>
@@ -55,6 +55,11 @@
 
         <dependency>
             <groupId>cn.hutool</groupId>
+            <artifactId>hutool-http</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
             <artifactId>hutool-crypto</artifactId>
         </dependency>
 
@@ -69,7 +74,16 @@
             <artifactId>fory-core</artifactId>
             <version>0.13.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- servlet 包 -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
