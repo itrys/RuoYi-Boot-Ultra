@@ -1,4 +1,4 @@
-# RuoYi-Boot-Plus：重构典范，打造技术基座
+# RuoYi-Boot-Plus：重构典范，打造技术与业务基座
 <div style="height: 10px; clear: both;"></div>
 
 - - -
