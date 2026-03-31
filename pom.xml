@@ -98,6 +98,7 @@
         <module>ruoyi-modules</module>
         <module>ruoyi-dependencies</module>
         <module>ruoyi-api</module>
+        <module>ruoyi-data-api</module>
     </modules>
     <packaging>pom</packaging>
 
