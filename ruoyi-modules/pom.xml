@@ -22,6 +22,7 @@
         <module>ruoyi-job</module>
         <module>ruoyi-system</module>
         <module>ruoyi-workflow</module>
+        <module>ruoyi-auth</module>
     </modules>
 
 </project>

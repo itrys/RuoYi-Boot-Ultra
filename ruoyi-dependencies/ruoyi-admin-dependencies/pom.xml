@@ -46,6 +46,11 @@
                 <artifactId>ruoyi-workflow</artifactId>
                 <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-auth</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
