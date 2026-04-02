@@ -69,5 +69,14 @@
             <groupId>org.itrys.boot</groupId>
             <artifactId>ruoyi-boot-starter-push</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-social</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.itrys</groupId>
+            <artifactId>ruoyi-system</artifactId>
+        </dependency>
+
     </dependencies>
 </project>

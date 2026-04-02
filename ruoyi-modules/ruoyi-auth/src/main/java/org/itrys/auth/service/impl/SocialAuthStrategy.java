@@ -1,4 +1,4 @@
-package org.itrys.web.service.impl;
+package org.itrys.auth.service.impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.stp.parameter.SaLoginParameter;
@@ -8,24 +8,24 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import me.zhyd.oauth.model.AuthResponse;
 import me.zhyd.oauth.model.AuthUser;
+import org.itrys.auth.domain.vo.LoginVo;
+import org.itrys.auth.service.IAuthStrategy;
+import org.itrys.auth.service.ISysLoginService;
 import org.itrys.boot.constant.SystemConstants;
 import org.itrys.boot.domain.model.LoginUser;
 import org.itrys.boot.domain.model.SocialLoginBody;
 import org.itrys.boot.exception.ServiceException;
 import org.itrys.boot.exception.user.UserException;
-import org.itrys.boot.utils.ValidatorUtils;
 import org.itrys.boot.json.utils.JsonUtils;
 import org.itrys.boot.satoken.utils.LoginHelper;
 import org.itrys.boot.social.config.properties.SocialProperties;
 import org.itrys.boot.social.utils.SocialUtils;
+import org.itrys.boot.utils.ValidatorUtils;
 import org.itrys.system.domain.vo.SysClientVo;
 import org.itrys.system.domain.vo.SysSocialVo;
 import org.itrys.system.domain.vo.SysUserVo;
 import org.itrys.system.mapper.SysUserMapper;
 import org.itrys.system.service.ISysSocialService;
-import org.itrys.web.domain.vo.LoginVo;
-import org.itrys.web.service.IAuthStrategy;
-import org.itrys.web.service.SysLoginService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -43,7 +43,7 @@ public class SocialAuthStrategy implements IAuthStrategy {
     private final SocialProperties socialProperties;
     private final ISysSocialService sysSocialService;
     private final SysUserMapper userMapper;
-    private final SysLoginService loginService;
+    private final ISysLoginService loginService;
 
     /**
      * 执行第三方授权登录，并校验授权账号与系统账号的绑定关系。

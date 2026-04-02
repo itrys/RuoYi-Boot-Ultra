@@ -82,7 +82,18 @@
             <groupId>org.itrys</groupId>
             <artifactId>ruoyi-demo</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.itrys</groupId>
+            <artifactId>ruoyi-auth</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.itrys</groupId>
+            <artifactId>ruoyi-admin-api-auth</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.itrys</groupId>
+            <artifactId>ruoyi-admin-api-system</artifactId>
+        </dependency>
         <!--  工作流模块  -->
         <dependency>
             <groupId>org.itrys</groupId>

@@ -1,4 +1,4 @@
-package org.itrys.web.domain.vo;
+package org.itrys.auth.domain.vo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

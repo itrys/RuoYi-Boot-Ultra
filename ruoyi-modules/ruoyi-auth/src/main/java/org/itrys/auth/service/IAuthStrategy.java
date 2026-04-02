@@ -1,10 +1,10 @@
-package org.itrys.web.service;
+package org.itrys.auth.service;
 
 
 import org.itrys.boot.exception.ServiceException;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.system.domain.vo.SysClientVo;
-import org.itrys.web.domain.vo.LoginVo;
+import org.itrys.auth.domain.vo.LoginVo;
 
 /**
  * 授权策略

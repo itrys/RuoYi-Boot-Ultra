@@ -1,8 +1,9 @@
-package org.itrys.web.service;
+package org.itrys.auth.service.impl;
 
 import cn.hutool.crypto.digest.BCrypt;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import lombok.RequiredArgsConstructor;
+import org.itrys.auth.service.ISysRegisterService;
 import org.itrys.boot.constant.Constants;
 import org.itrys.boot.constant.GlobalConstants;
 import org.itrys.boot.domain.model.RegisterBody;
@@ -30,7 +31,7 @@ import org.springframework.stereotype.Service;
  */
 @RequiredArgsConstructor
 @Service
-public class SysRegisterService {
+public class SysRegisterService implements ISysRegisterService {
 
     private final ISysUserService userService;
     private final SysUserMapper userMapper;

@@ -1,4 +1,4 @@
-package org.itrys.web.service.impl;
+package org.itrys.auth.service.impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.stp.parameter.SaLoginParameter;
@@ -6,6 +6,9 @@ import cn.hutool.core.util.ObjectUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.itrys.auth.domain.vo.LoginVo;
+import org.itrys.auth.service.IAuthStrategy;
+import org.itrys.auth.service.ISysLoginService;
 import org.itrys.boot.constant.Constants;
 import org.itrys.boot.constant.GlobalConstants;
 import org.itrys.boot.constant.SystemConstants;
@@ -14,19 +17,16 @@ import org.itrys.boot.domain.model.SmsLoginBody;
 import org.itrys.boot.enums.LoginType;
 import org.itrys.boot.exception.user.CaptchaExpireException;
 import org.itrys.boot.exception.user.UserException;
-import org.itrys.boot.utils.MessageUtils;
-import org.itrys.boot.utils.StringUtils;
-import org.itrys.boot.utils.ValidatorUtils;
 import org.itrys.boot.json.utils.JsonUtils;
 import org.itrys.boot.redis.utils.RedisUtils;
 import org.itrys.boot.satoken.utils.LoginHelper;
+import org.itrys.boot.utils.MessageUtils;
+import org.itrys.boot.utils.StringUtils;
+import org.itrys.boot.utils.ValidatorUtils;
 import org.itrys.system.domain.SysUser;
 import org.itrys.system.domain.vo.SysClientVo;
 import org.itrys.system.domain.vo.SysUserVo;
 import org.itrys.system.mapper.SysUserMapper;
-import org.itrys.web.domain.vo.LoginVo;
-import org.itrys.web.service.IAuthStrategy;
-import org.itrys.web.service.SysLoginService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -39,7 +39,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class SmsAuthStrategy implements IAuthStrategy {
 
-    private final SysLoginService loginService;
+    private final ISysLoginService loginService;
     private final SysUserMapper userMapper;
 
     /**

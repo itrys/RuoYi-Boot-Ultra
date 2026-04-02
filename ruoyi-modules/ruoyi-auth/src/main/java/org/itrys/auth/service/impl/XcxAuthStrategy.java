@@ -1,4 +1,4 @@
-package org.itrys.web.service.impl;
+package org.itrys.auth.service.impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.stp.parameter.SaLoginParameter;
@@ -12,18 +12,18 @@ import me.zhyd.oauth.model.AuthToken;
 import me.zhyd.oauth.model.AuthUser;
 import me.zhyd.oauth.request.AuthRequest;
 import me.zhyd.oauth.request.AuthWechatMiniProgramRequest;
+import org.itrys.auth.domain.vo.LoginVo;
+import org.itrys.auth.service.IAuthStrategy;
+import org.itrys.auth.service.ISysLoginService;
 import org.itrys.boot.constant.SystemConstants;
 import org.itrys.boot.domain.model.XcxLoginBody;
 import org.itrys.boot.domain.model.XcxLoginUser;
 import org.itrys.boot.exception.ServiceException;
-import org.itrys.boot.utils.ValidatorUtils;
 import org.itrys.boot.json.utils.JsonUtils;
 import org.itrys.boot.satoken.utils.LoginHelper;
+import org.itrys.boot.utils.ValidatorUtils;
 import org.itrys.system.domain.vo.SysClientVo;
 import org.itrys.system.domain.vo.SysUserVo;
-import org.itrys.web.domain.vo.LoginVo;
-import org.itrys.web.service.IAuthStrategy;
-import org.itrys.web.service.SysLoginService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -36,7 +36,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class XcxAuthStrategy implements IAuthStrategy {
 
-    private final SysLoginService loginService;
+    private final ISysLoginService loginService;
 
     /**
      * 执行微信小程序登录，并根据 openid 构建小程序用户登录态。

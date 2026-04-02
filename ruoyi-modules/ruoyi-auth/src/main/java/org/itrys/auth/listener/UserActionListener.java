@@ -1,4 +1,4 @@
-package org.itrys.web.listener;
+package org.itrys.auth.listener;
 
 import cn.dev33.satoken.listener.SaTokenListener;
 import cn.dev33.satoken.stp.parameter.SaLoginParameter;
@@ -6,17 +6,17 @@ import cn.hutool.http.useragent.UserAgent;
 import cn.hutool.http.useragent.UserAgentUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.itrys.auth.service.ISysLoginService;
 import org.itrys.boot.constant.CacheNames;
 import org.itrys.boot.constant.Constants;
 import org.itrys.boot.domain.dto.UserOnlineDTO;
+import org.itrys.boot.log.event.LoginInfoEvent;
+import org.itrys.boot.redis.utils.RedisUtils;
+import org.itrys.boot.satoken.utils.LoginHelper;
 import org.itrys.boot.utils.MessageUtils;
 import org.itrys.boot.utils.ServletUtils;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.utils.ip.AddressUtils;
-import org.itrys.boot.log.event.LoginInfoEvent;
-import org.itrys.boot.redis.utils.RedisUtils;
-import org.itrys.boot.satoken.utils.LoginHelper;
-import org.itrys.web.service.SysLoginService;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
@@ -31,7 +31,7 @@ import java.time.Duration;
 @Slf4j
 public class UserActionListener implements SaTokenListener {
 
-    private final SysLoginService loginService;
+    private final ISysLoginService loginService;
 
     /**
      * 登录成功后记录在线信息并写入登录日志。

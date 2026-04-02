@@ -1,4 +1,4 @@
-package org.itrys.web.controller;
+package org.itrys.captcha.controller;
 
 import cn.dev33.satoken.annotation.SaIgnore;
 import cn.hutool.captcha.generator.CodeGenerator;
