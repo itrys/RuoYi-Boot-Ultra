@@ -11,5 +11,30 @@
 
     <artifactId>ruoyi-public-api-captcha</artifactId>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-doc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-mail</artifactId>
+        </dependency>
+        <!-- 短信模块 -->
+        <dependency>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-sms</artifactId>
+        </dependency>
+        <!-- web服务 -->
+        <dependency>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-web</artifactId>
+        </dependency>
+        <!-- satoken -->
+        <dependency>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter-satoken</artifactId>
+        </dependency>
 
+    </dependencies>
 </project>
