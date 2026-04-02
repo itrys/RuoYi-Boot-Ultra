@@ -163,4 +163,8 @@ public class SysDictDataServiceImpl implements ISysDictDataService {
         return !exist;
     }
 
+    @Override
+    public SysDictDataVo selectDictDataByTypeDictValue(String dictType, String dictValue) {
+        return baseMapper.selectVoOne(Wrappers.lambdaQuery(SysDictData.class).eq(SysDictData::getDictType, dictType).eq(SysDictData::getDictValue, dictValue));
+    }
 }

@@ -11,5 +11,10 @@
 
     <artifactId>ruoyi-system-data-api</artifactId>
     <packaging>jar</packaging>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.itrys.boot</groupId>
+            <artifactId>ruoyi-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
 </project>

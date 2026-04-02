@@ -80,4 +80,11 @@ public interface ISysDictDataService {
      */
     boolean checkDictDataUnique(SysDictDataBo dict);
 
+    /**
+     * 根据字典类型字典值查询字典数据
+     * @param dictType 字典类型
+     * @param dictValue 字典值
+     * @return 字典数据集合信息
+     */
+    SysDictDataVo selectDictDataByTypeDictValue(String dictType,String dictValue);
 }
