@@ -4,10 +4,12 @@ import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.itrys.boot.utils.SpringUtils;
 import org.redisson.api.RBlockingQueue;
+import org.redisson.api.RDelayedQueue;
 import org.redisson.api.RPriorityBlockingQueue;
 import org.redisson.api.RedissonClient;
 
 import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 /**
@@ -31,6 +33,31 @@ public class QueueUtils {
      */
     public static RedissonClient getClient() {
         return CLIENT;
+    }
+
+    /**
+     * 添加延迟队列数据 默认毫秒
+     *
+     * @param queueName 队列名
+     * @param data      数据
+     * @param time      延迟时间
+     */
+    public static <T> void addDelayedQueueObject(String queueName, T data, long time) {
+        addDelayedQueueObject(queueName, data, time, TimeUnit.MILLISECONDS);
+    }
+
+    /**
+     * 添加延迟队列数据
+     *
+     * @param queueName 队列名
+     * @param data      数据
+     * @param time      延迟时间
+     * @param timeUnit  单位
+     */
+    public static <T> void addDelayedQueueObject(String queueName, T data, long time, TimeUnit timeUnit) {
+        RBlockingQueue<T> queue = CLIENT.getBlockingQueue(queueName);
+        RDelayedQueue<T> delayedQueue = CLIENT.getDelayedQueue(queue);
+        delayedQueue.offer(data, time, timeUnit);
     }
 
     /**
