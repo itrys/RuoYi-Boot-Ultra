@@ -51,6 +51,28 @@
                 <artifactId>ruoyi-auth</artifactId>
                 <version>${ruoyi-boot-ultra.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-admin-api-auth</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-admin-api-system</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-public-api-captcha</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.itrys</groupId>
+                <artifactId>ruoyi-system-data-api</artifactId>
+                <version>${ruoyi-boot-ultra.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

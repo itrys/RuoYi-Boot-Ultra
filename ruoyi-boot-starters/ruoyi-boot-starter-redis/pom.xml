@@ -74,11 +74,7 @@
             <artifactId>fory-core</artifactId>
             <version>0.13.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
+
         <!-- servlet 包 -->
         <dependency>
             <groupId>jakarta.servlet</groupId>

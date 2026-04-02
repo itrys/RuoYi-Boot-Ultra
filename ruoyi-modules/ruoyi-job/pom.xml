@@ -22,7 +22,11 @@
             <groupId>org.itrys.boot</groupId>
             <artifactId>ruoyi-boot-starter-json</artifactId>
         </dependency>
-
+        <!-- 添加 Web 支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.itrys.boot</groupId>
             <artifactId>ruoyi-boot-starter-job</artifactId>
