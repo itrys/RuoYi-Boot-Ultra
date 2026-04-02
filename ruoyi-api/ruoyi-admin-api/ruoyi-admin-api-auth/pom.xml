@@ -12,4 +12,12 @@
     <artifactId>ruoyi-admin-api-auth</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>org.itrys</groupId>
+            <artifactId>ruoyi-auth</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>
