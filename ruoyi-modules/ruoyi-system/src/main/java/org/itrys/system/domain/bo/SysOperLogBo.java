@@ -8,7 +8,7 @@ import org.itrys.system.domain.SysOperLog;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -70,9 +70,39 @@ public class SysOperLogBo implements Serializable {
     private String operName;
 
     /**
+     * 操作用户ID
+     */
+    private Long userId;
+
+    /**
+     * 操作部门ID
+     */
+    private Long deptId;
+
+    /**
      * 部门名称
      */
     private String deptName;
+
+    /**
+     * 客户端
+     */
+    private String clientKey;
+
+    /**
+     * 设备类型
+     */
+    private String deviceType;
+
+    /**
+     * 浏览器类型
+     */
+    private String browser;
+
+    /**
+     * 操作系统
+     */
+    private String os;
 
     /**
      * 请求URL
@@ -112,7 +142,7 @@ public class SysOperLogBo implements Serializable {
     /**
      * 操作时间
      */
-    private Date operTime;
+    private LocalDateTime operTime;
 
     /**
      * 消耗时间

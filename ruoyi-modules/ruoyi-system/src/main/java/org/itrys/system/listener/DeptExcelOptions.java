@@ -6,10 +6,9 @@ import org.itrys.boot.utils.TreeBuildUtils;
 import org.itrys.boot.excel.core.ExcelOptionsProvider;
 import org.itrys.system.domain.bo.SysDeptBo;
 import org.itrys.system.service.ISysDeptService;
-import org.springframework.stereotype.Component;
+import org.itrys.boot.utils.SpringUtils;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -18,10 +17,7 @@ import java.util.Set;
  * @author AprilWind
  */
 @RequiredArgsConstructor
-@Component
 public class DeptExcelOptions implements ExcelOptionsProvider {
-
-    private final ISysDeptService deptService;
 
     /**
      * 获取下拉选项数据
@@ -30,9 +26,9 @@ public class DeptExcelOptions implements ExcelOptionsProvider {
      */
     @Override
     public Set<String> getOptions() {
+        ISysDeptService deptService = SpringUtils.getBean(ISysDeptService.class);
         List<Tree<Long>> trees = deptService.selectDeptTreeList(new SysDeptBo());
-        Map<String, Tree<Long>> treeMap = TreeBuildUtils.buildTreeNodeMap(trees, "/", Tree::getName);
-        return treeMap.keySet();
+        return TreeBuildUtils.buildTreeNodeMap(trees, "/", Tree::getName).keySet();
     }
 
 }

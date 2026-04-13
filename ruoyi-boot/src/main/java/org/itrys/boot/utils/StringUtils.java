@@ -23,6 +23,8 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
     public static final String SLASH = "/";
 
+    private static final AntPathMatcher ANT_PATH_MATCHER = new AntPathMatcher();
+
     @Deprecated
     private StringUtils() {
     }
@@ -233,8 +235,7 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
      * @param url     需要匹配的url
      */
     public static boolean isMatch(String pattern, String url) {
-        AntPathMatcher matcher = new AntPathMatcher();
-        return matcher.match(pattern, url);
+        return ANT_PATH_MATCHER.match(pattern, url);
     }
 
     /**
@@ -545,6 +546,20 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
      */
     public static boolean containsAny(final CharSequence cs, final CharSequence... searchCharSequences) {
         return Strings.CS.containsAny(cs, searchCharSequences);
+    }
+
+    /**
+     * 将一个字符串替换为较大字符串内的另一个字符串，一次
+     */
+    public static String replaceOnce(final String text, final String searchString, final String replacement) {
+        return Strings.CS.replaceOnce(text, searchString, replacement);
+    }
+
+    /**
+     * 测试 CharSequence 是否以所提供的任何后缀结尾。
+     */
+    public static boolean endsWithAny(final CharSequence sequence, final CharSequence... searchStrings) {
+        return Strings.CS.endsWithAny(sequence, searchStrings);
     }
 
 }

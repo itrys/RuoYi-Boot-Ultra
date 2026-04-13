@@ -90,7 +90,7 @@ public class ExcelUtil {
             ServletOutputStream os = response.getOutputStream();
             exportExcel(list, sheetName, clazz, false, os, null);
         } catch (IOException e) {
-            throw new RuntimeException("导出Excel异常");
+            throw new RuntimeException("导出Excel异常", e);
         }
     }
 
@@ -109,7 +109,7 @@ public class ExcelUtil {
             ServletOutputStream os = response.getOutputStream();
             exportExcel(list, sheetName, clazz, false, os, options);
         } catch (IOException e) {
-            throw new RuntimeException("导出Excel异常");
+            throw new RuntimeException("导出Excel异常", e);
         }
     }
 
@@ -128,7 +128,7 @@ public class ExcelUtil {
             ServletOutputStream os = response.getOutputStream();
             exportExcel(list, sheetName, clazz, merge, os, null);
         } catch (IOException e) {
-            throw new RuntimeException("导出Excel异常");
+            throw new RuntimeException("导出Excel异常", e);
         }
     }
 
@@ -148,7 +148,7 @@ public class ExcelUtil {
             ServletOutputStream os = response.getOutputStream();
             exportExcel(list, sheetName, clazz, merge, os, options);
         } catch (IOException e) {
-            throw new RuntimeException("导出Excel异常");
+            throw new RuntimeException("导出Excel异常", e);
         }
     }
 
@@ -262,7 +262,7 @@ public class ExcelUtil {
             ServletOutputStream os = response.getOutputStream();
             exportTemplate(data, templatePath, os);
         } catch (IOException e) {
-            throw new RuntimeException("导出Excel异常");
+            throw new RuntimeException("导出Excel异常", e);
         }
     }
 
@@ -284,13 +284,16 @@ public class ExcelUtil {
             .registerConverter(new ExcelBigNumberConvert())
             .registerWriteHandler(new DataWriteHandler(data.getFirst().getClass()))
             .build();
-        WriteSheet writeSheet = FesodSheet.writerSheet().build();
-        FillConfig fillConfig = FillConfig.builder().forceNewRow(Boolean.TRUE).build();
-        // 单表多数据导出 模板格式为 {.属性}
-        for (T d : data) {
-            excelWriter.fill(d, fillConfig, writeSheet);
+        try {
+            WriteSheet writeSheet = FesodSheet.writerSheet().build();
+            FillConfig fillConfig = FillConfig.builder().forceNewRow(Boolean.TRUE).build();
+            // 单表多数据导出 模板格式为 {.属性}
+            for (T d : data) {
+                excelWriter.fill(d, fillConfig, writeSheet);
+            }
+        } finally {
+            excelWriter.finish();
         }
-        excelWriter.finish();
     }
 
     /**
@@ -312,7 +315,7 @@ public class ExcelUtil {
             ServletOutputStream os = response.getOutputStream();
             exportTemplateMultiList(data, templatePath, os);
         } catch (IOException e) {
-            throw new RuntimeException("导出Excel异常");
+            throw new RuntimeException("导出Excel异常", e);
         }
     }
 
@@ -335,7 +338,7 @@ public class ExcelUtil {
             ServletOutputStream os = response.getOutputStream();
             exportTemplateMultiSheet(data, templatePath, os);
         } catch (IOException e) {
-            throw new RuntimeException("导出Excel异常");
+            throw new RuntimeException("导出Excel异常", e);
         }
     }
 
@@ -356,18 +359,21 @@ public class ExcelUtil {
             // 大数值自动转换 防止失真
             .registerConverter(new ExcelBigNumberConvert())
             .build();
-        WriteSheet writeSheet = FesodSheet.writerSheet().build();
-        for (Map.Entry<String, Object> map : data.entrySet()) {
-            // 设置列表后续还有数据
-            FillConfig fillConfig = FillConfig.builder().forceNewRow(Boolean.TRUE).build();
-            if (map.getValue() instanceof Collection) {
-                // 多表导出必须使用 FillWrapper
-                excelWriter.fill(new FillWrapper(map.getKey(), (Collection<?>) map.getValue()), fillConfig, writeSheet);
-            } else {
-                excelWriter.fill(map.getValue(), fillConfig, writeSheet);
+        try {
+            WriteSheet writeSheet = FesodSheet.writerSheet().build();
+            for (Map.Entry<String, Object> map : data.entrySet()) {
+                // 设置列表后续还有数据
+                FillConfig fillConfig = FillConfig.builder().forceNewRow(Boolean.TRUE).build();
+                if (map.getValue() instanceof Collection) {
+                    // 多表导出必须使用 FillWrapper
+                    excelWriter.fill(new FillWrapper(map.getKey(), (Collection<?>) map.getValue()), fillConfig, writeSheet);
+                } else {
+                    excelWriter.fill(map.getValue(), fillConfig, writeSheet);
+                }
             }
+        } finally {
+            excelWriter.finish();
         }
-        excelWriter.finish();
     }
 
     /**
@@ -387,20 +393,23 @@ public class ExcelUtil {
             // 大数值自动转换 防止失真
             .registerConverter(new ExcelBigNumberConvert())
             .build();
-        for (int i = 0; i < data.size(); i++) {
-            WriteSheet writeSheet = FesodSheet.writerSheet(i).build();
-            for (Map.Entry<String, Object> map : data.get(i).entrySet()) {
-                // 设置列表后续还有数据
-                FillConfig fillConfig = FillConfig.builder().forceNewRow(Boolean.TRUE).build();
-                if (map.getValue() instanceof Collection) {
-                    // 多表导出必须使用 FillWrapper
-                    excelWriter.fill(new FillWrapper(map.getKey(), (Collection<?>) map.getValue()), fillConfig, writeSheet);
-                } else {
-                    excelWriter.fill(map.getValue(), writeSheet);
+        try {
+            for (int i = 0; i < data.size(); i++) {
+                WriteSheet writeSheet = FesodSheet.writerSheet(i).build();
+                for (Map.Entry<String, Object> map : data.get(i).entrySet()) {
+                    // 设置列表后续还有数据
+                    FillConfig fillConfig = FillConfig.builder().forceNewRow(Boolean.TRUE).build();
+                    if (map.getValue() instanceof Collection) {
+                        // 多表导出必须使用 FillWrapper
+                        excelWriter.fill(new FillWrapper(map.getKey(), (Collection<?>) map.getValue()), fillConfig, writeSheet);
+                    } else {
+                        excelWriter.fill(map.getValue(), writeSheet);
+                    }
                 }
             }
+        } finally {
+            excelWriter.finish();
         }
-        excelWriter.finish();
     }
 
     /**

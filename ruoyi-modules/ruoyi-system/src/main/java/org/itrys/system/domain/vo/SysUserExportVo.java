@@ -9,7 +9,7 @@ import org.itrys.system.listener.DeptExcelConverter;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * 用户对象导出VO
@@ -83,13 +83,7 @@ public class SysUserExportVo implements Serializable {
      * 最后登录时间
      */
     @ExcelProperty(value = "最后登录时间")
-    private Date loginDate;
-
-    /**
-     * 部门名称
-     */
-    @ExcelProperty(value = "部门名称")
-    private String deptName;
+    private LocalDateTime loginDate;
 
     /**
      * 负责人

@@ -11,7 +11,7 @@ import org.itrys.system.domain.SysRole;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * 角色信息视图对象 sys_role
@@ -86,7 +86,7 @@ public class SysRoleVo implements Serializable {
      * 创建时间
      */
     @ExcelProperty(value = "创建时间")
-    private Date createTime;
+    private LocalDateTime createTime;
 
     /**
      * 用户是否存在此角色标识 默认不存在
@@ -94,7 +94,7 @@ public class SysRoleVo implements Serializable {
     private boolean flag = false;
 
     public boolean isSuperAdmin() {
-        return SystemConstants.SUPER_ADMIN_ID.equals(this.roleId);
+        return SystemConstants.SUPER_ADMIN_ROLE_ID.equals(this.roleId);
     }
 
 }

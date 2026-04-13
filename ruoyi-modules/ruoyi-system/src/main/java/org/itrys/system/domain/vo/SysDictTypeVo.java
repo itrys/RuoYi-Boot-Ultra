@@ -8,7 +8,7 @@ import org.itrys.system.domain.SysDictType;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 
 /**
@@ -52,6 +52,6 @@ public class SysDictTypeVo implements Serializable {
      * 创建时间
      */
     @ExcelProperty(value = "创建时间")
-    private Date createTime;
+    private LocalDateTime createTime;
 
 }

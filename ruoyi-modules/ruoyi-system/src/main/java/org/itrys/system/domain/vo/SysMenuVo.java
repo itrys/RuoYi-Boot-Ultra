@@ -7,7 +7,7 @@ import org.itrys.system.domain.SysMenu;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -94,6 +94,16 @@ public class SysMenuVo implements Serializable {
     private String icon;
 
     /**
+     * 激活菜单路径
+     */
+    private String activeMenu;
+
+    /**
+     * 扩展字段
+     */
+    private String ext;
+
+    /**
      * 创建部门
      */
     private Long createDept;
@@ -106,7 +116,7 @@ public class SysMenuVo implements Serializable {
     /**
      * 创建时间
      */
-    private Date createTime;
+    private LocalDateTime createTime;
 
     /**
      * 子菜单

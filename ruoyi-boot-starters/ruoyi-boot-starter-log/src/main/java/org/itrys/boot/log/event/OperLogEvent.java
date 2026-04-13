@@ -4,7 +4,7 @@ import lombok.Data;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * 操作日志事件
@@ -59,9 +59,39 @@ public class OperLogEvent implements Serializable {
     private String operName;
 
     /**
+     * 操作用户ID
+     */
+    private Long userId;
+
+    /**
+     * 操作部门ID
+     */
+    private Long deptId;
+
+    /**
      * 部门名称
      */
     private String deptName;
+
+    /**
+     * 客户端
+     */
+    private String clientKey;
+
+    /**
+     * 设备类型
+     */
+    private String deviceType;
+
+    /**
+     * 浏览器类型
+     */
+    private String browser;
+
+    /**
+     * 操作系统
+     */
+    private String os;
 
     /**
      * 请求url
@@ -101,7 +131,7 @@ public class OperLogEvent implements Serializable {
     /**
      * 操作时间
      */
-    private Date operTime;
+    private LocalDateTime operTime;
 
     /**
      * 消耗时间

@@ -10,6 +10,7 @@ import org.itrys.boot.enums.PushTypeEnum;
 import org.itrys.boot.push.constant.MessageConstants;
 import org.itrys.boot.push.core.WebSocketSessionManager;
 import org.itrys.boot.push.dto.PushDTO;
+import org.itrys.boot.utils.StringUtils;
 import org.springframework.web.socket.BinaryMessage;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.PongMessage;
@@ -61,7 +62,7 @@ public class PlusWebSocketHandler extends AbstractWebSocketHandler {
             token,
             new ConcurrentWebSocketSessionDecorator(session, 10 * 1000, 64_000)
         );
-        log.info("[connect] sessionId: {}, userId:{}, token:{}", session.getId(), loginUser.getUserId(), token);
+        log.info("[connect] sessionId: {}, userId:{}, token:***{}", session.getId(), loginUser.getUserId(), StringUtils.right(token, 8));
     }
 
     /**
@@ -138,7 +139,7 @@ public class PlusWebSocketHandler extends AbstractWebSocketHandler {
 
         // 从会话管理器中移除连接
         webSocketSessionManager.disconnect(loginUser.getUserId(), token);
-        log.info("[disconnect] sessionId: {}, userId:{}, token:{}", session.getId(), loginUser.getUserId(), token);
+        log.info("[disconnect] sessionId: {}, userId:{}, token:***{}", session.getId(), loginUser.getUserId(), StringUtils.right(token, 8));
     }
 
     /**

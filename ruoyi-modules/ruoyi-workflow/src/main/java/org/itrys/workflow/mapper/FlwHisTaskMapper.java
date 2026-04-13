@@ -14,6 +14,7 @@ import org.dromara.warm.flow.orm.entity.FlowInstance;
 import org.itrys.workflow.domain.FlowInstanceBizExt;
 import org.itrys.workflow.domain.bo.FlowTaskBo;
 import org.itrys.workflow.domain.vo.FlowHisTaskVo;
+import org.itrys.workflow.common.enums.TaskStatusEnum;
 
 import java.util.List;
 import java.util.Map;
@@ -65,6 +66,7 @@ public interface FlwHisTaskMapper extends BaseMapperPlus<FlowHisTask, FlowHisTas
             .eq("b", FlowInstance::getDelFlag, NOT_DELETED)
             .eq("c", FlowDefinition::getDelFlag, NOT_DELETED)
             .in("a", FlowHisTask::getNodeType, List.of("1", "3", "4"))
+            .ne("a", FlowHisTask::getFlowStatus, TaskStatusEnum.COPY.getStatus())
             .like(StringUtils.isNotBlank(bo.getNodeName()), "a", FlowHisTask::getNodeName, bo.getNodeName())
             .like(StringUtils.isNotBlank(bo.getFlowName()), "c", FlowDefinition::getFlowName, bo.getFlowName())
             .like(StringUtils.isNotBlank(bo.getFlowCode()), "c", FlowDefinition::getFlowCode, bo.getFlowCode())

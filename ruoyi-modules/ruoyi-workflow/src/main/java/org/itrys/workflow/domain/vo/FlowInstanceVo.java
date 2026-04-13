@@ -5,7 +5,7 @@ import org.itrys.boot.translation.annotation.Translation;
 import org.itrys.boot.translation.constant.TransConstant;
 import org.itrys.workflow.common.constant.FlowConstant;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * 流程实例视图对象。
@@ -23,12 +23,12 @@ public class FlowInstanceVo {
     /**
      * 创建时间
      */
-    private Date createTime;
+    private LocalDateTime createTime;
 
     /**
      * 更新时间
      */
-    private Date updateTime;
+    private LocalDateTime updateTime;
 
     /**
      * 删除标记

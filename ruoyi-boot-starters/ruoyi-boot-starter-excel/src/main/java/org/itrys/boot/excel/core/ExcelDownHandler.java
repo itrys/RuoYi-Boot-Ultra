@@ -130,8 +130,9 @@ public class ExcelDownHandler implements SheetWriteHandler {
             }
             if (ObjectUtil.isNotEmpty(options)) {
                 // 仅当下拉可选项不为空时执行
-                if (options.size() > 20) {
-                    // 这里限制如果可选项大于20，则使用额外表形式
+                int totalCharacter = options.stream().mapToInt(String::length).sum() + options.size();
+                if (options.size() > 20 || totalCharacter > 255) {
+                    // 这里限制如果可选项大于20 或 总字符数超过255，则使用额外表形式
                     dropDownWithSheet(helper, workbook, sheet, index, options);
                 } else {
                     // 否则使用固定值形式
@@ -182,9 +183,10 @@ public class ExcelDownHandler implements SheetWriteHandler {
         Sheet linkedOptionsDataSheet = workbook.createSheet(WorkbookUtil.createSafeSheetName(linkedOptionsSheetName));
         // 将下拉表隐藏
         workbook.setSheetHidden(workbook.getSheetIndex(linkedOptionsDataSheet), true);
-        // 选项数据
+        // 选项数据（使用副本，避免修改调用方的原始数据）
         List<String> firstOptions = options.getOptions();
-        Map<String, List<String>> secoundOptionsMap = options.getNextOptions();
+        Map<String, List<String>> secoundOptionsMap = new HashMap<>();
+        options.getNextOptions().forEach((k, v) -> secoundOptionsMap.put(k, new ArrayList<>(v)));
 
         // 采用按行填充数据的方式，避免出现数据无法写入的问题
         // Attempting to write a row in the range that is already written to disk
@@ -378,7 +380,6 @@ public class ExcelDownHandler implements SheetWriteHandler {
             //选定提示
             dataValidation.createPromptBox("填写说明：", "填写内容只能为下拉中数据，其他数据将导致导入失败");
             dataValidation.setShowPromptBox(true);
-            sheet.addValidationData(dataValidation);
         } else {
             dataValidation.setSuppressDropDownArrow(false);
         }

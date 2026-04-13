@@ -2,6 +2,7 @@ package org.itrys.boot.mybatis.helper;
 
 import cn.hutool.core.convert.Convert;
 import com.baomidou.dynamic.datasource.DynamicRoutingDataSource;
+import com.baomidou.dynamic.datasource.toolkit.DynamicDataSourceContextHolder;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.itrys.boot.exception.ServiceException;
@@ -14,6 +15,8 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 数据库助手
@@ -24,6 +27,7 @@ import java.util.List;
 public class DataBaseHelper {
 
     private static final DynamicRoutingDataSource DS = SpringUtils.getBean(DynamicRoutingDataSource.class);
+    private static final Map<String, DataBaseType> DB_TYPE_CACHE = new ConcurrentHashMap<>();
 
     /**
      * 获取当前数据源对应的数据库类型
@@ -37,13 +41,37 @@ public class DataBaseHelper {
      */
     public static DataBaseType getDataBaseType() {
         DataSource dataSource = DS.determineDataSource();
-        try (Connection conn = dataSource.getConnection()) {
-            DatabaseMetaData metaData = conn.getMetaData();
-            String databaseProductName = metaData.getDatabaseProductName();
-            return DataBaseType.find(databaseProductName);
-        } catch (SQLException e) {
-            throw new RuntimeException("获取数据库类型失败", e);
-        }
+        String dsKey = DynamicDataSourceContextHolder.peek();
+        final String key = dsKey != null ? dsKey : "primary";
+        return DB_TYPE_CACHE.computeIfAbsent(key, k -> {
+            try (Connection conn = dataSource.getConnection()) {
+                DatabaseMetaData metaData = conn.getMetaData();
+                String databaseProductName = metaData.getDatabaseProductName();
+                return DataBaseType.find(databaseProductName);
+            } catch (SQLException e) {
+                throw new RuntimeException("获取数据库类型失败", e);
+            }
+        });
+    }
+
+    /**
+     * 获取指定数据源对应的数据库类型
+     *
+     * @param dsName 数据源名称
+     * @return 指定数据库对应的 DataBaseType 枚举，找不到时默认返回 MY_SQL
+     * @throws ServiceException 当获取数据库连接或元数据出现异常时抛出业务异常
+     */
+    public static DataBaseType getDataBaseType(String dsName) {
+        DataSource dataSource = DS.getDataSource(dsName);
+        return DB_TYPE_CACHE.computeIfAbsent(dsName, k -> {
+            try (Connection conn = dataSource.getConnection()) {
+                DatabaseMetaData metaData = conn.getMetaData();
+                String databaseProductName = metaData.getDatabaseProductName();
+                return DataBaseType.find(databaseProductName);
+            } catch (SQLException e) {
+                throw new RuntimeException("获取数据库类型失败", e);
+            }
+        });
     }
 
     /**

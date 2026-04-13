@@ -33,11 +33,14 @@ public class ExcelBigNumberConvert implements Converter<Long> {
 
     @Override
     public Long convertToJavaData(ReadCellData<?> cellData, ExcelContentProperty contentProperty, GlobalConfiguration globalConfiguration) {
-        return Convert.toLong(cellData.getData());
+        return Convert.toLong(cellData.getStringValue());
     }
 
     @Override
     public WriteCellData<Object> convertToExcelData(Long object, ExcelContentProperty contentProperty, GlobalConfiguration globalConfiguration) {
+        if (ObjectUtil.isNull(object)) {
+            return new WriteCellData<>("");
+        }
         if (ObjectUtil.isNotNull(object)) {
             String str = Convert.toStr(object);
             if (str.length() > 15) {

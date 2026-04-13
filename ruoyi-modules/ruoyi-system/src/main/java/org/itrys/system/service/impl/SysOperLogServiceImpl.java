@@ -19,8 +19,8 @@ import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -87,6 +87,12 @@ public class SysOperLogServiceImpl implements ISysOperLogService {
             .eq(operLog.getStatus() != null,
                 SysOperLog::getStatus, operLog.getStatus())
             .like(StringUtils.isNotBlank(operLog.getOperName()), SysOperLog::getOperName, operLog.getOperName())
+            .eq(operLog.getUserId() != null, SysOperLog::getUserId, operLog.getUserId())
+            .eq(operLog.getDeptId() != null, SysOperLog::getDeptId, operLog.getDeptId())
+            .eq(StringUtils.isNotBlank(operLog.getClientKey()), SysOperLog::getClientKey, operLog.getClientKey())
+            .eq(StringUtils.isNotBlank(operLog.getDeviceType()), SysOperLog::getDeviceType, operLog.getDeviceType())
+            .like(StringUtils.isNotBlank(operLog.getBrowser()), SysOperLog::getBrowser, operLog.getBrowser())
+            .like(StringUtils.isNotBlank(operLog.getOs()), SysOperLog::getOs, operLog.getOs())
             .between(params.get("beginTime") != null && params.get("endTime") != null,
                 SysOperLog::getOperTime, params.get("beginTime"), params.get("endTime"));
     }
@@ -99,7 +105,7 @@ public class SysOperLogServiceImpl implements ISysOperLogService {
     @Override
     public void insertOperlog(SysOperLogBo bo) {
         SysOperLog operLog = MapstructUtils.convert(bo, SysOperLog.class);
-        operLog.setOperTime(new Date());
+        operLog.setOperTime(LocalDateTime.now());
         baseMapper.insert(operLog);
     }
 

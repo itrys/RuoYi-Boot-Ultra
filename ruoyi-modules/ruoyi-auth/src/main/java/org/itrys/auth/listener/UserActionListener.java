@@ -17,6 +17,7 @@ import org.itrys.boot.utils.MessageUtils;
 import org.itrys.boot.utils.ServletUtils;
 import org.itrys.boot.utils.SpringUtils;
 import org.itrys.boot.utils.ip.AddressUtils;
+import org.itrys.boot.utils.StringUtils;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
@@ -67,7 +68,7 @@ public class UserActionListener implements SaTokenListener {
         SpringUtils.context().publishEvent(loginInfoEvent);
         // 更新登录信息
         loginService.recordLoginInfo((Long) loginParameter.getExtra(LoginHelper.USER_KEY), ip);
-        log.info("user doLogin, userId:{}, token:{}", loginId, tokenValue);
+        log.info("user doLogin, userId:{}, token:***{}", loginId, StringUtils.right(tokenValue, 8));
     }
 
     /**
@@ -76,7 +77,7 @@ public class UserActionListener implements SaTokenListener {
     @Override
     public void doLogout(String loginType, Object loginId, String tokenValue) {
         RedisUtils.deleteObject(CacheNames.ONLINE_TOKEN_KEY + tokenValue);
-        log.info("user doLogout, userId:{}, token:{}", loginId, tokenValue);
+        log.info("user doLogout, userId:{}, token:***{}", loginId, StringUtils.right(tokenValue, 8));
     }
 
     /**
@@ -85,7 +86,7 @@ public class UserActionListener implements SaTokenListener {
     @Override
     public void doKickout(String loginType, Object loginId, String tokenValue) {
         RedisUtils.deleteObject(CacheNames.ONLINE_TOKEN_KEY + tokenValue);
-        log.info("user doKickout, userId:{}, token:{}", loginId, tokenValue);
+        log.info("user doKickout, userId:{}, token:***{}", loginId, StringUtils.right(tokenValue, 8));
     }
 
     /**
@@ -94,7 +95,7 @@ public class UserActionListener implements SaTokenListener {
     @Override
     public void doReplaced(String loginType, Object loginId, String tokenValue) {
         RedisUtils.deleteObject(CacheNames.ONLINE_TOKEN_KEY + tokenValue);
-        log.info("user doReplaced, userId:{}, token:{}", loginId, tokenValue);
+        log.info("user doReplaced, userId:{}, token:***{}", loginId, StringUtils.right(tokenValue, 8));
     }
 
     /**
