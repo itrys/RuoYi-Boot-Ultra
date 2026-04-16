@@ -75,6 +75,67 @@ DHF 是一套面向现代 Java 项目的架构治理方案，通过三个正交�
 
 ---
 
+## 🔐创建方式
+重构后的 RuoYi-Vue-Plus 采用了类似于 Spring Boot 的使用方式，开发者只需在项目中引入相应的依赖，即可快速启动开发工作。这种设计降低了学习和使用的门槛，使得项目能够更好地适应未来业务和技术的变化。
+
+模块化开发模式，后续将把所开发的模块都发布到了maven中央库，也可本地把源代码通过Maven install安装到本地，然后通过类似于 Spring Boot 的使用方式来进行项目搭建，搭建方式有两种。
+
+**1.继承ruoyi-boot-starter-parent**
+```XML
+<parent>
+    <groupId>org.itrys</groupId>
+    <artifactId>ruoyi-boot-ultra</artifactId>
+    <version>${ruoyi-boot-ultra.version}</version>
+</parent>
+```
+**2.添加ruoyi-boot-ultra依赖**
+> 实际中有时候不想以ruoyi-boot-ultra依赖作为父类，可以用此方式定义了若干个rouyi-boot-vue所有模块坐标版本号（依赖管理，而非依赖），以达到减少依赖冲突的目的，其他配置参考ruoyi-boot-parent.pom。
+
+> 实际开发中，使用任意坐标时，仅书写GAV中的G和A，V(version)由RuoYi-Boot-Vue和SpringBoot提供，如发生坐标错误，再指定version（要小心版本冲突）。
+
+```XML
+<dependencyManagement>
+    <dependencies>
+        <!-- RuoYi-Boot-Vue的依赖配置-->
+        <dependency>
+            <groupId>org.itrys</groupId>
+            <artifactId>ruoyi-admin-dependencies</artifactId>
+            <version>${ruoyi-boot-ultra.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+```
+
+---
+
+## 🤡使用步骤 ##
+
+**1.业务模块创建引用基础starter依赖：参考ruoyi-demo和ruoyi-system**
+```XML
+<dependencies>
+    <!-- 基础starter依赖-->
+    <dependency>
+        <groupId>org.itrys.boot</groupId>
+        <artifactId>ruoyi-spring-boot-starter</artifactId>
+    </dependency>
+</dependencies>
+```
+
+**2.需要配置MyBatisPlus的mapper和domain多包扫描，支持扫描不同包，即公司或自己域名的包命名。**
+```yml
+mybatis-plus:
+    # 多包名使用 例如 org.dromara.**.mapper,org.xxx.**.mapper
+    mapperPackage: org.itrys.**.mapper,cc.dhf.**.mapper
+    # 实体扫描，多个package用逗号或者分号分隔
+    typeAliasesPackage: org.itrys.**.domain,cc.dhf.**.domain
+```
+
+[点击查看完整项目创建示例](https://gitee.com/denghuafeng/ruoyi-boot-examples)
+
+---
+
 ## 📁 项目结构
 
 ```
